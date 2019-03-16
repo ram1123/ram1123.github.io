@@ -2,7 +2,7 @@
 layout: post
 title: "How To AN in CMS"
 date: 2018-05-24
-tags: svn cms
+categories: svn cms
 ---
 
 * Do not remove this line (it will not be displayed)

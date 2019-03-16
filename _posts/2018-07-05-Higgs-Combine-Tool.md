@@ -2,7 +2,7 @@
 layout: post
 title: "Higgs Combine Tool"
 date: 2018-07-05
-tags: statistics cms
+categories: statistics cms
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

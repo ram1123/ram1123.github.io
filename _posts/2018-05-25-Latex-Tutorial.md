@@ -2,9 +2,8 @@
 layout: post
 title: "Latex Commands"
 date: 2018-05-25
-tags: latex
+categories: latex
 ---
-
 * Do not remove this line (it will not be displayed)
 {:toc}
 
@@ -175,7 +174,7 @@ in file `ThesisBibliography.bib` add bibliography like
 ```latex
 @TechReport{LHC-tdr-vol1,
   author      = {Bruning, Oliver S. and Collier, P. and Lebrun, P. and Myers, S. and Ostojic, R. and Poole, J. and Proudlock, P.},
-  title       = {{LHC Design Report Vol.1: The LHC Main Ring}},
+  title       = {LHC Design Report Vol.1: The LHC Main Ring},
   institution = {CERN},
   year        = {2004},
   type        = {techreport},

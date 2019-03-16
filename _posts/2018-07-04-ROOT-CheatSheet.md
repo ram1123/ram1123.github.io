@@ -2,7 +2,7 @@
 layout: post
 title: "ROOT CheatSheet"
 date: 2018-07-04
-tags: root cpp pyroot
+categories: root cpp pyroot
 ---
 
 * Do not remove this line (it will not be displayed)

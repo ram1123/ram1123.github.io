@@ -2,7 +2,7 @@
 layout: post
 title: "Condor Jobs"
 date: 2018-07-10
-tags: lpc condor cms
+categories: lpc condor cms
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

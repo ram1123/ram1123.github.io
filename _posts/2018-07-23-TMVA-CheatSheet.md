@@ -2,7 +2,7 @@
 layout: post
 title: "TMVA CheatSheet"
 date: 2018-07-04
-tags: root cpp pyroot tmva
+categories: root cpp pyroot tmva
 ---
 
 * Do not remove this line (it will not be displayed)

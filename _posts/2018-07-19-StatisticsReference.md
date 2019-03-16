@@ -2,7 +2,7 @@
 layout: post
 title: "Statistics"
 date: 2018-07-19
-tags: statistics
+categories: statistics
 ---
 
 * Do not remove this line (it will not be displayed)

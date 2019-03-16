@@ -2,7 +2,7 @@
 layout: post
 title: "rename multiple files"
 date: 2018-07-30
-tags: bash rename
+categories: bash rename
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

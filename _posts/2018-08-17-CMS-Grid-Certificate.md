@@ -2,7 +2,7 @@
 layout: post
 title: "CMS Grid Certificate"
 date: 2018-08-17
-tags: grid cms 
+categories: grid cms 
 ---
 
 * Do not remove this line (it will not be displayed)

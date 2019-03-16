@@ -2,7 +2,7 @@
 layout: post
 title: "How To Clean LHC"
 date: 2018-07-20
-tags: LHC particle-physics
+categories: LHC particle-physics
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

@@ -2,7 +2,7 @@
 layout: post
 title: "EOS uses"
 date: 2018-07-26
-tags: eos cern cms condor lpc
+categories: eos cern cms condor lpc
 ---
 
 * Do not remove this line (it will not be displayed)

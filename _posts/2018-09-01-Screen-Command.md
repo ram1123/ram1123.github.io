@@ -2,7 +2,7 @@
 layout: post
 title: "Screen Command"
 date: 2018-09-01
-tags: bash
+categories: bash
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

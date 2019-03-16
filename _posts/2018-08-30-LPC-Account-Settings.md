@@ -2,7 +2,7 @@
 layout: post
 title: "LPC Account Setting"
 date: 2018-08-30
-tags: lpc cluster
+categories: lpc cluster
 ---
 
 * Do not remove this line (it will not be displayed)

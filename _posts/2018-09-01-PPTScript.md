@@ -2,7 +2,7 @@
 layout: post
 title: "PPT with plots in one click"
 date: 2018-09-01
-tags: latex
+categories: latex
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

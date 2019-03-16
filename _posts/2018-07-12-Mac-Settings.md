@@ -2,7 +2,7 @@
 layout: post
 title: "Mac Settings"
 date: 2018-07-12
-tags: mac
+categories: mac
 ---
 
 * Do not remove this line (it will not be displayed)

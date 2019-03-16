@@ -2,7 +2,7 @@
 layout: post
 title: "Some Random Points/Definitions From Physics"
 date: 2018-09-01
-tags: particle-physics
+categories: particle-physics
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}
