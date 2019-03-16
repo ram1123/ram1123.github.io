@@ -23,6 +23,36 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ram1123
 github_username:  ram1123
 
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  
+
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: sal
+      avatar: /assets/images/avatar1.jpg
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+
+
+
 # Build settings
 markdown: kramdown
 theme: minima
