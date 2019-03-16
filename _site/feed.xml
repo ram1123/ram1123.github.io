@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-16T22:35:18+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Learning Notes</title><subtitle>In this website, I summarize things that I learn and might be useful for others. This site will contain materials that mostly an experimental particle physicist needs.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2019/03/16/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-03-16T22:18:15+01:00</published><updated>2019-03-16T22:18:15+01:00</updated><id>http://localhost:4000/jekyll/update/2019/03/16/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/03/16/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-16T22:39:49+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Learning Notes</title><subtitle>In this website, I summarize things that I learn and might be useful for others. This site will contain materials that mostly an experimental particle physicist needs.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2019/03/16/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-03-16T22:18:15+01:00</published><updated>2019-03-16T22:18:15+01:00</updated><id>http://localhost:4000/jekyll/update/2019/03/16/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/03/16/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
@@ -10,4 +10,519 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Some Random Points/Definitions From Physics</title><link href="http://localhost:4000/2018/09/01/Some-Random-Points-FromPhysics.html" rel="alternate" type="text/html" title="Some Random Points/Definitions From Physics" /><published>2018-09-01T00:00:00+02:00</published><updated>2018-09-01T00:00:00+02:00</updated><id>http://localhost:4000/2018/09/01/Some-Random-Points-FromPhysics</id><content type="html" xml:base="http://localhost:4000/2018/09/01/Some-Random-Points-FromPhysics.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#ramsauer-townsend-effect&quot; id=&quot;markdown-toc-ramsauer-townsend-effect&quot;&gt;Ramsauer-Townsend Effect&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#townsend-coefficient&quot; id=&quot;markdown-toc-townsend-coefficient&quot;&gt;Townsend Coefficient&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#references&quot; id=&quot;markdown-toc-references&quot;&gt;References:&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;ramsauer-townsend-effect&quot;&gt;Ramsauer-Townsend Effect&lt;/h1&gt;
+
+&lt;p&gt;The reduction of cross-section when low energy (about 1 eV) electrons collides with atom of inert gases is known as &lt;strong&gt;&lt;em&gt;Ramsauer-Townsend effect&lt;/em&gt;&lt;/strong&gt;. This reduction of cross-section requires quantum mechanical explanation (1-dimensional model) as it is connected with the wave nature of the electrons&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;This effect was discovered independently by Ramsauer&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;  and Townsend and Bailey&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;townsend-coefficient&quot;&gt;Townsend Coefficient&lt;/h1&gt;
+
+&lt;p&gt;The average distance travelled by electron in an ionizing collision is called its mean free path.&lt;/p&gt;
+
+&lt;p&gt;The average distance an electron travels between ionizing collisions is called mean free path and its inverse is the number of ionizing collision per cm α (the first Townsend coefficient). This parameter determines the gas gain of the gas. If no is the number of primary electron without amplification in uniform electric field, and n is the number of electrons after distance x under avalanche condition. So n is given by n = noeαx and the gas gain G is given by G = n0/n = eαx. The first Townsend Coefficient depends on the nature of the gas, the electric field and pressure.&lt;/p&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References:&lt;/h1&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;D. E. Golden and H. W. Bandel, &lt;em&gt;Low-Energy $e^-Ar$ Total Scattering Cross Sections: The Ramsauer-Townsend Effect&lt;/em&gt;, Phys. Rev. 149, 58 (1966) &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;C. Ramsauer, Ann. Physik 64, 513 (1921) &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;J. S. Townsend and V. A. Bailey, Phil. Mag. 43, 593 (1922) &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="particle-physics" /><summary type="html"></summary></entry><entry><title type="html">Screen Command</title><link href="http://localhost:4000/2018/09/01/Screen-Command.html" rel="alternate" type="text/html" title="Screen Command" /><published>2018-09-01T00:00:00+02:00</published><updated>2018-09-01T00:00:00+02:00</updated><id>http://localhost:4000/2018/09/01/Screen-Command</id><content type="html" xml:base="http://localhost:4000/2018/09/01/Screen-Command.html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;How to use&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nv&quot;&gt;$screen&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;This will open a new screen (say new terminal)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Then start working….&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;If you are working on lxplus then you have set set CMSSW environment again after going into screen.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you want to save a log file, i.e., whatever you are doing after type the screen command then instead of simple &lt;code class=&quot;highlighter-rouge&quot;&gt;screen&lt;/code&gt; type &lt;code class=&quot;highlighter-rouge&quot;&gt;screen -L&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To detach screen&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ctrl A&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;+d
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To reattach screen&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  screen &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To leave the screen&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;ctrl A&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;+K   &lt;span class=&quot;c&quot;&gt;# to kill the screen&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;How to scroll&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Step 1: Press “Ctrl-A” on the keyboard and press “Esc.”&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Step 2: Press the “Up” and “Down” arrow keys or the “PgUp” and “PgDn” keys to scroll through previous output.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Step 3: Press “Esc” to exit scrollback mode.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="bash" /><summary type="html"></summary></entry><entry><title type="html">PPT with plots in one click</title><link href="http://localhost:4000/2018/09/01/PPTScript.html" rel="alternate" type="text/html" title="PPT with plots in one click" /><published>2018-09-01T00:00:00+02:00</published><updated>2018-09-01T00:00:00+02:00</updated><id>http://localhost:4000/2018/09/01/PPTScript</id><content type="html" xml:base="http://localhost:4000/2018/09/01/PPTScript.html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Git clone the script&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git clone https://github.com/ram1123/PPT_script.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Above command will create a directory named PPT_Script&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Put all of your plot file in this directory.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Please name the plots as you want the title of the slide, just put different words together by underscore(_). Because the name of file will become the heading of slide replacing underscore (_) by spaces.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now Run the command ./MakePPT.sh&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;But by default the script will take only *.pdf files only&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you want to use any other format then use -f option of the script&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  ./MakePPT.sh &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; jpg or ./MakePPT.sh &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; jpeg
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Also by default it will make a pdf file named &lt;strong&gt;ppt_test.pdf&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you want to get any other name then you can use -n option of the script&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  ./MakePPT.sh &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; ram
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Then it will create output pdf file with name &lt;strong&gt;ram.pdf&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you want to do both things at a time, i.e. change the file format to recognize and name of output file then you can use both option like&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  ./MakePPT.sh &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; jpeg &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; ram
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You May Get error if you don’t have compiler pdflatex or other dependencies that is necessary for the beamer to make ppt.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you face any problem then you can post your problem on the link:&lt;a href=&quot;https://github.com/ram1123/PPT_script/issues&quot;&gt;https://github.com/ram1123/PPT_script/issues&lt;/a&gt;. I will try to resolve the problem as soon as possible.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="latex" /><summary type="html"></summary></entry><entry><title type="html">Markdown</title><link href="http://localhost:4000/2018/09/01/markdown.html" rel="alternate" type="text/html" title="Markdown" /><published>2018-09-01T00:00:00+02:00</published><updated>2018-09-01T00:00:00+02:00</updated><id>http://localhost:4000/2018/09/01/markdown</id><content type="html" xml:base="http://localhost:4000/2018/09/01/markdown.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#footnote&quot; id=&quot;markdown-toc-footnote&quot;&gt;Footnote&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;footnote&quot;&gt;Footnote&lt;/h1&gt;
+&lt;p&gt;How to add footnote.&lt;/p&gt;</content><author><name></name></author><category term="markdown" /><summary type="html"></summary></entry><entry><title type="html">LPC Account Setting</title><link href="http://localhost:4000/2018/08/30/LPC-Account-Settings.html" rel="alternate" type="text/html" title="LPC Account Setting" /><published>2018-08-30T00:00:00+02:00</published><updated>2018-08-30T00:00:00+02:00</updated><id>http://localhost:4000/2018/08/30/LPC-Account-Settings</id><content type="html" xml:base="http://localhost:4000/2018/08/30/LPC-Account-Settings.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#switch-to-bash-shell&quot; id=&quot;markdown-toc-switch-to-bash-shell&quot;&gt;Switch to bash shell&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;switch-to-bash-shell&quot;&gt;Switch to bash shell&lt;/h1&gt;
+
+&lt;p&gt;Reference: e-mail by &lt;code class=&quot;highlighter-rouge&quot;&gt;Dr. Marguerite Tonjes&lt;/code&gt; dated August 30, 2018 on &lt;code class=&quot;highlighter-rouge&quot;&gt;lpc-howto&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Many users choose to have bash as their default shell (tsch is the current default on the CMS LPC CAF - cmslpc machines.)
+
+1) find out what shell you have right now: 
+echo $0
+
+Or find your default shell with: finger username
+
+2) Change your shell (you may wish to do this as changing shell by hand fails to pick up the EOS aliases): 
+https://uscms.org/uscms_at_work/computing/setup/setup_software.shtml#shell
+
+3) When you change your default shell you don't have the nice command line information. To do that, add the following to your ~/.bash_profile file on the cluster:
+source /etc/bashrc
+
+4) In your next login you will have a nicer formatted command line telling you [username@machine directory]$
+
+5) Note we put that in the ~/.bash_profile because that's executed only upon Login before you get the command line. That way it doesn't affect bash scripts.
+
+6) You may also wish to add this to your ~/.bash_profile to setup the CMS environment so you can use &quot;cmsenv&quot;:
+source /cvmfs/cms.cern.ch/cmsset_default.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="lpc" /><category term="cluster" /><summary type="html"></summary></entry><entry><title type="html">RooFit (Things that I used)</title><link href="http://localhost:4000/2018/08/21/RooFit.html" rel="alternate" type="text/html" title="RooFit (Things that I used)" /><published>2018-08-21T00:00:00+02:00</published><updated>2018-08-21T00:00:00+02:00</updated><id>http://localhost:4000/2018/08/21/RooFit</id><content type="html" xml:base="http://localhost:4000/2018/08/21/RooFit.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#calculate-chi2ndf&quot; id=&quot;markdown-toc-calculate-chi2ndf&quot;&gt;Calculate Chi2/ndf&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#method-1--using-roofit-function-chisquare&quot; id=&quot;markdown-toc-method-1--using-roofit-function-chisquare&quot;&gt;Method 1 : (Using RooFit function chiSquare)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#method-2-using-th1-method-chi2test&quot; id=&quot;markdown-toc-method-2-using-th1-method-chi2test&quot;&gt;Method 2: (Using TH1 method Chi2Test)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#plotting-components-of-composite-pdfs&quot; id=&quot;markdown-toc-plotting-components-of-composite-pdfs&quot;&gt;plotting components of composite p.d.f.s&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;calculate-chi2ndf&quot;&gt;Calculate Chi2/ndf&lt;/h1&gt;
+
+&lt;h2 id=&quot;method-1--using-roofit-function-chisquare&quot;&gt;Method 1 : (Using RooFit function chiSquare)&lt;/h2&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Double_t&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;chiSquare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nFitParam&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Double_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chiSquare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pdfname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;histname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nFitParam&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;RooPlot::chiSquare()&lt;/strong&gt; gives us the &lt;strong&gt;chi2/dof&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;We can also provide the number of floating parameters if the curve is the result of the fit.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If we have multiple curve or dataset then the chi2 is calculated from the last added dataset and curve. Or we can add explicitly the names of the curve and histogram in the RooPlot we would like to compare.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Plot and histogram names are automatically chosen (do e.g. RooPlot::print()), but you can also choose them yourself by adding a Name(“blah”) argument to each plotOn call.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Reference:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://root-forum.cern.ch/t/how-to-obtain-fit-goodness-in-roofit/8199/2?u=ramkrishna&quot;&gt;https://root-forum.cern.ch/t/how-to-obtain-fit-goodness-in-roofit/8199/2?u=ramkrishna&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;method-2-using-th1-method-chi2test&quot;&gt;Method 2: (Using TH1 method Chi2Test)&lt;/h2&gt;
+
+&lt;p&gt;Reference: &lt;a href=&quot;https://root.cern.ch/doc/master/classTH1.html#a6c281eebc0c0a848e7a0d620425090a5&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Double_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TH1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Chi2Test&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TH1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Option_t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;option&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;UU&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Double_t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;       &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;calculate chi2/ndf like this:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      &lt;span class=&quot;n&quot;&gt;chi2ndf&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Chi2Test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hPdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;CHI2/NDFUW&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Reference: &lt;a href=&quot;https://github.com/MiT-HEP/MitEwk13TeV/blob/master/SignalExtraction/fitWm.C#L1901&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;plotting-components-of-composite-pdfs&quot;&gt;plotting components of composite p.d.f.s&lt;/h1&gt;
+
+&lt;p&gt;Reference: &lt;a href=&quot;https://root.cern.ch/root/html/tutorials/roofit/rf205_compplot.C.html&quot;&gt;https://root.cern.ch/root/html/tutorials/roofit/rf205_compplot.C.html&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="roofit" /><category term="root" /><summary type="html"></summary></entry><entry><title type="html">CMS Grid Certificate</title><link href="http://localhost:4000/2018/08/17/CMS-Grid-Certificate.html" rel="alternate" type="text/html" title="CMS Grid Certificate" /><published>2018-08-17T00:00:00+02:00</published><updated>2018-08-17T00:00:00+02:00</updated><id>http://localhost:4000/2018/08/17/CMS-Grid-Certificate</id><content type="html" xml:base="http://localhost:4000/2018/08/17/CMS-Grid-Certificate.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#grid-certificate-installation&quot; id=&quot;markdown-toc-grid-certificate-installation&quot;&gt;Grid Certificate Installation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#computing-at-lpc&quot; id=&quot;markdown-toc-computing-at-lpc&quot;&gt;computing at LPC&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#change-the-default-shell-at-lpc&quot; id=&quot;markdown-toc-change-the-default-shell-at-lpc&quot;&gt;Change the default shell at lpc:&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;grid-certificate-installation&quot;&gt;Grid Certificate Installation&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Get new grid certificate from link : https://ca.cern.ch/ca/&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Backup certificate from Firefox and name is as cert.p12.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;You can see this step here: https://ca.cern.ch/ca/Help/?kbid=040111&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Copy file cert.p12 on lxplus (or lpc) home directory.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go to lxplus and run following commands:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.globus
+openssl pkcs12 &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; cert.p12 &lt;span class=&quot;nt&quot;&gt;-clcerts&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-nokeys&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.globus/usercert.pem
+openssl pkcs12 &lt;span class=&quot;nt&quot;&gt;-in&lt;/span&gt; cert.p12 &lt;span class=&quot;nt&quot;&gt;-nocerts&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-out&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.globus/userkey.pem
+&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;400 &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.globus/userkey.pem
+&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;600 &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.globus/usercert.pem
+&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;go-rx &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.globus
+fs setacl &lt;span class=&quot;nt&quot;&gt;-dir&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.globus &lt;span class=&quot;nt&quot;&gt;-acl&lt;/span&gt; system:anyuser l   &lt;span class=&quot;c&quot;&gt;# this command will work on lxplus  only&lt;/span&gt;
+voms-proxy-init &lt;span class=&quot;nt&quot;&gt;-voms&lt;/span&gt; cms
+voms-proxy-info &lt;span class=&quot;nt&quot;&gt;-all&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;computing-at-lpc&quot;&gt;computing at LPC&lt;/h1&gt;
+
+&lt;p&gt;Link: &lt;a href=&quot;https://lpc.fnal.gov/computing/&quot;&gt;https://lpc.fnal.gov/computing/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;change-the-default-shell-at-lpc&quot;&gt;Change the default shell at lpc:&lt;/h1&gt;
+
+&lt;p&gt;Reference: &lt;a href=&quot;http://uscms.org/uscms_at_work/computing/setup/setup_software.shtml#shell&quot;&gt;http://uscms.org/uscms_at_work/computing/setup/setup_software.shtml#shell&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="grid" /><category term="cms" /><summary type="html"></summary></entry><entry><title type="html">rename multiple files</title><link href="http://localhost:4000/2018/07/30/rename-command.html" rel="alternate" type="text/html" title="rename multiple files" /><published>2018-07-30T00:00:00+02:00</published><updated>2018-07-30T00:00:00+02:00</updated><id>http://localhost:4000/2018/07/30/rename-command</id><content type="html" xml:base="http://localhost:4000/2018/07/30/rename-command.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#rename-command&quot; id=&quot;markdown-toc-rename-command&quot;&gt;rename command&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#rename-files-using-move-command-in-for-loop&quot; id=&quot;markdown-toc-rename-files-using-move-command-in-for-loop&quot;&gt;rename files using move command in for loop&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;rename-command&quot;&gt;rename command&lt;/h1&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    rename searchWord replaceWord  &amp;lt;InputFile&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;rename-files-using-move-command-in-for-loop&quot;&gt;rename files using move command in for loop&lt;/h1&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;file &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;File&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.dat
+    &lt;span class=&quot;k&quot;&gt;do
+        &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mv&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/SearchWord/ReplacementWord&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# Here -i option will ask everytime for replacing name.&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="bash" /><category term="rename" /><summary type="html"></summary></entry><entry><title type="html">EOS uses</title><link href="http://localhost:4000/2018/07/26/CERN-EOS-Access.html" rel="alternate" type="text/html" title="EOS uses" /><published>2018-07-26T00:00:00+02:00</published><updated>2018-07-26T00:00:00+02:00</updated><id>http://localhost:4000/2018/07/26/CERN-EOS-Access</id><content type="html" xml:base="http://localhost:4000/2018/07/26/CERN-EOS-Access.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#some-eos-related-useful-commands&quot; id=&quot;markdown-toc-some-eos-related-useful-commands&quot;&gt;Some EOS related useful commands&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#some-scripts&quot; id=&quot;markdown-toc-some-scripts&quot;&gt;Some Scripts&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#copy-files-from-eos-to-present-working-directory-pwd&quot; id=&quot;markdown-toc-copy-files-from-eos-to-present-working-directory-pwd&quot;&gt;copy files from eos to present working directory (pwd)&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#command-to-check-file-size-and-file-number&quot; id=&quot;markdown-toc-command-to-check-file-size-and-file-number&quot;&gt;Command To check file size and file number&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#check-file-size&quot; id=&quot;markdown-toc-check-file-size&quot;&gt;Check file size&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#open-a-file-from-eos&quot; id=&quot;markdown-toc-open-a-file-from-eos&quot;&gt;Open a file from EOS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#open-a-file-in-condor-batch-or-cern-batch-jobs&quot; id=&quot;markdown-toc-open-a-file-in-condor-batch-or-cern-batch-jobs&quot;&gt;Open a file in condor batch or CERN batch jobs&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#condor-jobs&quot; id=&quot;markdown-toc-condor-jobs&quot;&gt;Condor Jobs&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#cern-batch-jobs&quot; id=&quot;markdown-toc-cern-batch-jobs&quot;&gt;CERN Batch Jobs&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#fnal-eos-some-useful-commands&quot; id=&quot;markdown-toc-fnal-eos-some-useful-commands&quot;&gt;FNAL EOS (some useful commands)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#disk-quota-info&quot; id=&quot;markdown-toc-disk-quota-info&quot;&gt;Disk Quota Info&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#lpc&quot; id=&quot;markdown-toc-lpc&quot;&gt;LPC&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lxplus&quot; id=&quot;markdown-toc-lxplus&quot;&gt;LXPLUS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#tifr-account-details&quot; id=&quot;markdown-toc-tifr-account-details&quot;&gt;TIFR account details&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;some-eos-related-useful-commands&quot;&gt;Some EOS related useful commands&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Copy file from eos to local area: &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;eos cp /eos/cms/store/user/&amp;lt;UserName&amp;gt;/test.root &amp;lt;Path_Local&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;copy recursive the complete hierarchy in a directory: &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;eos cp -r /eos/cms/store/&amp;lt;Path_of_file&amp;gt;  &amp;lt;outputpath&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Find all file under eos directory: &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;eos find -f /eos/cms/user/t/test&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Find all directory under eos : &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;eos find -d /eos/cms/user/t/test&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Find command on eos: &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;eos root://cmseos.fnal.gov find&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;some-scripts&quot;&gt;Some Scripts&lt;/h1&gt;
+
+&lt;h2 id=&quot;copy-files-from-eos-to-present-working-directory-pwd&quot;&gt;copy files from eos to present working directory (pwd)&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;For tcsh shell&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/env tcsh&lt;/span&gt;
+foreach file &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &amp;lt;store-Path&amp;gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.root &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    xrdcp &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$file&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;command-to-check-file-size-and-file-number&quot;&gt;Command To check file size and file number&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-maxdepth&lt;/span&gt; 1 &lt;span class=&quot;nt&quot;&gt;-type&lt;/span&gt; d &lt;span class=&quot;nt&quot;&gt;-print0&lt;/span&gt; | xargs &lt;span class=&quot;nt&quot;&gt;-0&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-I&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echo  $(find &quot;{}&quot; -printf &quot;\n&quot; | wc -l) &quot;{}&quot;'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sort&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Here,
+    &quot;.&quot; =&amp;gt; Preset working directory
+    &quot;-maxdepth 1 &quot; =&amp;gt; Show only for directories in PWD
+    &quot;-type d&quot; =&amp;gt; Show only for directories
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;check-file-size&quot;&gt;Check file size&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;du&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-h&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--max-depth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sort&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Reference:
+https://stackoverflow.com/questions/9157138/recursively-counting-files-in-a-linux-directory/26458853#26458853
+http://www.ducea.com/2006/05/14/tip-how-to-sort-folders-by-size-with-one-command-line-in-linux/&lt;/p&gt;
+
+&lt;h1 id=&quot;open-a-file-from-eos&quot;&gt;Open a file from EOS&lt;/h1&gt;
+
+&lt;p&gt;To open a file we must specify the redirector to find the file. This redirector depends on our region, to minimize the distance over which the data must travel and thus minimizing the reading latency.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;If working in US: &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;root://cmsxrootd.fnal.gov//&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;if working in Europe and Asia: &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;root://xrootd-cms.infn.it//&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;global redirector: &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;root://cms-xrd-global.cern.ch//&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open a file using ROOT: If you are using bare ROOT, you can open files in the xrootd service just like you would any other file:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;TFile&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;root://cmsxrootd.fnal.gov///store/mc/SAM/GenericTTbar/GEN-SIM-RECO/CMSSW_5_3_1_START53_V5-v1/0013/CE4D66EB-5AAE-E111-96D6-003048D37524.root&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;BEWARE:&lt;/strong&gt; Do not use the apparently equivalent syntax, which is known not to work :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-c+++&quot;&gt;TFile(&quot;root://cmsxrootd.fnal.gov//store/foo/bar&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;open-a-file-in-condor-batch-or-cern-batch-jobs&quot;&gt;Open a file in condor batch or CERN batch jobs&lt;/h1&gt;
+
+&lt;h2 id=&quot;condor-jobs&quot;&gt;Condor Jobs&lt;/h2&gt;
+
+&lt;p&gt;If one wants to use local condor batch to analyze user/group skims located at remote sites. The only modification needed is adding:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;use_x509userproxy &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;in your condor jdl file (the file which defines universe, Executable, etc..).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Remember&lt;/strong&gt;: Before submitting the jobs you must have a valid grid proxy. For this run the command:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;voms-proxy-init &lt;span class=&quot;nt&quot;&gt;--voms&lt;/span&gt; cms &lt;span class=&quot;nt&quot;&gt;--valid&lt;/span&gt; 168:00
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Output of above command contains your valid grid proxy. Condor will pass this information to the working node of the condor batch.&lt;/p&gt;
+
+&lt;h2 id=&quot;cern-batch-jobs&quot;&gt;CERN Batch Jobs&lt;/h2&gt;
+
+&lt;p&gt;Jobs submitted to the CERN batch farm will look for a valid grid proxy in the location pointed to by the environment variable $X509_USER_PROXY. (If $X509_USER_PROXY is not set, Xrootd looks for the proxy in the default location in /tmp.)&lt;/p&gt;
+
+&lt;p&gt;To make your proxy available to the lxbatch jobs, first copy your proxy to an area in afs, for example your home directory:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cp&lt;/span&gt; /tmp/x509up_uXXXX  /afs/cern.ch/user/u/username/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you are submitting a job with &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bsub myscript.sh&lt;/code&gt;&lt;/strong&gt;, then in &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;myscript.sh&lt;/code&gt;&lt;/strong&gt;, set this environment variable:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;X509_USER_PROXY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/afs/cern.ch/user/u/username/x509up_uXXXX
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Reference: &lt;a href=&quot;https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookXrootdService&quot;&gt;https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookXrootdService&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;fnal-eos-some-useful-commands&quot;&gt;FNAL EOS (some useful commands)&lt;/h1&gt;
+
+&lt;p&gt;Ref: http://uscms.org/uscms_at_work/computing/LPC/usingEOSAtLPC.shtml&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Check personal quota:   &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;eosquota&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Check group quota: &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;eosgrpquota lnujj&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Reading from from FNAL eos: &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;root://cmseos.fnal.gov//store/&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;disk-quota-info&quot;&gt;Disk Quota Info&lt;/h1&gt;
+
+&lt;h2 id=&quot;lpc&quot;&gt;LPC&lt;/h2&gt;
+
+&lt;p&gt;EOS = 2 TB /user&lt;/p&gt;
+
+&lt;p&gt;/uscms_data = 100 GB/user&lt;/p&gt;
+
+&lt;p&gt;/uscms home = 2 GB/user&lt;/p&gt;
+
+&lt;p&gt;Space without quota for 3 day life time /uscmst1b_scratch/lpc1/3DayLifetime/&lt;username&gt; . As the name suggest data will be deleted automatically after 3 days.&lt;/username&gt;&lt;/p&gt;
+
+&lt;p&gt;Checking quota: quota -s&lt;/p&gt;
+
+&lt;h2 id=&quot;lxplus&quot;&gt;LXPLUS&lt;/h2&gt;
+
+&lt;p&gt;work = 100 GB/user (max)&lt;/p&gt;
+
+&lt;p&gt;Reference: 
+&lt;a href=&quot;http://uscms.org/uscms_at_work/computing/setup/diskusage.shtml&quot;&gt;http://uscms.org/uscms_at_work/computing/setup/diskusage.shtml&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Computing at LPC: &lt;a href=&quot;http://lpc.fnal.gov/computing/index.shtml&quot;&gt;http://lpc.fnal.gov/computing/index.shtml&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tifr-account-details&quot;&gt;TIFR account details&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Log in into TIFR account: &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ssh -X &amp;lt;username&amp;gt;@ui.indiacms.res.in&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;path of LFN : &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/store/user/username&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To access LFN type this command:   &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$voms-proxy-init --voms cms &lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To change password type:  &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$passwd&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Site Name for crab jobs:  &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;T2_IN_TIFR&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To List the files do:   &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$rfdir /dpm/indiacms.res.in/home/cms/store/user/&amp;lt;userName&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To delete files   &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$rfrm path/of/store/&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;For sotring data use T3 space whose path is  &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/home/&amp;lt;userName&amp;gt;/t3store&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Path of T2 directory:   &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/dpm/indiacms.res.in/home/cms/store/user/&amp;lt;userName&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;in CRAB jobs if you white-list &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;T2_IN_TIFR&lt;/code&gt;&lt;/strong&gt; for stageout then crab3 will automatically write at that location. stageout location will be &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/store/user/rasharma&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To copy file from ui to lxplus:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  xrdcp root://se01.indiacms.res.in//store/user/&amp;lt;userName&amp;gt;/Path_of_file /localpath
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To open file at uiwith root in lxplus:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  root &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; root://se01.indiacms.res.in//store/user/rchawla/DrellYan-Analysis/DYToEE_M-800_CT10_TuneZ2star_8TeV-powheg-pythia6/crab_DrellYan-Analysis/150511_195346/0000/DYEE_M800_8TeV_AOD_1.root
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="eos" /><category term="cern" /><category term="cms" /><category term="condor" /><category term="lpc" /><summary type="html"></summary></entry></feed>
