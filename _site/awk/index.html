@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>awk command | My Notes</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="awk command" />
+<meta name="author" content="sal" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In this website, I summarize things that I learn and might be useful for others. This site will contain materials that mostly an experimental particle physicist needs." />
+<meta property="og:description" content="In this website, I summarize things that I learn and might be useful for others. This site will contain materials that mostly an experimental particle physicist needs." />
+<link rel="canonical" href="http://localhost:4000/awk/" />
+<meta property="og:url" content="http://localhost:4000/awk/" />
+<meta property="og:site_name" content="My Notes" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-05-24T00:00:00+02:00" />
+<script type="application/ld+json">
+{"description":"In this website, I summarize things that I learn and might be useful for others. This site will contain materials that mostly an experimental particle physicist needs.","author":{"@type":"Person","name":"sal"},"@type":"BlogPosting","url":"http://localhost:4000/awk/","headline":"awk command","dateModified":"2018-05-24T00:00:00+02:00","datePublished":"2018-05-24T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/awk/"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="My Notes" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">My Notes</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">awk command</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-05-24T00:00:00+02:00" itemprop="datePublished">May 24, 2018
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">sal</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="markdown-toc">
+  <li><a href="#awk-process-flow" id="markdown-toc-awk-process-flow">AWK process flow</a></li>
+  <li><a href="#skip-blank-lines" id="markdown-toc-skip-blank-lines">skip blank lines</a></li>
+  <li><a href="#if-else" id="markdown-toc-if-else">If Else</a></li>
+  <li><a href="#generate-random-number" id="markdown-toc-generate-random-number">Generate random number</a></li>
+  <li><a href="#for-loop" id="markdown-toc-for-loop">For loop</a></li>
+  <li><a href="#select-row-and-element-in-awk" id="markdown-toc-select-row-and-element-in-awk">select row and element in awk</a></li>
+  <li><a href="#replace-a-particular-row-and-column-value-of-one-file-with-another" id="markdown-toc-replace-a-particular-row-and-column-value-of-one-file-with-another">replace a particular row and column value of one file with another</a></li>
+</ul>
+
+<p>AWK is one of mostly used text-processing utilities on Linux. It takes its name from initials of its authors - <code class="highlighter-rouge">Aho, Wienberger and Kernighan</code>. It is a scripting language that processes data files, especially text files that are organized in rows and columns.</p>
+
+<p>AWK is used for stream processing, where the basic unit is the string. <strong>It considers a text file as a collection of fields and records. Each row is a record, and a record is a collection of fields.</strong> The syntax of AWK is as follows:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nb">awk</span> <span class="o">[</span>options] <span class="s1">'patter {action}'</span> input_file
+</code></pre></div></div>
+<p>As an AWK script:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nb">awk</span> <span class="o">[</span>options] script_name input_file
+</code></pre></div></div>
+<p>The most commonly used command-line options of awk are “-F” and “-f”:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-F : to change input field seperator
+-f : to name script file
+</code></pre></div></div>
+
+<p>There are two types of buffers used in AWK - the record buffer and field buffer.</p>
+
+<p>The field buffer is denoted as $1, $2… $n, where ‘n’ indicates the field number in the input file. So, $2 indicates the second field (or the second column in a file).</p>
+
+<p>The record buffer is denoted as $0, which indicates the whole record.</p>
+
+<p><strong>Example</strong></p>
+
+<p>fileName : file1.txt</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ram    1 get       7
+    shyam   2 put      8
+    krishna  3 lost    9
+    sharma   4 found   8
+    archana  5 good    7
+    kumari   6 best    6
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>To print third and first field in a file, use the command
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nb">awk</span> <span class="s1">'{print $3, $1}'</span> file1.txt
+</code></pre></div></div>
+<p>Output:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get ram
+put shyam
+lost krishna
+found sharma
+good archana
+best kumari
+</code></pre></div></div>
+
+<h2 id="awk-process-flow">AWK process flow</h2>
+<p>AWK scripts are divided into the following three parts - <strong>BEGIN (pre-processing), body (processing) and END (post-processing)</strong>.</p>
+
+<p><strong>BEGIN</strong> is the part of the AWK script where variables can be initialised and report headings can be created. The processing body contains the data that needs to be processed, like a loop. <strong>END</strong> or the post-processing part analyses or prints the data that has been processed.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="nb">awk</span> <span class="s1">'BEGIN {print "Sum \t average"} {tot=$2+$4; avg=tot/3; print tot,avg} END {print "======================\nProcessing End...\n================="}'</span> file1.txt
+</code></pre></div></div>
+<p>Output:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Sum    average
+    8  2.66667
+    10  3.33333
+    12  4
+    12  4
+    12  4
+    12  4
+    ======================
+    Processing End...
+    =================
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="skip-blank-lines">skip blank lines</h2>
+
+<p>There are two approaches you can try to filter out lines:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nb">awk</span> <span class="s1">'NF'</span> data.txt
+</code></pre></div></div>
+<p>and</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nb">awk</span> <span class="s1">'length'</span> data.txt
+</code></pre></div></div>
+<p>Just put these at the start of your command, i.e.,</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nb">awk</span> <span class="nt">-v</span> <span class="nv">variable</span><span class="o">=</span><span class="nv">$bashvariable</span> <span class="s1">'NF { print variable ... }'</span> myinfile
+</code></pre></div></div>
+
+<p>or</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nb">awk</span> <span class="nt">-v</span> <span class="nv">variable</span><span class="o">=</span><span class="nv">$bashvariable</span> <span class="s1">'length { print variable  ... }'</span> myinfile
+</code></pre></div></div>
+<p>Both of these act as gatekeepers/if-statements.</p>
+
+<p>The first approach works by only printining out lines where the number of fields (NF) is not zero (i.e., greater than zero).</p>
+
+<p>The second method looks at the line length and acts if the length is not zero (i.e., greater than zero)</p>
+
+<p>You can pick the approach that is most suitable for your data/needs.</p>
+
+<p>Reference: https://stackoverflow.com/questions/11687216/awk-to-skip-the-blank-lines</p>
+
+<h2 id="if-else">If Else</h2>
+
+<p>Reference: https://www.thegeekstuff.com/2010/02/awk-conditional-statements</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">awk</span> <span class="s1">'{if ($3 &lt; 105 &amp;&amp; $3&gt;65) print $3}'</span> mass.txt 
+</code></pre></div></div>
+<h2 id="generate-random-number">Generate random number</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">awk</span> <span class="nt">-v</span> <span class="nv">min</span><span class="o">=</span>5 <span class="nt">-v</span> <span class="nv">max</span><span class="o">=</span>10 <span class="s1">'BEGIN{srand(); print int(min+rand()*(max-min+1))}'</span>
+</code></pre></div></div>
+
+<h2 id="for-loop">For loop</h2>
+
+<p><strong>Command 1</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">awk</span> <span class="nt">-F</span><span class="s1">'[, ]'</span> <span class="s1">'{for(i=2;i&lt;=NF;i++){print $1,$i}}'</span> file
+</code></pre></div></div>
+
+<p><strong>Command 2</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">awk</span> <span class="s1">'BEGIN { for (i = 1; i &lt;= 5; ++i) print i }'</span>
+</code></pre></div></div>
+
+<p>If you want to print awk output in the same line add <code class="highlighter-rouge">| xargs | sed -e 's/ /,/g'</code> as shown below:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">awk</span> <span class="s1">'BEGIN { for (i = 1; i &lt;= 5; ++i) print i }'</span> | xargs | <span class="nb">sed</span> <span class="nt">-e</span> <span class="s1">'s/ /, /g'</span>
+</code></pre></div></div>
+
+<p>This will print each value seperated by “comma and a space” in same line.</p>
+
+<h1 id="select-row-and-element-in-awk">select row and element in awk</h1>
+
+<p>Reference: <a href="https://stackoverflow.com/questions/1506521/select-row-and-element-in-awk">https://stackoverflow.com/questions/1506521/select-row-and-element-in-awk</a></p>
+
+<h1 id="replace-a-particular-row-and-column-value-of-one-file-with-another">replace a particular row and column value of one file with another</h1>
+
+<p>Reference: <a href="https://stackoverflow.com/questions/26089692/replace-a-particular-row-and-column-value-of-one-file-with-another">https://stackoverflow.com/questions/26089692/replace-a-particular-row-and-column-value-of-one-file-with-another</a></p>
+
+  </div><a class="u-url" href="/awk/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My Notes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">My Notes</li><li><a class="u-email" href="mailto:rasharma@cern.ch">rasharma@cern.ch</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/ram1123"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">ram1123</span></a></li><li><a href="https://www.twitter.com/ram1123"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">ram1123</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>In this website, I summarize things that I learn and might be useful for others. This site will contain materials that mostly an experimental particle physicist needs.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
