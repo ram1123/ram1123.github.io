@@ -1,16 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-17T01:00:23+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Notes</title><subtitle>In this website, I summarize things that I learn and might be useful for others. This site will contain materials that mostly an experimental particle physicist needs.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-03-16T22:18:15+01:00</published><updated>2019-03-16T22:18:15+01:00</updated><id>http://localhost:4000/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/welcome-to-jekyll/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-20T22:50:40+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Notes</title><subtitle>In this website, I summarize things that I learn and might be useful for others. This site will contain materials that mostly an experimental particle physicist needs.</subtitle><entry><title type="html">GridPack Generation</title><link href="http://localhost:4000/mc/2019/03/20/GridPack-Generation.html" rel="alternate" type="text/html" title="GridPack Generation" /><published>2019-03-20T00:00:00+01:00</published><updated>2019-03-20T00:00:00+01:00</updated><id>http://localhost:4000/mc/2019/03/20/GridPack-Generation</id><content type="html" xml:base="http://localhost:4000/mc/2019/03/20/GridPack-Generation.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#madgraph-introduction&quot; id=&quot;markdown-toc-madgraph-introduction&quot;&gt;MadGraph Introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#inputs-for-gridpack-generation&quot; id=&quot;markdown-toc-inputs-for-gridpack-generation&quot;&gt;Inputs for GridPack Generation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-to-generate&quot; id=&quot;markdown-toc-how-to-generate&quot;&gt;How To Generate&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#generate-gridpack&quot; id=&quot;markdown-toc-generate-gridpack&quot;&gt;Generate GridPack&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#generate-events-from-gridpack&quot; id=&quot;markdown-toc-generate-events-from-gridpack&quot;&gt;Generate Events from GridPack&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#faq&quot; id=&quot;markdown-toc-faq&quot;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#possible-issues&quot; id=&quot;markdown-toc-possible-issues&quot;&gt;Possible Issues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;h1 id=&quot;madgraph-introduction&quot;&gt;MadGraph Introduction&lt;/h1&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;h1 id=&quot;inputs-for-gridpack-generation&quot;&gt;Inputs for GridPack Generation&lt;/h1&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;how-to-generate&quot;&gt;How To Generate&lt;/h1&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>sal</name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Some Random Points/Definitions From Physics</title><link href="http://localhost:4000/Some-Random-Points-FromPhysics/" rel="alternate" type="text/html" title="Some Random Points/Definitions From Physics" /><published>2018-09-01T00:00:00+02:00</published><updated>2018-09-01T00:00:00+02:00</updated><id>http://localhost:4000/Some-Random-Points-FromPhysics</id><content type="html" xml:base="http://localhost:4000/Some-Random-Points-FromPhysics/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;h2 id=&quot;generate-gridpack&quot;&gt;Generate GridPack&lt;/h2&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;https://github.com/cms-sw/genproductions.git]&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;https://github.com/cms-sw/genproductions.git&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;bin/MadGraph5_aMCatNLO/
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;bin/MadGraph5_aMCatNLO/cards/production/13TeV/
+&lt;span class=&quot;nb&quot;&gt;mkdir &lt;/span&gt;Test
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Example card:
+&lt;a href=&quot;https://github.com/ram1123/genproductions/tree/673e25b126d618890dd6dc5bbd8cc88bc0faf816/bin/MadGraph5_aMCatNLO/cards/production/13TeV/AnomalousCouplings-SMP/aQGC_WPlepWMhadJJ_EWK_LO_NPle1&quot;&gt;https://github.com/ram1123/genproductions/tree/673e25b126d618890dd6dc5bbd8cc88bc0faf816/bin/MadGraph5_aMCatNLO/cards/production/13TeV/AnomalousCouplings-SMP/aQGC_WPlepWMhadJJ_EWK_LO_NPle1&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gridpack_generation.sh &amp;lt;CardName&amp;gt; &amp;lt;CardPath&amp;gt;
+./submit_gridpack_generation.sh &amp;lt;memoryInMBytes&amp;gt; &amp;lt;diskInMBytes&amp;gt; &amp;lt;queueForMasterJob&amp;gt; &amp;lt;name of process card without _proc_card.dat&amp;gt; &amp;lt;folder containing cards relative to current location&amp;gt; &amp;lt;queue&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;generate-events-from-gridpack&quot;&gt;Generate Events from GridPack&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    cmsrel CMSSW_X_Y_Z 
+    &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;CMSSW_X_Y_Z/src
+    cmsenv
+    &lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-xavf&lt;/span&gt; &amp;lt;path of gridpack creation&amp;gt;/wplustest_LO_tarball.tar.xz
+    bash
+    ./runcmsgrid.sh &amp;lt;NEvents&amp;gt; &amp;lt;RandomSeed&amp;gt; &amp;lt;NumberOfCPUs&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Reference: &lt;a href=&quot;Reference: https://twiki.cern.ch/twiki/bin/viewauth/CMS/QuickGuideMadGraph5aMCatNLO#Standalone_production_running_th&quot;&gt;Reference: https://twiki.cern.ch/twiki/bin/viewauth/CMS/QuickGuideMadGraph5aMCatNLO#Standalone_production_running_th&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;faq&quot;&gt;FAQ&lt;/h1&gt;
+
+&lt;h1 id=&quot;possible-issues&quot;&gt;Possible Issues&lt;/h1&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Some Random Points/Definitions From Physics</title><link href="http://localhost:4000/particle-physics/2018/09/01/Some-Random-Points-FromPhysics.html" rel="alternate" type="text/html" title="Some Random Points/Definitions From Physics" /><published>2018-09-01T00:00:00+02:00</published><updated>2018-09-01T00:00:00+02:00</updated><id>http://localhost:4000/particle-physics/2018/09/01/Some-Random-Points-FromPhysics</id><content type="html" xml:base="http://localhost:4000/particle-physics/2018/09/01/Some-Random-Points-FromPhysics.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#ramsauer-townsend-effect&quot; id=&quot;markdown-toc-ramsauer-townsend-effect&quot;&gt;Ramsauer-Townsend Effect&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#townsend-coefficient&quot; id=&quot;markdown-toc-townsend-coefficient&quot;&gt;Townsend Coefficient&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#references&quot; id=&quot;markdown-toc-references&quot;&gt;References:&lt;/a&gt;&lt;/li&gt;
@@ -42,7 +76,7 @@
       &lt;p&gt;J. S. Townsend and V. A. Bailey, Phil. Mag. 43, 593 (1922) &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>sal</name></author><summary type="html"></summary></entry><entry><title type="html">Screen Command</title><link href="http://localhost:4000/Screen-Command/" rel="alternate" type="text/html" title="Screen Command" /><published>2018-09-01T00:00:00+02:00</published><updated>2018-09-01T00:00:00+02:00</updated><id>http://localhost:4000/Screen-Command</id><content type="html" xml:base="http://localhost:4000/Screen-Command/">&lt;ul&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Screen Command</title><link href="http://localhost:4000/bash/2018/09/01/Screen-Command.html" rel="alternate" type="text/html" title="Screen Command" /><published>2018-09-01T00:00:00+02:00</published><updated>2018-09-01T00:00:00+02:00</updated><id>http://localhost:4000/bash/2018/09/01/Screen-Command</id><content type="html" xml:base="http://localhost:4000/bash/2018/09/01/Screen-Command.html">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;How to use&lt;/strong&gt;:&lt;/p&gt;
 
@@ -96,7 +130,7 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>sal</name></author><summary type="html"></summary></entry><entry><title type="html">PPT with plots in one click</title><link href="http://localhost:4000/PPTScript/" rel="alternate" type="text/html" title="PPT with plots in one click" /><published>2018-09-01T00:00:00+02:00</published><updated>2018-09-01T00:00:00+02:00</updated><id>http://localhost:4000/PPTScript</id><content type="html" xml:base="http://localhost:4000/PPTScript/">&lt;ul&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">PPT with plots in one click</title><link href="http://localhost:4000/latex/2018/09/01/PPTScript.html" rel="alternate" type="text/html" title="PPT with plots in one click" /><published>2018-09-01T00:00:00+02:00</published><updated>2018-09-01T00:00:00+02:00</updated><id>http://localhost:4000/latex/2018/09/01/PPTScript</id><content type="html" xml:base="http://localhost:4000/latex/2018/09/01/PPTScript.html">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;Git clone the script&lt;/p&gt;
 
@@ -149,12 +183,12 @@
   &lt;li&gt;
     &lt;p&gt;If you face any problem then you can post your problem on the link:&lt;a href=&quot;https://github.com/ram1123/PPT_script/issues&quot;&gt;https://github.com/ram1123/PPT_script/issues&lt;/a&gt;. I will try to resolve the problem as soon as possible.&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>sal</name></author><summary type="html"></summary></entry><entry><title type="html">Markdown</title><link href="http://localhost:4000/markdown/" rel="alternate" type="text/html" title="Markdown" /><published>2018-09-01T00:00:00+02:00</published><updated>2018-09-01T00:00:00+02:00</updated><id>http://localhost:4000/markdown</id><content type="html" xml:base="http://localhost:4000/markdown/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Markdown</title><link href="http://localhost:4000/markdown/2018/09/01/markdown.html" rel="alternate" type="text/html" title="Markdown" /><published>2018-09-01T00:00:00+02:00</published><updated>2018-09-01T00:00:00+02:00</updated><id>http://localhost:4000/markdown/2018/09/01/markdown</id><content type="html" xml:base="http://localhost:4000/markdown/2018/09/01/markdown.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#footnote&quot; id=&quot;markdown-toc-footnote&quot;&gt;Footnote&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;footnote&quot;&gt;Footnote&lt;/h1&gt;
-&lt;p&gt;How to add footnote.&lt;/p&gt;</content><author><name>sal</name></author><summary type="html"></summary></entry><entry><title type="html">LPC Account Setting</title><link href="http://localhost:4000/LPC-Account-Settings/" rel="alternate" type="text/html" title="LPC Account Setting" /><published>2018-08-30T00:00:00+02:00</published><updated>2018-08-30T00:00:00+02:00</updated><id>http://localhost:4000/LPC-Account-Settings</id><content type="html" xml:base="http://localhost:4000/LPC-Account-Settings/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;p&gt;How to add footnote.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">LPC Account Setting</title><link href="http://localhost:4000/lpc/cluster/2018/08/30/LPC-Account-Settings.html" rel="alternate" type="text/html" title="LPC Account Setting" /><published>2018-08-30T00:00:00+02:00</published><updated>2018-08-30T00:00:00+02:00</updated><id>http://localhost:4000/lpc/cluster/2018/08/30/LPC-Account-Settings</id><content type="html" xml:base="http://localhost:4000/lpc/cluster/2018/08/30/LPC-Account-Settings.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#switch-to-bash-shell&quot; id=&quot;markdown-toc-switch-to-bash-shell&quot;&gt;Switch to bash shell&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -181,7 +215,7 @@ source /etc/bashrc
 
 6) You may also wish to add this to your ~/.bash_profile to setup the CMS environment so you can use &quot;cmsenv&quot;:
 source /cvmfs/cms.cern.ch/cmsset_default.sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>sal</name></author><summary type="html"></summary></entry><entry><title type="html">RooFit (Things that I used)</title><link href="http://localhost:4000/RooFit/" rel="alternate" type="text/html" title="RooFit (Things that I used)" /><published>2018-08-21T00:00:00+02:00</published><updated>2018-08-21T00:00:00+02:00</updated><id>http://localhost:4000/RooFit</id><content type="html" xml:base="http://localhost:4000/RooFit/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">RooFit (Things that I used)</title><link href="http://localhost:4000/roofit/root/2018/08/21/RooFit.html" rel="alternate" type="text/html" title="RooFit (Things that I used)" /><published>2018-08-21T00:00:00+02:00</published><updated>2018-08-21T00:00:00+02:00</updated><id>http://localhost:4000/roofit/root/2018/08/21/RooFit</id><content type="html" xml:base="http://localhost:4000/roofit/root/2018/08/21/RooFit.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#calculate-chi2ndf&quot; id=&quot;markdown-toc-calculate-chi2ndf&quot;&gt;Calculate Chi2/ndf&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#method-1--using-roofit-function-chisquare&quot; id=&quot;markdown-toc-method-1--using-roofit-function-chisquare&quot;&gt;Method 1 : (Using RooFit function chiSquare)&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#method-2-using-th1-method-chi2test&quot; id=&quot;markdown-toc-method-2-using-th1-method-chi2test&quot;&gt;Method 2: (Using TH1 method Chi2Test)&lt;/a&gt;&lt;/li&gt;
@@ -239,7 +273,7 @@ source /cvmfs/cms.cern.ch/cmsset_default.sh
 
 &lt;h1 id=&quot;plotting-components-of-composite-pdfs&quot;&gt;plotting components of composite p.d.f.s&lt;/h1&gt;
 
-&lt;p&gt;Reference: &lt;a href=&quot;https://root.cern.ch/root/html/tutorials/roofit/rf205_compplot.C.html&quot;&gt;https://root.cern.ch/root/html/tutorials/roofit/rf205_compplot.C.html&lt;/a&gt;&lt;/p&gt;</content><author><name>sal</name></author><summary type="html"></summary></entry><entry><title type="html">CMS Grid Certificate</title><link href="http://localhost:4000/CMS-Grid-Certificate/" rel="alternate" type="text/html" title="CMS Grid Certificate" /><published>2018-08-17T00:00:00+02:00</published><updated>2018-08-17T00:00:00+02:00</updated><id>http://localhost:4000/CMS-Grid-Certificate</id><content type="html" xml:base="http://localhost:4000/CMS-Grid-Certificate/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;p&gt;Reference: &lt;a href=&quot;https://root.cern.ch/root/html/tutorials/roofit/rf205_compplot.C.html&quot;&gt;https://root.cern.ch/root/html/tutorials/roofit/rf205_compplot.C.html&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">CMS Grid Certificate</title><link href="http://localhost:4000/grid/cms/2018/08/17/CMS-Grid-Certificate.html" rel="alternate" type="text/html" title="CMS Grid Certificate" /><published>2018-08-17T00:00:00+02:00</published><updated>2018-08-17T00:00:00+02:00</updated><id>http://localhost:4000/grid/cms/2018/08/17/CMS-Grid-Certificate</id><content type="html" xml:base="http://localhost:4000/grid/cms/2018/08/17/CMS-Grid-Certificate.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#grid-certificate-installation&quot; id=&quot;markdown-toc-grid-certificate-installation&quot;&gt;Grid Certificate Installation&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#computing-at-lpc&quot; id=&quot;markdown-toc-computing-at-lpc&quot;&gt;computing at LPC&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#change-the-default-shell-at-lpc&quot; id=&quot;markdown-toc-change-the-default-shell-at-lpc&quot;&gt;Change the default shell at lpc:&lt;/a&gt;&lt;/li&gt;
@@ -283,7 +317,7 @@ voms-proxy-info &lt;span class=&quot;nt&quot;&gt;-all&lt;/span&gt;
 
 &lt;h1 id=&quot;change-the-default-shell-at-lpc&quot;&gt;Change the default shell at lpc:&lt;/h1&gt;
 
-&lt;p&gt;Reference: &lt;a href=&quot;http://uscms.org/uscms_at_work/computing/setup/setup_software.shtml#shell&quot;&gt;http://uscms.org/uscms_at_work/computing/setup/setup_software.shtml#shell&lt;/a&gt;&lt;/p&gt;</content><author><name>sal</name></author><summary type="html"></summary></entry><entry><title type="html">rename multiple files</title><link href="http://localhost:4000/rename-command/" rel="alternate" type="text/html" title="rename multiple files" /><published>2018-07-30T00:00:00+02:00</published><updated>2018-07-30T00:00:00+02:00</updated><id>http://localhost:4000/rename-command</id><content type="html" xml:base="http://localhost:4000/rename-command/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;p&gt;Reference: &lt;a href=&quot;http://uscms.org/uscms_at_work/computing/setup/setup_software.shtml#shell&quot;&gt;http://uscms.org/uscms_at_work/computing/setup/setup_software.shtml#shell&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">rename multiple files</title><link href="http://localhost:4000/bash/rename/2018/07/30/rename-command.html" rel="alternate" type="text/html" title="rename multiple files" /><published>2018-07-30T00:00:00+02:00</published><updated>2018-07-30T00:00:00+02:00</updated><id>http://localhost:4000/bash/rename/2018/07/30/rename-command</id><content type="html" xml:base="http://localhost:4000/bash/rename/2018/07/30/rename-command.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#rename-command&quot; id=&quot;markdown-toc-rename-command&quot;&gt;rename command&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#rename-files-using-move-command-in-for-loop&quot; id=&quot;markdown-toc-rename-files-using-move-command-in-for-loop&quot;&gt;rename files using move command in for loop&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -304,7 +338,7 @@ voms-proxy-info &lt;span class=&quot;nt&quot;&gt;-all&lt;/span&gt;
         &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mv&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/SearchWord/ReplacementWord&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
         &lt;span class=&quot;c&quot;&gt;# Here -i option will ask everytime for replacing name.&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>sal</name></author><summary type="html"></summary></entry><entry><title type="html">EOS uses</title><link href="http://localhost:4000/CERN-EOS-Access/" rel="alternate" type="text/html" title="EOS uses" /><published>2018-07-26T00:00:00+02:00</published><updated>2018-07-26T00:00:00+02:00</updated><id>http://localhost:4000/CERN-EOS-Access</id><content type="html" xml:base="http://localhost:4000/CERN-EOS-Access/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">EOS uses</title><link href="http://localhost:4000/eos/cern/cms/condor/lpc/2018/07/26/CERN-EOS-Access.html" rel="alternate" type="text/html" title="EOS uses" /><published>2018-07-26T00:00:00+02:00</published><updated>2018-07-26T00:00:00+02:00</updated><id>http://localhost:4000/eos/cern/cms/condor/lpc/2018/07/26/CERN-EOS-Access</id><content type="html" xml:base="http://localhost:4000/eos/cern/cms/condor/lpc/2018/07/26/CERN-EOS-Access.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#some-eos-related-useful-commands&quot; id=&quot;markdown-toc-some-eos-related-useful-commands&quot;&gt;Some EOS related useful commands&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#some-scripts&quot; id=&quot;markdown-toc-some-scripts&quot;&gt;Some Scripts&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#copy-files-from-eos-to-present-working-directory-pwd&quot; id=&quot;markdown-toc-copy-files-from-eos-to-present-working-directory-pwd&quot;&gt;copy files from eos to present working directory (pwd)&lt;/a&gt;        &lt;ul&gt;
@@ -525,4 +559,4 @@ http://www.ducea.com/2006/05/14/tip-how-to-sort-folders-by-size-with-one-command
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  root &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; root://se01.indiacms.res.in//store/user/rchawla/DrellYan-Analysis/DYToEE_M-800_CT10_TuneZ2star_8TeV-powheg-pythia6/crab_DrellYan-Analysis/150511_195346/0000/DYEE_M800_8TeV_AOD_1.root
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>sal</name></author><summary type="html"></summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>

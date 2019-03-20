@@ -1,0 +1,4 @@
+_site/*
+# Don't ignore git settings
+!.gitignore
+_site/about/index.html
