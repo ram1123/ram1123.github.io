@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<p class="meta">{{ page.date | date_to_string }}</p>
+
+{% if page.lang %}
+<div class="post" lang="{{page.lang}}">
+{% else %}
+<div class="post">
+{% endif %}
+  <!-- <h1 class="post-title">{{ page.title }}</h1> -->
+  <span class="post-tags">
+    <font size="6" color="maroon">[&nbsp;Category:&nbsp;
+    {% for tag in page.categories %}
+      {% capture tag_name %}{{ tag }}{% endcapture %}
+      <a class="no-underline" href="/blog/category.html#{{ tag_name }}" style="color:maroon"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>    
+    {% endfor %}
+    ]</font>
+  </span>
+  {{ content }}
+</div>
+
+
+<div class="related">
+  <p>
+  <p>
+  <hr>
+  <hr>
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      {% if post.lang %}
+      <li lang="{{ post.lang }}">
+      {% else %}
+      <li>
+      {% endif %}
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
