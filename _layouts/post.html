@@ -11,7 +11,7 @@ layout: default
 {% endif %}
   <!-- <h1 class="post-title">{{ page.title }}</h1> -->
   <span class="post-tags">
-    <font size="6" color="maroon">[&nbsp;Category:&nbsp;
+    <font size="6" color="maroon">[&nbsp;<a href="/blog/category.html">Category:&nbsp;
     {% for tag in page.categories %}
       {% capture tag_name %}{{ tag }}{% endcapture %}
       <a class="no-underline" href="/blog/category.html#{{ tag_name }}" style="color:maroon"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>    
@@ -45,3 +45,15 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+<!-- Below patch is to support the math equation -->
+<!-- Reference: https://stackoverflow.com/a/46765337 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
