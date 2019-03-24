@@ -1,0 +1,10 @@
+---
+layout: default
+title: Blog
+---
+
+<h1>My Learnings Summary</h1>
+{% for post in site.posts %}
+    {{ post.date | date_to_string }}
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+{% endfor %}
