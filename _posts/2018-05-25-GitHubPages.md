@@ -8,6 +8,12 @@ categories: git githubpage
 * Do not remove this line (it will not be displayed)
 {:toc}
 
+# Some References
+
+1. Basics of `liquid`: [link](https://shopify.github.io/liquid/)
+
+
+# Others
 1. Reference: [http://jmcglone.com/guides/github-pages/](http://jmcglone.com/guides/github-pages/)
 
 2. Enable latex support for maths: [link](http://blog.lostinmyterminal.com/webpages/2015/01/09/math-support-in-jekyll.html)

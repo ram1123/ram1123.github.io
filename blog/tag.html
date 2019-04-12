@@ -1,0 +1,32 @@
+---
+layout: default
+title: tag
+---
+
+{% comment %}
+=======================
+The following part extracts all the categories from your posts and sort categorys, so that you do not need to manually collect your categories to a place.
+=======================
+{% endcomment %}
+
+<div class="tags-expo">
+  <div class="tags-expo-list">
+    {% for tag in site.tags %}
+    <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+    {% endfor %}
+  </div>
+  <hr/>
+  <div class="tags-expo-section">
+    {% for tag in site.tags %}
+    <h2 id="{{ tag[0] | slugify }}">{{ tag | first }}</h2>
+    <ul class="tags-expo-posts">
+      {% for post in tag[1] %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }}
+      </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</div>

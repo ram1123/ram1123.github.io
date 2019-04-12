@@ -7,15 +7,19 @@ categories: lpc condor cms
 * Do not remove this line (it will not be displayed)
 {:toc}
 
+# Condor Commands Summary
+
 ![condorjobs]({{ site.url }}/assets/condor_jobs.png)
 
-# Command Description
+# See interactive running status of a job
 
 ```sh
 condor_tail [clusterID].[processID] -f
 ```
 
 - `-f` : if you want to follow the output and see the updates immediately
+
+# Debug Condor Issue (generally the Ideal stage)
 
 ```sh
 condor_q [job-ID] -analyze
@@ -28,9 +32,11 @@ condor_q [job-ID] -better-analyze
 
 In case if the jobs remain in ideal state then we can see using this why the status is ideal.
 
+# General Info
+
 eos commands are not accessible from condor jobs. As generally the general eos commands are alias of main commands. So, in condor jobs we have to use the main commands not alias.
 
-# Condor Examples
+## Condor Examples
 
 Ref: [http://batchdocs.web.cern.ch/batchdocs/tutorial/exercise1a.html](http://batchdocs.web.cern.ch/batchdocs/tutorial/exercise1a.html)
 

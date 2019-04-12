@@ -2,7 +2,8 @@
 layout: post
 title: "GridPack Generation"
 date: 2019-03-20
-categories: monte-carlo madgraph
+categories: [monte-carlo, madgraph]
+tags: [monte-carlo, madgraph]
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}
@@ -11,10 +12,22 @@ categories: monte-carlo madgraph
 
 # Inputs for GridPack Generation
 There are several input file one need for the GridPack generation. They are:
-1. run card: [Example]()
-2. proc card: [Example]()
-3. decay card: [Example]()
-4. model card: [Example]()
+1. proc card: [Example](https://github.com/cms-sw/genproductions/blob/pre2017/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/VVjj_semileptonic/aQGC/aQGC_WPlepWMhadJJ_EWK_LO_NPle1_mjj100pt10/aQGC_WPlepWMhadJJ_EWK_LO_NPle1_mjj100pt10_proc_card.dat)
+    1. Proc card contains the information for the process to generate.
+
+3. madspin card: [Example](https://github.com/cms-sw/genproductions/blob/pre2017/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/VVjj_semileptonic/aQGC/aQGC_WPlepWMhadJJ_EWK_LO_NPle1_mjj100pt10/aQGC_WPlepWMhadJJ_EWK_LO_NPle1_mjj100pt10_madspin_card.dat)
+    1. If one need to decay a particle (say W-boson) then add the corresponding information in this file.
+
+1. run card: [Example](https://github.com/cms-sw/genproductions/blob/pre2017/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/VVjj_semileptonic/aQGC/aQGC_WPlepWMhadJJ_EWK_LO_NPle1_mjj100pt10/aQGC_WPlepWMhadJJ_EWK_LO_NPle1_mjj100pt10_run_card.dat)
+    1. run card sets parameters of run. Like: number of events, beam type and its energy, which pdf we would like to use, some cuts on particle properties like on pt, eta, etc.
+
+
+4. model card: [Example](https://github.com/cms-sw/genproductions/blob/pre2017/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/VVjj_semileptonic/aQGC/aQGC_WPlepWMhadJJ_EWK_LO_NPle1_mjj100pt10/aQGC_WPlepWMhadJJ_EWK_LO_NPle1_mjj100pt10_extramodels.dat)
+    1. If the physics model that we are using is not SM then we need to add the model name in this card.
+6. customize card: [Example](https://github.com/cms-sw/genproductions/blob/pre2017/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/VVjj_semileptonic/aQGC/aQGC_WPlepWMhadJJ_EWK_LO_NPle1_mjj100pt10/aQGC_WPlepWMhadJJ_EWK_LO_NPle1_mjj100pt10_customizecards.dat)
+    1. If one need to modify some parameter of the genration then pass the corresponding information in this file.
+5. reweight card: [Example](https://github.com/cms-sw/genproductions/blob/pre2017/bin/MadGraph5_aMCatNLO/cards/production/13TeV/VBS/VVjj_semileptonic/aQGC/aQGC_WPlepWMhadJJ_EWK_LO_NPle1_mjj100pt10/aQGC_WPlepWMhadJJ_EWK_LO_NPle1_mjj100pt10_reweight_card.dat)
+    1. If one need to generate sample with same model but by varying some parameter of a model. Then instead of generating additional sample for each parameter one can add these information in reweight card and it saves weights corresponding to each parameters.
 
 # How To Generate
 
@@ -50,12 +63,12 @@ There are several input file one need for the GridPack generation. They are:
     cmsrel CMSSW_X_Y_Z 
     cd CMSSW_X_Y_Z/src
     cmsenv
-    tar -xavf <path of gridpack creation>/wplustest_LO_tarball.tar.xz
+    tar -xavf <path of gridpack creation>/<TarFileName>.tar.xz
     bash
     ./runcmsgrid.sh <NEvents> <RandomSeed> <NumberOfCPUs>
 ```
 
-Reference: [Reference: https://twiki.cern.ch/twiki/bin/viewauth/CMS/QuickGuideMadGraph5aMCatNLO#Standalone_production_running_th](Reference: https://twiki.cern.ch/twiki/bin/viewauth/CMS/QuickGuideMadGraph5aMCatNLO#Standalone_production_running_th)
+Reference: [https://twiki.cern.ch/twiki/bin/viewauth/CMS/QuickGuideMadGraph5aMCatNLO#Standalone_production_running_th](https://twiki.cern.ch/twiki/bin/viewauth/CMS/QuickGuideMadGraph5aMCatNLO#Standalone_production_running_th)
 
 # FAQ
 
