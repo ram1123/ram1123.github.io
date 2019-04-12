@@ -16,7 +16,7 @@ div {
     <img src="5220316.jpeg" alt="MyPic" style="float:right;width:200px;height:200px;margin-left: 20px;">
     <!-- <img src="5220316.jpeg" alt="MyPic" style="float:right;width:200px;height:200px;padding: 0 11px;"> -->
     <h1>Ram Krishna Sharma</h1> 
-    <p>I am Ramkrishna Sharma. I submitted my PhD thesis, titled <b><em>Search For Anomalous Gauge Coupling through Vector Boson Scattering and Development of the GEM Detectors at the CMS Experiment</em></b>, in November 2018. I am seeking further opportunity to continue my research in experimental high energy physics.</p>
+    <p>I am Ramkrishna Sharma. I submitted my PhD thesis, entitled <b><em>Search For Anomalous Gauge Coupling through Vector Boson Scattering and Development of the GEM Detectors at the CMS Experiment</em></b>, in November 2018. I am seeking further opportunity to continue my research in experimental high energy physics.</p>
     <!-- I am a PhD student from <a href="http://www.du.ac.in">University of Delhi</a>, Delhi, India.  -->
     
     <p>
