@@ -7,7 +7,12 @@ categories: bash
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-- **How to use**:
+# What is tmux?
+
+Refernce: [https://www.linode.com/docs/networking/ssh/persistent-terminal-sessions-with-tmux/](https://www.linode.com/docs/networking/ssh/persistent-terminal-sessions-with-tmux/)
+# What is screen?
+
+## How to use screen?
 
     ```bash
     $screen
@@ -45,3 +50,6 @@ categories: bash
     - Step 2: Press the “Up” and “Down” arrow keys or the “PgUp” and “PgDn” keys to scroll through previous output.
 
     - Step 3: Press “Esc” to exit scrollback mode.
+# Difference between tmux and screen?
+
+

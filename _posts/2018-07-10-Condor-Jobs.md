@@ -7,6 +7,8 @@ categories: lpc condor cms
 * Do not remove this line (it will not be displayed)
 {:toc}
 
+- Condor Guide (lxplus): [link](http://batchdocs.web.cern.ch/batchdocs/index.html)
+
 # Condor Commands Summary
 
 ![condorjobs]({{ site.url }}/assets/condor_jobs.png)
