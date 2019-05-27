@@ -1,6 +1,5 @@
 ---
 layout: default
-title: My Work Detailss
 ---
 
 **Will update soon...**
