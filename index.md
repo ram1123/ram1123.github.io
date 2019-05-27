@@ -26,7 +26,7 @@ div {
         For detectors, I work on the GEM detector R&D. For the CMS-GEM collaboration, I was mainly involved in the <b>beam test</b> from starting of the detector set-up to the data analysis of beam test. Furthermore, I am part of developing the GEM detector lab at my university and characterised the Indian made GEM foil in University of Delhi, which results in our separate paper from University of Delhi GEM group.     
     </p>
     <p>
-        Currently, I continued working on the physics analysis with full run-2 data. As well as on detector side, I am working on the development on XDAQ for GE1/1 detector (Presently, I am in learning phase) and ageing and discharge studies of the GE2/1 detector for the phase-2 upgrade (See details <a href="{{ site.url }}/MyWorkDetails.md"> here </a>)
+        Currently, I continued working on the physics analysis with full run-2 data. As well as on detector side, I am working on the development on XDAQ for GE1/1 detector (Presently, I am in learning phase) and ageing and discharge studies of the GE2/1 detector for the phase-2 upgrade (See details <a href="{{ site.url }}/MyWorkDetails.html"> here </a>)
     </p>
     <p>
         Along with that I enjoy coding and scripting. I used C/C++, Python, shell script, and html. Also, I try to bookkeep some important point in this web-page.
