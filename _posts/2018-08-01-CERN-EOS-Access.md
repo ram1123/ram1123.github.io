@@ -144,7 +144,9 @@ Checking quota: quota -s
 
 ## LXPLUS
 
-work = 100 GB/user (max)
+- work = 100 GB/user (max)
+- check quota using: `fs listquota`
+- Lxplus commands: [https://twiki.cern.ch/twiki/bin/view/Main/HowtoUseLxplus](https://twiki.cern.ch/twiki/bin/view/Main/HowtoUseLxplus)
 
 Reference: 
 [http://uscms.org/uscms_at_work/computing/setup/diskusage.shtml](http://uscms.org/uscms_at_work/computing/setup/diskusage.shtml) 
