@@ -101,7 +101,19 @@ do
 done
 ```
 
-Reference:
+# Some important notes
+
+1. Don't execute das queries in batch jobs:
+   ```
+   It is not a good idea to execute das queries in batch jobs, because it could overwhelm the database if thousands of jobs send simultaneous requests.
+
+   Instead, you should execute your cmsDriver.py command locally with the --no_exec option, and then in your job script, do:
+   cmsRun [config]
+   where [config] is the output python config file from cmsDriver.py.
+   ```
+
+
+# Reference
 
 1. [http://batchdocs.web.cern.ch/batchdocs/local/quick.html](http://batchdocs.web.cern.ch/batchdocs/local/quick.html)
 

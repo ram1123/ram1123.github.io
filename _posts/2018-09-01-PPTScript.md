@@ -27,7 +27,9 @@ categories: latex
 - If you want to use any other format then use -f option of the script 
 
     ```bash
-    ./MakePPT.sh -f jpg or ./MakePPT.sh -f jpeg
+    ./MakePPT.sh -f jpg 
+    #or 
+    ./MakePPT.sh -f jpeg
     ```
 
 - Also by default it will make a pdf file named **ppt_test.pdf**

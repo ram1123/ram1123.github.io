@@ -21,6 +21,16 @@ categories: eos cern cms condor lpc
 
 - Find command on eos: **`eos root://cmseos.fnal.gov find`**
 
+- Use cernbox: there is an xrootd cernbox endpoint:
+  
+  [https://cern.service-now.com/service-portal/article.do?n=KB0001998#your-cernbox-files](https://cern.service-now.com/service-portal/article.do?n=KB0001998#your-cernbox-files)
+
+  in practice, something like
+
+  ```
+  root://eosuser.cern.ch//eos/user/l/laman
+  ```
+
 # Some Scripts
 
 ## copy files from eos to present working directory (pwd)
