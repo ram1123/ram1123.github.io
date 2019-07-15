@@ -25,4 +25,6 @@ layout: default
 2. [[feature request] Add ADC readout from SCA](https://github.com/cms-gem-daq-project/ctp7_modules/issues/100)
     * Added this feature and pull request merged. [link](https://github.com/cms-gem-daq-project/ctp7_modules/pull/120)
 
+### 2.2 On Detector GE1/1 Quality Control
+
 # Summary of Activities in 2018 or before
