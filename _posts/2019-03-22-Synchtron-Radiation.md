@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Synchtron Radiation"
 date: 2019-03-22
 categories: Detector accelerator
