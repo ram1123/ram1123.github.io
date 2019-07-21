@@ -8,6 +8,13 @@ categories: root cpp pyroot
 * Do not remove this line (it will not be displayed)
 {:toc}
 
+# ListOfKeys
+
+- `tfile->GetListOfKeys()->Print()`
+  + prints all the keys in the tfile or ttree.
+- `tfile->GetListOfKeys()->Contains("xyz")`
+  + returns `True (False)`, if the key named `xyz` exists (does not exists) in the input root file or tree.
+
 # Redirecting output (ROOT-6)
 
 ```c++
