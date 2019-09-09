@@ -7,6 +7,34 @@ categories: latex
 * Do not remove this line (it will not be displayed)
 {:toc}
 
+# Figure Positioning 
+
+Few important points to note:
+1. The content of the image should not be broken over page.
+2. It should be labelled and correctly referenced.
+
+|specifier | positioning place |
+|:--- |:--- |
+|h | place here |
+|t | top of page |
+|b | bottom of page |
+|p | on a special page |
+|! | force the position |
+|H | place precisely at the location where it is defined |
+
+Reference: https://www.overleaf.com/learn/latex/Positioning_of_Figures
+
+## Put figure at the center
+
+For this we need to use the `\centering` as shown below:
+
+```latex
+\begin{figure}
+\centering
+\includegraphics{test.pdf}
+\end{figure}
+```
+
 # Multiple Figures
 ## way-1
 
