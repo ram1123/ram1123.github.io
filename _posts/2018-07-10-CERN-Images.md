@@ -40,3 +40,4 @@ categories: particle-physics images cms cern LHC
 |23 | [Higgs potential](https://cds.cern.ch/record/1638469/plots) | ![Higgs potential](https://cds.cern.ch/record/1638469/files/higgspotential.png) |
 |24 | [Particle Physics Periodic Table](https://uslhc.web.cern.ch/physics/standard-model-and-beyond) | ![Particle Physics Periodic Table](https://cds.cern.ch/record/1473657/files/SMinfographic_image.png?subformat=) |
 |25 | [The installation of the CMS beam pipe](http://cds.cern.ch/record/1598081) | ![The installation of the CMS beam pipe](http://cds.cern.ch/record/1598081/files/DSC_0159.jpg?subformat=icon-1440) |
+|26 | [RF Cavity](https://www.lhc-closer.es/taking_a_closer_look_at_lhc/0.rf_cavities) | ![rf cavity](https://www.lhc-closer.es/webapp/files/1435503941_77cff2f9fcf76f625a60aa3135ed2c87.jpg)|
