@@ -11,6 +11,7 @@ categories: accelerator
 # Some references
 
 1. Accelerators and Beamhttps://www-oxfordscholarship-com.ezproxy.cern.ch/view/10.1093/acprof:oso/9780198508298.001.0001/acprof-9780198508298-chapter-2s, Tools of Discovery and Innovation: [link](https://www.aps.org/units/dpb/upload/accel_beams_2013d_lowr.pdf)
+2. Synchrotron radiation:[link](https://www.slac.stanford.edu/pubs/slacpubs/16250/slac-pub-16450.pdf)
 1. Summary of beam physics and equation of motion: [link](https://warwick.ac.uk/fac/sci/physics/staff/academic/boyd/warwick_week/beamphysics/beam_physics_1.pdf)
 2. CAS - CERN Accelerator School : 5th General Accelerator Physics Course [link](http://cds.cern.ch/record/235242)
 3. Lecture presented at US Particle Accelerator School, Fundamentals of Accelerators Course. Austin, Texas, Feb 2016 [link](https://www.slac.stanford.edu/pubs/slacpubs/16250/slac-pub-16450.pdf)

@@ -28,6 +28,16 @@ categories: particle-physics
 * [Accelerators and Beams, Tools of Discovery and Innovation](https://www.aps.org/units/dpb/news/edition4th.cfm)
 * [Accelerators: Driving Applications for Society](https://www.jlab.org/indico/event/297/timetable/#20181217)
 * [Accelerators for Society](http://www.accelerators-for-society.org/about-accelerators/index.php?id=21)
+* [How Particle Accelerators Work](https://www.energy.gov/articles/how-particle-accelerators-work)
+* [Why do hospitals have particle accelerators? - Pedro Brugarolas](https://www.youtube.com/watch?v=KXzONBPcPIk)
+* [How do brain scans work? - John Borghi and Elizabeth Waters](https://www.youtube.com/watch?v=B10pc0Kizsc)
+* [Particle Accelerators: Current and Future Applications](https://www.youtube.com/watch?v=ZaIgEBPv34A)
+* [What is the Future of Particle Accelerators?](https://www.youtube.com/watch?v=YR66Z54mRaQ)
+* [Q&A - What is the Future of Particle Accelerators?](https://www.youtube.com/watch?v=XblwzEemP90)
+* [Particle Accelerators Reimagined - with Suzie Sheehy](https://www.youtube.com/watch?v=jLmciZdh5j4)
+* [How to Design a Particle Accelerator - with Suzie Sheehy](https://www.youtube.com/watch?v=V_hirIK9eFs)
+* [Better particle accelerators with SRF technology](https://www.youtube.com/watch?v=HqrSb36QYVk)
+* [LHC Facts and figures](https://home.cern/resources/faqs/facts-and-figures-about-lhc)
 
 
 # Explanation of concept

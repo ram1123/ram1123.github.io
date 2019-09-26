@@ -24,3 +24,5 @@ categories: particle-physics
 * Here’s what happens when 2 proton beams collide at nearly the speed of light: http://www.businessinsider.com/what-happens-inside-a-particle-collider-2015-4
 
 * [Nice philosophical article on Symmetry and Symmetry breaking](https://www.google.com/url?q=https%3A%2F%2Fplato.stanford.edu%2Fentries%2Fsymmetry-breaking%2F&sa=D&sntz=1&usg=AFQjCNEgMGSr6eD0XzUuFGkcmHxUuELaAA)
+
+* [A gentle introduction to neutrino physics by Pasquale D. Serpico](https://indico.in2p3.fr/event/8043/contributions/43638/attachments/35035/43162/memo_Pasquale.pdf)
