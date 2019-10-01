@@ -2,7 +2,7 @@
 layout: post
 title: "Images Related to CERN"
 date: 2018-07-10
-categories: particle-physics images cms cern LHC
+categories: particle-physics images cms cern lhc
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}
