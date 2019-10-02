@@ -41,5 +41,5 @@ To clean the viton o-ring just warm it in the vacuum chamber.
 
 ### Systematic diagram of simplest discriminator
 
-![simplest_discriminator]({{ site.url }}/assets/GEM/simplest_discriminator.jpg){:height="560px" width="900px"}
+![simplest_discriminator]({{ site.url }}/assets/GEM/simplest_discriminator.jpg){:height="290px" width="900px"}
 
