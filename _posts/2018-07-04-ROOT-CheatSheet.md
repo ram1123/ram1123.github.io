@@ -2,7 +2,7 @@
 layout: post
 title: "ROOT CheatSheet"
 date: 2018-07-04
-categories: root cpp pyroot
+categories: root cpp pyroot programming
 ---
 
 * Do not remove this line (it will not be displayed)
@@ -14,6 +14,99 @@ categories: root cpp pyroot
   + prints all the keys in the tfile or ttree.
 - `tfile->GetListOfKeys()->Contains("xyz")`
   + returns `True (False)`, if the key named `xyz` exists (does not exists) in the input root file or tree.
+
+# quickly inspect root file
+
+https://root.cern.ch/how/how-quickly-inspect-content-file
+
+# Check if ROOT file is not corrupt
+
+```cpp=
+TFile *infile = TFile::Open("Test.root");
+if (infile->IsZombie()) continue;
+delete infile;
+infile=0;
+```
+
+# Check if tree exists in ROOT file
+
+```cpp=
+TFile *infile = TFile::Open("Test.root");
+if (infile->IsZombie()) continue;
+if (!(infile->GetListOfKeys()->Contains("Events"))) continue; // Here "Events" is the name of tree
+TTree *eventTree = (TTree*)infile->Get("Events");
+delete infile;
+infile=0;
+eventTree=0;
+```
+
+# Read Root TTree using TTreeReader and make histogram
+
+```c++
+#include "TFile.h"
+#include "TH1F.h"
+#include "TTreeReader.h"
+#include "TTreeReaderValue.h"
+void TTreeReader_Macro() {
+   // Create a histogram for the values we read.
+   TH1F *h1 = new TH1F("h1", "ntuple", 100, 0, 2400);
+   // Open the file containing the tree.
+   TFile *myFile = TFile::Open("root:://cmseos.fnal.gov//eos/uscms/store/user/rasharma/SecondStep/WWTree_2018_01_03_14h54/HaddedFiles/WplusTo2JWminusToLNuJJ_EWK_LO_SM.root");
+   // Create a TTreeReader for the tree, for instance by passing the
+   // TTree's name and the TDirectory / TFile it is in. (otree is the name of tree)
+   TTreeReader myReader("otree", myFile);
+   // The branch "px" contains floats; access them as myPx.
+   TTreeReaderValue<Float_t> myPx(myReader, "mass_lvj_type0");
+   TTreeReaderValue<Float_t> btag(myReader, "btag0Wgt");
+   TTreeReaderArray<Float_t> raMuonPt(myReader, "muonspT");
+  
+   // Loop over all entries of the TTree or TChain.
+   while (myReader.Next()) {
+      // Just access the data as if myPx and btag were iterators (note the '*'
+      // in front of them):
+      h1->Fill(*myPx);
+      cout<<*btag<<endl;
+      for (int iMuon = 0, nMuons =  raMuonPt.GetSize(); iMuon < nMuons; ++iMuon) {
+          hist->Fill(raMuonPt[iMuon]);
+      }
+   }
+   h1->Draw();
+}
+```
+
+# Histogram from text file
+
+https://root-forum.cern.ch/t/histogram-from-a-text-file/13287/2?u=ramkrishna
+
+
+- Try TGraph: [url] http://root.cern.ch/root/html/TGraph.html
+- Store your data in a simple text file, e.g. "MyData.txt", then try:
+- Try TGraph instead: [url]http://root.cern.ch/root/html/TGraph.html
+- Store your data in a simple text file, e.g. "MyData.txt", then try:
+    ```
+    root [0] TGraph *MyGraph = new TGraph("MyData.txt");
+    root [0] TGraph *MyGraph = new TGraph("MyData.txt");
+    root [1] MyGraph->Draw("A*");
+
+    root [1] MyGraph->Draw("A*");
+    ```
+
+- Or, try a TTree instead: [url]http://root.cern.ch/root/html/TTree.html[/url]
+- Again, store your data in a simple text file, e.g. "MyData.txt", then try:
+- Or, try a TTree instead: [url]http://root.cern.ch/root/html/TTree.html[/url]
+Again, store your data in a simple text file, e.g. "MyData.txt", then try:
+
+```
+root [0] TTree *MyTree = new TTree("MyTree", "MyTree");
+root [1] MyTree->ReadFile("MyData.txt", "Energy_1:Energy_2");
+root [2] MyTree->Draw("Energy_1:Energy_2", "", "*");
+root [3] MyTree->Draw("Energy_1");
+root [0] TTree *MyTree = new TTree("MyTree", "MyTree");
+root [1] MyTree->ReadFile("MyData.txt", "Energy_1:Energy_2");
+root [2] MyTree->Draw("Energy_1:Energy_2", "", "*");
+root [3] MyTree->Draw("Energy_1");
+```
+
 
 # Redirecting output (ROOT-6)
 

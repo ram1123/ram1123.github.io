@@ -12,7 +12,7 @@ categories: particle-physics
 2. Boston Review Article: [When (Quantum) Worlds Collide](http://bostonreview.net/books-ideas/matthew-buckley-search-new-physics-cern-part-5)
 3. [Talk] LHC for dummies [link](http://www.hep.wisc.edu/~herndon/CMSInductionLHC.pdf)
 4. http://www.acceleratorsamerica.org
-5. 
+5. FAQs: https://home.cern/resources/faqs
 
 # Practical Application of Particle Physics
 

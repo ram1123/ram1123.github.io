@@ -43,3 +43,17 @@ To clean the viton o-ring just warm it in the vacuum chamber.
 
 ![simplest_discriminator]({{ site.url }}/assets/GEM/simplest_discriminator.jpg){:height="290px" width="900px"}
 
+# GE1/1 mapping
+
+1. APV25 Hybrid Layout - Long
+   ![]({{ site.url }}/assets/GEM/APV25-hybrid-layout-long.jpeg){:height="290px" width="900px"}
+2. APV25 Hybrid Layout - Short
+![]({{ site.url }}/assets/GEM/APV25-hybrid-layout-short.jpeg){:height="290px" width="900px"}
+3. VFATs Strip-channel mapping
+![]({{ site.url }}/assets/GEM/VFAT-strip-channel-mapping.jpeg){:height="290px" width="900px"}
+
+Reference:
+1. [https://mattermost.web.cern.ch/files/rhshysh41iy3dfcwhhpn8xd9cc/public?h=wpqrqrFjrApQoBZN8MndlNdUQHWR34Y1zlREqmyiWjo](https://mattermost.web.cern.ch/files/rhshysh41iy3dfcwhhpn8xd9cc/public?h=wpqrqrFjrApQoBZN8MndlNdUQHWR34Y1zlREqmyiWjo)
+
+
+
