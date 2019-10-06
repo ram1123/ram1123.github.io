@@ -53,6 +53,26 @@ Thus, gain will be
     Gain~=~\frac{n}{n_0}~=~e^{\alpha.x}
 \end{equation}
 
+Also, the townsend coefficient can be expressed as the ionization cross-section as
+
+\begin{equation}
+    \alpha = \frac{1}{\lambda_{ion}} = \sigma_i N,
+\end{equation}
+where, N is the atom/molecule density. Since, it also depends on the interaction cross-section, this implies that it also depends heavily on the nature of gas, electric field and pressure.
+
+# Townsend second coefficient
+
+We know that
+
+\begin{equation}
+n = n_0 e^{\alpha x}
+\end{equation}
+It implies that
+\begin{equation}
+ln(n) = ln(n_0) + \alpha x
+\end{equation}
+This is the equation of straight line for a given pressure and electric field. However, Townsend realize that at higher voltage the current increases more rapidly than expected. To explain the departure from linearity townsend suggested that a second mechanism is taking place.
+
 # Raether Limit
 After a certain critical limit, $Q_{critical}$, of the electron amplification the discharge is very likely to occur. This critical limit is known as the ***Raether limit.***
 It is also given as:
@@ -67,3 +87,19 @@ Collection efficiency is the ratio of the total electrons released from the bott
     \text{Collection efficiency}~=~\frac{\text{Number of electrons reached readout board}}{\text{Total number of released electron from bottom of GEM foil}}
 \end{equation}
 Also, it depends on the ratio of the conversion electric field to the collection electric field. Higher the conversion field lesser the collection efficiency. In general the conversion field should never be greater than the collection field. 
+
+# Optical transparency
+
+optical transparency ($\tau$) = $\frac{open~area}{total~area}$ = $\frac{\pi D^2}{2 \sqrt{3} P^2}$
+
+Here, 
+
+* D is diameter of holes
+* P is the pitch
+
+# Some general points
+
+- The maximum hole diameter is usually limited to about 2/3 of the pitch.
+- To prevent the charging-up of the walls, the inner diameter should be as close as possible to the outer diameter as a cylindrical shape is the optimal one.[^Ref:charging-up]
+
+[^Ref:charging-up]: NIMA 419 (1998) 410
