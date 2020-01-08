@@ -40,6 +40,46 @@ infile=0;
 eventTree=0;
 ```
 
+# Change to nice color pallet
+
+- c++
+
+```c++
+  const Int_t NRGBs = 5;
+  const Int_t NCont = 255;
+
+  Double_t stops[NRGBs] = { 0.00, 0.34, 0.61, 0.84, 1.00 };
+  Double_t red[NRGBs]   = { 0.00, 0.00, 0.87, 1.00, 0.51 };
+  Double_t green[NRGBs] = { 0.00, 0.81, 1.00, 0.20, 0.00 };
+  Double_t blue[NRGBs]  = { 0.51, 1.00, 0.12, 0.00, 0.00 };
+  
+  TColor::CreateGradientColorTable(NRGBs, stops, red, green, blue, NCont);
+  gStyle->SetNumberContours(NCont);
+```
+
+- python
+
+```python
+import ROOT
+from ROOT import TColor, gStyle
+from array import array
+
+NRGBs = 5;
+NCont = 255;
+stops = [ 0.00, 0.34, 0.61, 0.84, 1.00 ]
+red   = [ 0.00, 0.00, 0.87, 1.00, 0.51 ]
+green = [ 0.00, 0.81, 1.00, 0.20, 0.00 ]
+blue  = [ 0.51, 1.00, 0.12, 0.00, 0.00 ]
+
+s = array('d', stops)
+r = array('d', red)
+g = array('d', green)
+b = array('d', blue)
+
+TColor.CreateGradientColorTable(NRGBs, s, r, g, b, NCont);
+gStyle.SetNumberContours(NCont);
+```
+
 # Read Root TTree using TTreeReader and make histogram
 
 ```c++
