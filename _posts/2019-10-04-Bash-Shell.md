@@ -19,3 +19,14 @@ categories: bash shell programming
 1D
 ```
 
+# Check the running time of bash script
+
+```bash
+start=`date +%s`
+stuff1
+end=`date +%s`
+
+runtime=$((end-start))
+```
+
+Reference: [https://unix.stackexchange.com/a/52347](https://unix.stackexchange.com/a/52347)
