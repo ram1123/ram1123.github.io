@@ -3,8 +3,8 @@ layout: post
 title: "Bash Shell"
 date: 2019-10-04
 categories: bash shell programming
+comments: true
 ---
-
 * Do not remove this line (it will not be displayed)
 {:toc}
 
