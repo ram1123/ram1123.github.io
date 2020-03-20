@@ -115,7 +115,9 @@ rm -rf CMSSW_9_4_13
 
 # Reference
 
-1. Condor Guide (lxplus): [link](http://batchdocs.web.cern.ch/batchdocs/index.html)
+1. Lxplus condor tutorial: [link](https://indico.cern.ch/event/611296/contributions/2604376/attachments/1471164/2276521/TannenbaumT_UserTutorial.pdf)
+
+2. Condor Guide (lxplus): [link](http://batchdocs.web.cern.ch/batchdocs/index.html)
 
 2. [http://batchdocs.web.cern.ch/batchdocs/local/quick.html](http://batchdocs.web.cern.ch/batchdocs/local/quick.html)
 
