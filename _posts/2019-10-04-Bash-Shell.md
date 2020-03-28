@@ -8,6 +8,10 @@ comments: true
 * Do not remove this line (it will not be displayed)
 {:toc}
 
+# Comparison Operators
+
+Reference: [http://tldp.org/LDP/abs/html/comparison-ops.html](http://tldp.org/LDP/abs/html/comparison-ops.html)
+
 
 # Convert number from decimal to hexadecimal
 

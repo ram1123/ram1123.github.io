@@ -10,13 +10,13 @@ categories: grid cms
 
 # Grid Certificate Installation
 
-- Get new grid certificate from link : https://ca.cern.ch/ca/
+- Get new grid certificate from link : [https://ca.cern.ch/ca/](https://ca.cern.ch/ca/)
 
-- Backup certificate from Firefox and name is as cert.p12.
+- Backup certificate from FireFox and name is as cert.p12.
 
-    + You can see this step here: https://ca.cern.ch/ca/Help/?kbid=040111
+    + You can see this step here: [https://ca.cern.ch/ca/Help/?kbid=040111](https://ca.cern.ch/ca/Help/?kbid=040111)
 
-- Copy file cert.p12 on lxplus (or lpc) home directory.
+- Copy file `cert.p12` on lxplus (or lpc) home directory.
 
 - Go to lxplus and run following commands:
 
