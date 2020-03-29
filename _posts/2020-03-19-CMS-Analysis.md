@@ -15,7 +15,7 @@ comment_issue_id: 2
 
 ## CMS dataset naming convention
 
-CMS dataset name follows the following convention:
+CMS dataset name follows the following conventions:
 
 ```
 PROCESS_RANGETYPE-RANGELOWToRANGEHIGH_FILTER_TUNE_COMMENT_COMENERGY-GENERATOR
