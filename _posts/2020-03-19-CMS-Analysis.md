@@ -39,7 +39,11 @@ Reference: [https://twiki.cern.ch/twiki/bin/viewauth/CMS/ProductionDataSetNames]
 
 1. Locate data sample from DAS: [https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookLocatingDataSamples](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookLocatingDataSamples)
 2. To check the latest recommended available dataset check the official PdmV twiki: [https://twiki.cern.ch/twiki/bin/view/CMS/PdmV](https://twiki.cern.ch/twiki/bin/view/CMS/PdmV)
+3. Generator group gitbook: [How to search for datasets in mcm](https://monte-carlo-production-tools.gitbook.io/project/analyzers-corner/how-to-search-for-datasets-in-mcm)
 
+## Compute Cross Sections with the GenXSecAnalyzer
+
+[https://twiki.cern.ch/twiki/bin/viewauth/CMS/HowToGenXSecAnalyzer](https://twiki.cern.ch/twiki/bin/viewauth/CMS/HowToGenXSecAnalyzer)
 
 # FAQ
 
