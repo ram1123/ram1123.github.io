@@ -2,7 +2,7 @@
 layout: post
 title: "How to GitHub Pages"
 date: 2018-05-25
-categories: git githubpage
+categories: git
 ---
 
 * Do not remove this line (it will not be displayed)

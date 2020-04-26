@@ -7,7 +7,9 @@ categories: latex
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-# Figure Positioning 
+# Figures
+
+## Firures Positioning 
 
 Few important points to note:
 1. The content of the image should not be broken over page.
@@ -35,8 +37,8 @@ For this we need to use the `\centering` as shown below:
 \end{figure}
 ```
 
-# Multiple Figures
-## way-1
+## Multiple Figures
+### way-1
 
 ```latex
 \begin{figure}[!htbp]
@@ -61,7 +63,7 @@ This will look like:
 
 ![way-1]({{ site.url }}/assets/latex/latex-way-1.png){:height="560px" width="900px"}
 
-## Way-2
+### Way-2
 
 ```latex
 \begin{figure}[!htbp]
@@ -78,7 +80,7 @@ This will look like:
 This will look like:
 ![way-2]({{ site.url }}/assets/latex/latex-way-2.png){:height="560px" width="900px"}
 
-## way-3
+### way-3
 
 ```latex
 \begin{figure}[htbp] 
@@ -102,6 +104,12 @@ This will look like:
 
 ![way-3]({{ site.url }}/assets/latex/latex-way-3.png){:height="560px" width="900px"}
 
+## sub-figures
+Ref-1: [https://tex.stackexchange.com/questions/132599/placement-of-images-in-row-using-subfigure](https://tex.stackexchange.com/questions/132599/placement-of-images-in-row-using-subfigure)
+
+Ref-2: [https://tex.stackexchange.com/questions/278727/split-subfigures-over-multiple-pages](https://tex.stackexchange.com/questions/278727/split-subfigures-over-multiple-pages)
+
+
 # Forcing Line-Break in \url{}
 To line break we can use the sloppypar feature:
 
@@ -113,10 +121,6 @@ Madgraph cards are located here: \url{https://github.com/cms-sw/genproductions/t
 
 Reference: [https://tex.stackexchange.com/questions/3033/forcing-linebreaks-in-url](https://tex.stackexchange.com/questions/3033/forcing-linebreaks-in-url)
 
-# sub-figures
-Ref-1: [https://tex.stackexchange.com/questions/132599/placement-of-images-in-row-using-subfigure](https://tex.stackexchange.com/questions/132599/placement-of-images-in-row-using-subfigure)
-
-Ref-2: [https://tex.stackexchange.com/questions/278727/split-subfigures-over-multiple-pages](https://tex.stackexchange.com/questions/278727/split-subfigures-over-multiple-pages)
 
 # Table with alternate color row
 Reference: [https://tex.stackexchange.com/questions/5363/how-to-create-alternating-rows-in-a-table](https://tex.stackexchange.com/questions/5363/how-to-create-alternating-rows-in-a-table)
@@ -185,6 +189,63 @@ The angle is \ang{30}.
 
 Reference: [https://tex.stackexchange.com/questions/384873/what-is-the-degree-symbol](https://tex.stackexchange.com/questions/384873/what-is-the-degree-symbol)
 
+# Decrease top margin for table
+Just use the `\vspace{-7.5em}` inside the table environment.
+
+```latex
+\begin{table}[ht]
+\begin{adjustwidth}{-3cm}{}
+\vspace{-7.5em}%
+.....
+\end{table}
+```
+
+Reference: [https://tex.stackexchange.com/a/168881/41568](https://tex.stackexchange.com/a/168881/41568)
+
+
+# Big O and related notations in LaTeX
+
+There are two possible ways to type the big O:
+
+> $O(n\log{}n)$ % regular O
+> 
+> $\mathcal{O}(n\log{}n)$ % Open at top left
+
+The latter produces the following:
+
+$$\mathcal{O}(n\log{}n)$$
+
+Reference: [https://texblog.org/2014/06/24/big-o-and-related-notations-in-latex/](https://texblog.org/2014/06/24/big-o-and-related-notations-in-latex/)
+
+# chapter and section titles overlap removal
+
+With `fancyhdr` sometimes chapter and section titles overlaps when they are long. It looks like:
+
+![](https://i.stack.imgur.com/dLnYx.png)
+
+To fix this replace:
+
+```latex
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+```
+
+with 
+
+```latex
+\usepackage{fancyhdr,ragged2e}
+\fancyhead{}
+\lhead{\parbox[t]{0.4\textwidth}{\RaggedRight\rightmark\strut}}
+\rhead{\parbox[t]{0.4\textwidth}{\RaggedLeft\leftmark\strut}}
+\setlength{\headheight}{5\baselineskip}
+\pagestyle{fancy}
+```
+
+After fix it becomes:
+![](https://i.stack.imgur.com/sLkYi.png)
+
+Reference: [https://tex.stackexchange.com/a/419472](https://tex.stackexchange.com/a/419472)
+
 # Add bibliograph
 
 ```latex
@@ -240,30 +301,4 @@ The contents...
 \end{document}
 ```
 
-# Decrease top margin for table
-Just use the `\vspace{-7.5em}` inside the table environment.
-
-```latex
-\begin{table}[ht]
-\begin{adjustwidth}{-3cm}{}
-\vspace{-7.5em}%
-.....
-\end{table}
-```
-
-Reference: [https://tex.stackexchange.com/a/168881/41568](https://tex.stackexchange.com/a/168881/41568)
-
-# Big O and related notations in LaTeX
-
-There are two possible ways to type the big O:
-
-> $O(n\log{}n)$ % regular O
-> 
-> $\mathcal{O}(n\log{}n)$ % Open at top left
-
-The latter produces the following:
-
-$$\mathcal{O}(n\log{}n)$$
-
-Reference: [https://texblog.org/2014/06/24/big-o-and-related-notations-in-latex/](https://texblog.org/2014/06/24/big-o-and-related-notations-in-latex/)
 
