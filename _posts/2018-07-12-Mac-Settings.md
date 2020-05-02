@@ -36,3 +36,15 @@ categories: mac
 
 - Vidyo portal: `https://vidyoportal.cern.ch`
 
+# HOW TO MAKE A BOOTABLE USB STICK FROM AN ISO FILE ON AN APPLE MAC OS X
+
+Reference: [https://www.lewan.com/blog/2012/02/10/making-a-bootable-usb-stick-on-an-apple-mac-os-x-from-an-iso](https://www.lewan.com/blog/2012/02/10/making-a-bootable-usb-stick-on-an-apple-mac-os-x-from-an-iso)
+
+# ROOT installation using homebrew
+```bash
+brew install root6
+brew info root6
+. $(brew --prefix root6)/libexec/thisroot.sh
+```
+
+Reference: [https://alexpearce.me/2016/02/root-on-os-x-el-capitan/](https://alexpearce.me/2016/02/root-on-os-x-el-capitan/)
