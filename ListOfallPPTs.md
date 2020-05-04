@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 * Do not remove this line (it will not be displayed)
 {:toc}
 
@@ -14,7 +15,6 @@ layout: default
 ## Internal Talk
 
 ### EGamma
-
 1. 29 April 2020 [Egamma identification]; Photon cutbased ID SF approval (medium & tight WP, UL2017); [link](https://indico.cern.ch/event/890330/)
 2. 24 April 2020 [EGamma Reco/Comm/HLT meeting]; Update of photon Medium and Tight ID SFs for UL2017; [link](https://indico.cern.ch/event/879922/)
 3. 17 April 2020 [Joint ECAL/Egamma meeting (off-week)]; Approval of UL 2017 Photon ID SFs by Ashim Roy; [link](https://indico.cern.ch/event/879921/contributions/3825889/attachments/2021576/3381389/ApprovalTalkForUL2017PhotonIDScaleFactor.pdf)

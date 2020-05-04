@@ -27,7 +27,7 @@ div {
     </p>
     <p>
         Currently, I continued working on the physics analysis with full run-2 data. As well as on detector side, I am working on the development on XDAQ for GE1/1 detector, on detector electronics quality control test and R&D of the GE2/1 detector for the phase-2 upgrade (See details <a href="{{ site.url }}/MyWorkDetails.html"> here </a>).
-        Also, you can see my list of talks <a href="{{ site.url }}/ListOfallPPTs.md">here</a>.
+        Also, you can see my list of talks <a href="{{ site.url }}/ListOfallPPTs.html">here</a>.
     </p>
     <p>
         Apart from this, I enjoy coding and scripting. I used C/C++, Python, shell script, and html. Also, I try to bookkeep some important point in this web-page.
