@@ -91,6 +91,7 @@ Ref: http://uscms.org/uscms_at_work/computing/LPC/usingEOSAtLPC.shtml
 - Checking quota: `quota -s`
 - Checking eos quota; `eosquota`
 - Checking eos group quota: `eosgrpquota <groupName>`
+- Checking if a user have write access or not; `getent group | grep ^lnujj`
 
 ## LXPLUS
 
