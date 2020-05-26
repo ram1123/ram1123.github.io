@@ -16,5 +16,3 @@ categories: rf-cavity, lhc
 4. [Paper] Introducing the LHC in the classroom: an overview of education resources available. [link](https://iopscience.iop.org/article/10.1088/0031-9120/51/3/035001/pdf)
 5. [Article] RF cavities: Taking a closer look at LHC [link](https://www.lhc-closer.es/taking_a_closer_look_at_lhc/0.rf_cavities)
 6. [Talk] Superconducting RF Cavities Fundamental [link](http://accelconf.web.cern.ch/AccelConf/srf2009/CONTENTS/Tutorials/h_padamsee_superconducting_rf_cavities_fundamentals.pdf)
-7. 
-7. 

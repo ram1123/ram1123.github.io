@@ -41,6 +41,7 @@ categories: mac
 Reference: [https://www.lewan.com/blog/2012/02/10/making-a-bootable-usb-stick-on-an-apple-mac-os-x-from-an-iso](https://www.lewan.com/blog/2012/02/10/making-a-bootable-usb-stick-on-an-apple-mac-os-x-from-an-iso)
 
 # ROOT installation using homebrew
+
 ```bash
 brew install root6
 brew info root6

@@ -11,8 +11,7 @@ categories: physics
 # Difference in W+jets and Z+jets events
 
 1. $W \rightarrow l \nu$, $Z \rightarrow l^+ l^-$
-    
-    In case of leptonic decay, reconstruction of W-boson is difficult because of MET.
+2. In case of leptonic decay, reconstruction of W-boson is difficult because of MET.
 2. Z-boson has higher mass than W-boson, which leads to higher multiplicity, a higher jet-pT and a higher lepton pT.
 3. Z-boson is mostly produced from $u\bar{u}$, while $W^+$ is mostly produced from $u\bar{d}$ and $W^-$ from $d\bar{u}$. That affects the rapidity distribution of the bosons because of PDFs for the valence quarks up and down are different.
 4. The coupling of W- and Z-bosons are different. The W-boson couples to left handed particles with universal V-A coupling while Z-boson couples through V+A coupling as well as V-A to both left and right handed particles. This influence the angular distribution of the final state particles, especially leptons.

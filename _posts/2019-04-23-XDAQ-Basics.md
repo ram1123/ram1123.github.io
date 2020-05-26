@@ -23,6 +23,7 @@ Generally, resistance thermometer uses [platinum](https://en.wikipedia.org/wiki/
 [^3]: https://blog.beamex.com/pt100-temperature-sensor
 
 ## PT100 sensor temperature measurement
+
 Reference:
 - Email from Evaldas Juska forwarded by Brian Dorney
 - Subject of email: “OH voltage and temperature monitoring”
