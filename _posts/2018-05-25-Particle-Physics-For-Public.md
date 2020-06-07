@@ -45,3 +45,9 @@ categories: particle-physics
 * [Visualizing the Innards of Subatomic Particles](https://www.google.com/url?q=https%3A%2F%2Fblogs.scientificamerican.com%2Fsa-visual%2Fvisualizing-the-innards-of-subatomic-particles%2F&sa=D&sntz=1&usg=AFQjCNE0mNBI-QQyxWctrLMcBaTmBGmKVQ)
 
 * [what is a cross-section?](https://www.google.com/url?q=https%3A%2F%2Fwww.symmetrymagazine.org%2Farticle%2Fspeak-physics-what-is-a-cross-section&sa=D&sntz=1&usg=AFQjCNFaECJaIqvi1fSht0BQfaseeqPAYg)
+
+
+# General Articles
+
+1. [The Importance of Physics to the Economies of Europe](https://cdn.ymaws.com/www.eps.org/resource/resmgr/policy/eps_pp_physics_ecov5_full.pdf)
+2. [How mega science projects could help India become a $5 trillion economy](https://theprint.in/science/how-mega-science-projects-could-help-india-become-a-5-trillion-economy/352138/#:~:text=Developing%2C%20investing%20and%20commercialising%20technologies,economy%2C%20but%20also%20help%20society)

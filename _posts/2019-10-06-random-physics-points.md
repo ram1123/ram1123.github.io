@@ -43,9 +43,9 @@ Trigger is a combination of hardware and software system that uses certain crite
 # Custodial Symmetry
 
 - Before the breaking of $SU(2)_L x U(1)_Y$, the Higgs potential as a global $SU(2)_L x SU(2)_R$ symmetry which reduces to $SU(2)_v$ when symmetry is broken. This remanent global symmetry is called the "*Custodial Symmetry*"[^Ref:Custodial]
-- If the gauge symmetry of the electroweak model is broken by the Higgs doublet, there is a custodial symmetry which protects the mass relation of the W and Z gauge fields, i.e.  $$\rho = \frac{M^2_{w}}{{M_Z}^2 Cos^2(\theta)} \sim 1,$$ here, $\theta$ is the weak mixing angle.
+- If the gauge symmetry of the electroweak model is broken by the Higgs doublet, there is a custodial symmetry which protects the mass relation of the W and Z gauge fields, i.e.  $$\rho = \frac{M^2_{w}}{{M_Z}^2 Cos^2(\theta)}\sim1$$, here, $\theta$ is the weak mixing angle.
 
-   This relation is also valid after the radiative corrections if the custodial symmetry is not broken. Experimentally, this relation is satisfied at the 1% level, which restricts the new physics beyond SM and allows us to distinguish among different models.
+This relation is also valid after the radiative corrections if the custodial symmetry is not broken. Experimentally, this relation is satisfied at the 1% level, which restricts the new physics beyond SM and allows us to distinguish among different models.
 
 - When the SM symmetry is broken by Higgs doublets, there is a global symmetry that protects the mass relation of the W and Z fields, which transforms as the components of a triplets. This relation is violated when this symmetry is not exact. If the isospin symmetry or custodial symmetry is broken, then $\rho$ parameter may get radiative corrections different from zero. To look for new physics beyond the SM it is important to know if this symmetry is still exact.
 
@@ -54,8 +54,8 @@ Trigger is a combination of hardware and software system that uses certain crite
 # Hadrons
 
 Hadrons interacts via strong interaction and categorized into two category. They are
-    - **Meson**: Mesons are the hadrons that are formed via a quark and an anti-quark pair. It falls into the boson category. There are approximately 140 types of mesons and the lightest meson is **pion**.
-    - **Baryon**: Baryons are the hadrons that are formed via the combinations of three quarks. It falls into the fermion category. There are approximately 120 types of baryons and the lightest baryon is **proton**. Proton is the only hadron which is stable in free space. All baryons other than nucleons decay with mean lives of less than $10^{-9}$ s in a variety of ways, but the end result is always a proton or neutron.
+- **Meson**: Mesons are the hadrons that are formed via a quark and an anti-quark pair. It falls into the boson category. There are approximately 140 types of mesons and the lightest meson is **pion**.
+- **Baryon**: Baryons are the hadrons that are formed via the combinations of three quarks. It falls into the fermion category. There are approximately 120 types of baryons and the lightest baryon is **proton**. Proton is the only hadron which is stable in free space. All baryons other than nucleons decay with mean lives of less than $10^{-9}$ s in a variety of ways, but the end result is always a proton or neutron.
 
 # Elementarity test of electron
 

@@ -57,6 +57,14 @@ There are several input file one need for the GridPack generation. They are:
     ./submit_gridpack_generation.sh <memoryInMBytes> <diskInMBytes> <queueForMasterJob> <name of process card without _proc_card.dat> <folder containing cards relative to current location> <queue>
     ```
     
+### Gridpack generation using CMSConnect
+
+Link: [https://indico.cern.ch/event/615524/contributions/2520456/attachments/1430441/2197104/March20_2017_gen_meeting.pdf#search=CMS%20Connect](https://indico.cern.ch/event/615524/contributions/2520456/attachments/1430441/2197104/March20_2017_gen_meeting.pdf#search=CMS%20Connect)
+
+settings in gridpack generation script: [https://hypernews.cern.ch/HyperNews/CMS/get/generators/4398/1.html](https://hypernews.cern.ch/HyperNews/CMS/get/generators/4398/1.html)
+
+CMS Connect: [https://indico.cern.ch/event/533066/contributions/2210983/attachments/1293988/1928544/CMSConnect.pdf](https://indico.cern.ch/event/533066/contributions/2210983/attachments/1293988/1928544/CMSConnect.pdf)
+
 ## Generate Events from GridPack
 
 ```bash
