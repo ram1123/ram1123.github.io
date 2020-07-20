@@ -17,7 +17,8 @@ categories: lpc condor cms
 condor_tail [clusterID].[processID] -f
 ```
 
-- `-f` : if you want to follow the output and see the updates immediately
+- `-f` : if you want to follow the output and see the updates immediately.
+- This command is similar to the bash **tail -f** command.
 
 # Debug Condor Issue (generally the Ideal stage)
 
@@ -35,6 +36,16 @@ In case if the jobs remain in ideal state then we can see using this why the sta
 # General Info
 
 eos commands are not accessible from condor jobs. As generally the general eos commands are alias of main commands. So, in condor jobs we have to use the main commands not alias.
+
+For example: `eosls` command is the alias of `eos root://cmseos.fnal.gov ls`
+
+List below shows general alias and its full command:
+
+| alias | Command | Description
+|--- |--- |--- |
+|eosls | `eos root://cmseos.fnal.gov ls` | list files placed on EOS |
+|cmsenv | `eval \`scramv1 runtime -sh\`` | load CMSSW environment |
+|cmsrel | `scramv1 project CMSSW`| Get a particular CMSSW release |
 
 ## Condor Examples
 

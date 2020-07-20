@@ -21,6 +21,8 @@ We need to perform matching to avoid the double counting while interfacing the m
 1. $qCut > p_{T}$
 2. Check the Differential Jet Rate (DJR) distribution should be smooth.
 
+
+
 # References
 
 1. Differential Jet Rate (DJR) details: [https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/MatchChecker#no1](https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/MatchChecker#no1)
@@ -34,4 +36,5 @@ We need to perform matching to avoid the double counting while interfacing the m
 9. Merging in Madgraph5 and Pythia8, a brief overview: [https://indico.cern.ch/event/333239/contributions/777451/attachments/649911/893775/ERCWorkShop.pdf](https://indico.cern.ch/event/333239/contributions/777451/attachments/649911/893775/ERCWorkShop.pdf)
 10. [https://sites.google.com/site/montecarlocms/#TOC-Documentation:](https://sites.google.com/site/montecarlocms/#TOC-Documentation:)
 11. MLM FxFx merging scale: [https://answers.launchpad.net/mg5amcnlo/+question/403110](https://answers.launchpad.net/mg5amcnlo/+question/403110)
-12. 
+12. FxFx merging within aMC@NLO: [https://indico.cern.ch/event/221788/](https://indico.cern.ch/event/221788/)
+13. 
