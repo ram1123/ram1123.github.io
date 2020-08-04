@@ -20,8 +20,9 @@ condor_tail [clusterID].[processID] -f
 - `-f` : if you want to follow the output and see the updates immediately.
 - This command is similar to the bash **tail -f** command.
 
-# Debug Condor Issue (generally the Ideal stage)
+# Debug Condor Issue
 
+## Check reason for hold/Ideal
 ```sh
 condor_q [job-ID] -analyze
 ```
@@ -32,6 +33,15 @@ condor_q [job-ID] -better-analyze
 ```
 
 In case if the jobs remain in ideal state then we can see using this why the status is ideal.
+
+## Fix hold without killing job
+Reference: [https://indico.cern.ch/event/611296/contributions/2604376/attachments/1471164/2276521/TannenbaumT_UserTutorial.pdf](https://indico.cern.ch/event/611296/contributions/2604376/attachments/1471164/2276521/TannenbaumT_UserTutorial.pdf)
+
+- If the job goes to hold because of memory issue then fix it like below:
+
+  ```bash
+  condor_qedit -name <Name of Scheduler>  <cluster>.<proc>  request_memory 5000
+  ```
 
 # General Info
 
