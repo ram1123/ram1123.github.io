@@ -247,3 +247,38 @@ Reference: [http://www.cplusplus.com/reference/array/array/at/](http://www.cplus
 
 - Reference: [http://www.cplusplus.com/reference/array/array/at/](http://www.cplusplus.com/reference/array/array/at/)
 
+# Get type of variable
+
+```c++
+#include <typeinfo>
+.
+.
+.
+cout << typeid(variable).name() << endl;
+```
+
+- https://stackoverflow.com/a/11310937
+
+#  initializing a static map using function
+
+```c++
+#include <map>
+
+using namespace std;
+
+map<int,int> create_map()
+{
+  map<int,int> m;
+  m[1] = 2;
+  m[3] = 4;
+  m[5] = 6;
+  return m;
+}
+
+map<int,int> m = create_map();
+```
+
+- https://stackoverflow.com/a/138633/2302094
+
+
+

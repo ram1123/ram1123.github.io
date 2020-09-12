@@ -28,8 +28,20 @@ categories: bash screen tmux
    ```bash=
    tmux attach
    ```
+- **To go in the command mode of tmux session use "CTRL+b"**.
+- Save log of tmux session:
+   ```bash
+   :pipe-pane "cat > tmux.log"
+   ```
+   To turn off the log run:
+   ```bash
+   :pipe-pane
+   ```
 
-Refernce: [https://www.linode.com/docs/networking/ssh/persistent-terminal-sessions-with-tmux/](https://www.linode.com/docs/networking/ssh/persistent-terminal-sessions-with-tmux/)
+Refernce: 
+1. [https://www.linode.com/docs/networking/ssh/persistent-terminal-sessions-with-tmux/](https://www.linode.com/docs/networking/ssh/persistent-terminal-sessions-with-tmux/)
+2. [https://hyperpolyglot.org/multiplexers](https://hyperpolyglot.org/multiplexers)
+
 
 # SCREEN
 
