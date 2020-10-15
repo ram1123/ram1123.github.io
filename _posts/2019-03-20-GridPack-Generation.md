@@ -4,6 +4,7 @@ title: "GridPack Generation"
 date: 2019-03-20
 categories: [monte-carlo, madgraph]
 tags: [monte-carlo, madgraph]
+comments: true
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

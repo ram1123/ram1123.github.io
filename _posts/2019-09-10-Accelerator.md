@@ -3,6 +3,7 @@ layout: post
 title: "Accelerator Basics"
 date: 2019-09-10
 categories: accelerator
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

@@ -3,6 +3,7 @@ layout: post
 title: "Gaseous Detector: Important Points"
 date: 2019-03-22
 categories: gem detector
+comments: true
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

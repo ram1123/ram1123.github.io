@@ -3,6 +3,7 @@ layout: post
 title: "Beam Dynamics Basics"
 date: 2019-09-22
 categories: beam, lhc
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

@@ -3,6 +3,7 @@ layout: post
 title: "ADC Readout"
 date: 2019-06-24
 categories: ADC
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

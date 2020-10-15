@@ -3,6 +3,7 @@ layout: post
 title: "Some Good Reference For Thesis"
 date: 2018-05-25
 categories: particle-physics
+comments: true
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

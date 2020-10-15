@@ -3,6 +3,7 @@ layout: post
 title: "Scale & PDF uncertainties"
 date: 2020-07-07
 categories: mc-generators
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

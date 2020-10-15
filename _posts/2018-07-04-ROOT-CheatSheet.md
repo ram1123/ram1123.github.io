@@ -3,6 +3,7 @@ layout: post
 title: "ROOT CheatSheet"
 date: 2018-07-04
 categories: root cpp pyroot programming
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

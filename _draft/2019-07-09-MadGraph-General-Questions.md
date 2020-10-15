@@ -3,6 +3,7 @@ layout: post
 title: "MadGraph: General Questions"
 date: 2019-07-09
 categories: monte-carlo madgraph
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

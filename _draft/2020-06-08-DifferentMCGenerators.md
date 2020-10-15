@@ -3,6 +3,7 @@ layout: post
 title: "Different MC Generators"
 date: 2020-06-08
 categories: mc-generators
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

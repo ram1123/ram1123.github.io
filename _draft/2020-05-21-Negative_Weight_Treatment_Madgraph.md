@@ -3,6 +3,7 @@ layout: post
 title: "Negative Weight Treatment (Madgraph)"
 date: 2020-05-21
 categories: cms madgraph analysis weight
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

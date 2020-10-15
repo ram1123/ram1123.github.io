@@ -3,6 +3,7 @@ layout: post
 title: "Random Physics Points"
 date: 2019-10-06
 categories: physics particle-physics
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

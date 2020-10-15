@@ -3,6 +3,7 @@ layout: post
 title: "C++ CheatSheet"
 date: 2018-07-17
 categories: cpp programming
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

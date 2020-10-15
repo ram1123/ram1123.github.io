@@ -3,6 +3,7 @@ layout: post
 title: "List of Lectures"
 date: 2018-07-15
 categories: particle-physics lectures 
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

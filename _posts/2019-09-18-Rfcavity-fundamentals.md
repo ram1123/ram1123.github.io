@@ -3,6 +3,7 @@ layout: post
 title: "RF Cavity Basics"
 date: 2019-09-18
 categories: rf-cavity, lhc
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

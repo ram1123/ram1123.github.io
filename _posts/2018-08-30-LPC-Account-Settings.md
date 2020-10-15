@@ -3,6 +3,7 @@ layout: post
 title: "LPC Account Setting"
 date: 2018-08-30
 categories: lpc cluster settings
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

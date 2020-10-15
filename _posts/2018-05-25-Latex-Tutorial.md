@@ -3,6 +3,7 @@ layout: post
 title: "Latex Commands"
 date: 2018-05-25
 categories: latex
+comments: true
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

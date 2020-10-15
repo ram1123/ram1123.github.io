@@ -3,6 +3,7 @@ layout: post
 title: "Screen Command"
 date: 2018-09-01
 categories: bash screen tmux
+comments: true
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

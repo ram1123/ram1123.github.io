@@ -3,6 +3,7 @@ layout: post
 title: "Machine Learning"
 date: 2018-05-25
 categories: machine-learning
+comments: true
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

@@ -3,6 +3,7 @@ layout: post
 title: "Articles related to our health"
 date: 2018-07-19
 categories: health
+comments: true
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

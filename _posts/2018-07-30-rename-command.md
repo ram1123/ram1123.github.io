@@ -3,11 +3,11 @@ layout: post
 title: "rename multiple files"
 date: 2018-07-30
 categories: bash rename
+comments: true
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}
 
----
 ---
 
 # rename command

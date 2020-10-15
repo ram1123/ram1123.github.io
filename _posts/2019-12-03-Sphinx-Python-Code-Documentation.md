@@ -3,6 +3,7 @@ layout: post
 title: "Sphinx: Python code documentation tool"
 date: 2019-12-03
 categories: tools
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

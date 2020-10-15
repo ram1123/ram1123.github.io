@@ -3,6 +3,7 @@ layout: post
 title: "Statistics"
 date: 2018-07-19
 categories: statistics
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

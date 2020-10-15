@@ -3,6 +3,7 @@ layout: post
 title: "EOS uses"
 date: 2018-07-26
 categories: eos cern cms condor lpc
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

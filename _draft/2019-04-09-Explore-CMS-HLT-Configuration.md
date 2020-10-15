@@ -3,6 +3,7 @@ layout: post
 title: "Explore HLT Configuration Editor"
 date: 2019-04-09
 categories: [CMS, HLT]
+comments: true
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

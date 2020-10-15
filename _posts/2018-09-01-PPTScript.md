@@ -3,6 +3,7 @@ layout: post
 title: "PPT with plots in one click"
 date: 2018-09-01
 categories: latex
+comments: true
 ---
 * Do not remove this line (it will not be displayed)
 {:toc}

@@ -3,6 +3,7 @@ layout: post
 title: "TMVA CheatSheet"
 date: 2018-07-04
 categories: root cpp pyroot tmva
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

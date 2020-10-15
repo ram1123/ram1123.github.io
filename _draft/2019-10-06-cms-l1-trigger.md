@@ -3,6 +3,7 @@ layout: post
 title: "CMS L1 trigger"
 date: 2019-10-06
 categories: cms, trigger
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

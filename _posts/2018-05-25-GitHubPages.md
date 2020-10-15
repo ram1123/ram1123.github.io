@@ -3,6 +3,7 @@ layout: post
 title: "How to GitHub Pages"
 date: 2018-05-25
 categories: git
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

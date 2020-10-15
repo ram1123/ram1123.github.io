@@ -3,6 +3,7 @@ layout: post
 title: "Background Estimation"
 date: 2018-07-26
 categories: monte-carlo madgraph
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

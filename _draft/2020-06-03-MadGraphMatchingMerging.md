@@ -3,6 +3,7 @@ layout: post
 title: "Matching & Merging (MadGraph)"
 date: 2020-06-03
 categories: madgraph matching merging
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

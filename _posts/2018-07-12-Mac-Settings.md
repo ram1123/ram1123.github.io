@@ -3,6 +3,7 @@ layout: post
 title: "Mac Settings"
 date: 2018-07-12
 categories: mac
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)

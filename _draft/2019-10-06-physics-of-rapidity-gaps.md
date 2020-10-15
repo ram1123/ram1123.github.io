@@ -3,6 +3,7 @@ layout: post
 title: "Physics of Rapidity Gaps"
 date: 2019-10-06
 categories: physics
+comments: true
 ---
 
 * Do not remove this line (it will not be displayed)
