@@ -457,6 +457,18 @@ for (const auto&& keyObj : *(file->GetListOfKeys()) ){
 }
 ```
 
+# Print Name of all Keys in RootFile
+
+```cpp
+TFile *infile = TFile::Open("Test.root");
+TIter next(infile.GetListOfKeys());
+   TKey *key;
+   while ((key=(TKey*)next())) {
+      printf("key: %s points to an object of class: %s at %dn", key->GetName(),
+      key->GetClassName(),key->GetSeekKey());
+   }
+```
+
 # TRatioPlot
 
 TRatioPlot:  [https://root.cern.ch/doc/master/classTRatioPlot.html ](https://root.cern.ch/doc/master/classTRatioPlot.html )

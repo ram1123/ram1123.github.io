@@ -63,48 +63,84 @@ Ref: [http://batchdocs.web.cern.ch/batchdocs/tutorial/exercise1a.html](http://ba
 
 For condor jobs we have to make two files. First file is the condor submit descriptor file and another file is the shell script.
 
-First File: **RunGENSIMRAW_condor.jdl**
+First File: **test.jdl**
 
 ```sh
-Executable = runstep2condor.sh
++JobFlavour = "espresso"   # this we need at lxplus not on lpc
+Executable = DoubleHiggs_NonResonant.sh
 Universe = vanilla
 Notification = ERROR
-Should_Transfer_Files = YES
-WhenToTransferOutput = ON_EXIT
-request_memory = 5001
-Transfer_Input_Files = runstep2condor.sh, python/produceWWNtuples.py
+Transfer_Input_Files = Hello_world.cpp, test.sh
 x509userproxy = $ENV(X509_USER_PROXY)
-Output = DYJetsToLL_0J_TuneCP5_13TeV-amcatnloFXFX-pythia8_0.stdout
-Error  = DYJetsToLL_0J_TuneCP5_13TeV-amcatnloFXFX-pythia8_0.stdout
-Log  = DYJetsToLL_0J_TuneCP5_13TeV-amcatnloFXFX-pythia8_0.log
-Arguments = -n DYJetsToLL -o DYJetsToLL_0 -w 0.0 -no 1 -noNeg 0 -lumi 35900.0 --ismc 1 -trig 1 -c lpc -f listTemp.txt  
-Queue
+Output = GF_HH_10_slc6_$(Cluster)_$(Process).stdout
+Error  = GF_HH_10_slc6_$(Cluster)_$(Process).stdout
+Log  = GF_HH_10_slc6_$(Cluster)_$(Process).log
+Arguments = $(Cluster) $(Process) Hello_world.cpp
+Queue 1
 ```
 
-Second File: **RunGENSIMRAW_condor.sh**
+Second File: **test.sh**
 
 ```sh
 #!/bin/bash
+
+# I ADDED TOO MANY ECHO STATEMENT JUST TO SEE THE
+# LOG FILE AND UNDERSTAND.
+
 echo "Starting job on " `date`
 echo "Running on: `uname -a`"
 echo "System software: `cat /etc/redhat-release`"
 source /cvmfs/cms.cern.ch/cmsset_default.sh
-xrdcp -s root://cmseos.fnal.gov//store/user/rasharma/SecondStep/Run_2017/Frameworkupdate/WWTree_2020_01_18_00h09/CMSSW_9_4_13.tgz  .
-tar -xf CMSSW_9_4_13.tgz
-rm CMSSW_9_4_13.tgz
-cd CMSSW_9_4_13/src/WWAnalysis/WWAnalysisRun2
-echo "====> Remove any file with name similar to WWTree*.root... " 
-rm WWTree*.root
-scramv1 b ProjectRename
+echo "###################################################"
+echo "#    List of Input Arguments: "
+echo "###################################################"
+echo "Input Arguments (Cluster ID): $1"
+echo "Input Arguments (Proc ID): $2"
+echo "Input Arguments (Config file name): $3"
+echo "###################################################"
+
+# uncomment below line and give path of eos where output need to transfer
+# OUTDIR=root://cmseos.fnal.gov//store/user/<userName>/
+
+echo "==============================="
+echo "==                        ====="
+echo "==    List file in PWD    ====="
+echo "PWD: "$PWD
+ls
+echo "==                        ====="
+echo "==============================="
+echo "==   Load CMSSW environment  =="
+eval `scramv1 project CMSSW CMSSW_10_2_22`
+# copy file Hello_world.cpp inside the CMSSW directory
+cp Hello_world.cpp  CMSSW_10_2_22/src/
+cd CMSSW_10_2_22/src/
+# set cmssw environment
 eval `scram runtime -sh`
-python python/produceWWNtuples.py -i /store/user/lpcbacon/15/ $*
-echo "====> List root files : " 
-ls WWTree*.root
-echo "====> copying WWTree*.root file to stores area..." 
-xrdcp -f WWTree*.root root://cmseos.fnal.gov//store/user/rasharma/SecondStep/Run_2017/Frameworkupdate/WWTree_2020_01_18_00h09
-rm WWTree*.root
-cd ${_CONDOR_SCRATCH_DIR}
-rm -rf CMSSW_9_4_13
+echo "==============================="
+echo "==                        ====="
+echo "==    Running C++ program ====="
+echo "==                        ====="
+echo "==============================="
+root -l -b -q Hello_world.cpp
+echo "==============================="
+echo "==                        ====="
+echo "==    List file in PWD    ====="
+echo "PWD: "$PWD
+ls
+echo "==                        ====="
+echo "==============================="
+echo "xrdcp output for condor"
+# xrdcp -f outPut_${1}_${2}.root ${OUTDIR}/outPut_${1}_${2}.root
+# here $1 and $2 is the cluster ID and job ID and it is passed 
+# through the arguments from jdl file
+echo "==============================="
+echo "==                        ====="
+echo "==    List file in PWD    ====="
+echo "PWD: "$PWD
+ls
+echo "==                        ====="
+echo "==============================="
+date
 ```
 
 # Some important notes
@@ -123,16 +159,26 @@ rm -rf CMSSW_9_4_13
    Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3011] No servers are available to read the file.
    ```
    To get rid of this we need to map our proxy properly in the condor script. For this follow the following steps:
-   1. After setting proxy do
+   a) After setting proxy do
       ```
-      cp /tmp/x509up_u117617 /afs/cern.ch/user/z/zewang/
-      export X509_USER_PROXY=/afs/cern.ch/user/z/zewang/x509up_u117617
+      cp /tmp/x509up_u117617 /afs/cern.ch/user/<NameInitial>/<UserName>/
+      export X509_USER_PROXY=/afs/cern.ch/user/<NameInitial>/<UserName>/x509up_u117617
       ```
+      Here, `/tmp/x509up_u117617` is the file as you got while setting the proxy using
+      `voms-proxy-init --voms cms --valid 168:00`
+
       **Remember to submit jobs from this terminal only**
-   2. In condor jdl file add the following line:
+      
+   b) In condor jdl file add the following line:
       ```
       x509userproxy = $ENV(X509_USER_PROXY)
       ```
+
+3. **Change of schedular at lxplus**: If you want to switch to schedular named `bigbird17` then use command:
+   ```bash
+   export _condor_SCHEDD_HOST=bigbird17.cern.ch
+   export _condor_CREDD_HOST=bigbird17.cern.ch
+   ```
 
 # Reference
 
