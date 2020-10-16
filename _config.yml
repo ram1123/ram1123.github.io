@@ -29,7 +29,8 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-theme: minimal-mistakes-jekyll
+# theme: minimal-mistakes-jekyll
+theme: jekyll-theme-leap-day
 # - jekyll-sitemap
 
 # Exclude from processing.
