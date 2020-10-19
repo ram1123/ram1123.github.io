@@ -62,87 +62,109 @@ List below shows general alias and its full command:
 
 Ref: [http://batchdocs.web.cern.ch/batchdocs/tutorial/exercise1a.html](http://batchdocs.web.cern.ch/batchdocs/tutorial/exercise1a.html)
 
-For condor jobs we have to make two files. First file is the condor submit descriptor file and another file is the shell script.
+For condor jobs we have to make two files for job submission. First file is the condor submit descriptor file and another file is the shell script.
 
-First File: **test.jdl**
+Suppose we want to submit the program "Hello_world.cpp" using condor. 
 
-```sh
-+JobFlavour = "espresso"   # this we need at lxplus not on lpc
-Executable = DoubleHiggs_NonResonant.sh
-Universe = vanilla
-Notification = ERROR
-Transfer_Input_Files = Hello_world.cpp, test.sh
-x509userproxy = $ENV(X509_USER_PROXY)
-Output = GF_HH_10_slc6_$(Cluster)_$(Process).stdout
-Error  = GF_HH_10_slc6_$(Cluster)_$(Process).stdout
-Log  = GF_HH_10_slc6_$(Cluster)_$(Process).log
-Arguments = $(Cluster) $(Process) Hello_world.cpp
-Queue 1
-```
+- Cpp program file name: `Hello_world.cpp`.
+   ```cpp
+   {
+      std::cout << "Hello world..." << std::endl;
+   }
+   ```
 
-Second File: **test.sh**
+- Condor submitter descriptor file: **test.jdl**
 
-```sh
-#!/bin/bash
+   ```sh
+   +JobFlavour = "espresso"   # this we need at lxplus not on lpc
+   Executable = test.sh
+   Universe = vanilla
+   Notification = ERROR
+   Transfer_Input_Files = Hello_world.cpp, test.sh
+   x509userproxy = $ENV(X509_USER_PROXY)
+   Output = Condor_LogFiles_$(Cluster)_$(Process).stdout
+   Error  = Condor_LogFiles_$(Cluster)_$(Process).stdout
+   Log  = Condor_LogFiles_$(Cluster)_$(Process).log
+   Arguments = $(Cluster) $(Process) Hello_world.cpp
+   Queue 1
+   ```
 
-# I ADDED TOO MANY ECHO STATEMENT JUST TO SEE THE
-# LOG FILE AND UNDERSTAND.
+- Shell script file: **test.sh**
 
-echo "Starting job on " `date`
-echo "Running on: `uname -a`"
-echo "System software: `cat /etc/redhat-release`"
-source /cvmfs/cms.cern.ch/cmsset_default.sh
-echo "###################################################"
-echo "#    List of Input Arguments: "
-echo "###################################################"
-echo "Input Arguments (Cluster ID): $1"
-echo "Input Arguments (Proc ID): $2"
-echo "Input Arguments (Config file name): $3"
-echo "###################################################"
+   ```sh
+   #!/bin/bash
+   
+   # I ADDED TOO MANY ECHO STATEMENT JUST TO SEE THE
+   # LOG FILE AND UNDERSTAND.
+   
+   echo "Starting job on " `date`
+   echo "Running on: `uname -a`"
+   echo "System software: `cat /etc/redhat-release`"
+   source /cvmfs/cms.cern.ch/cmsset_default.sh
+   echo "###################################################"
+   echo "#    List of Input Arguments: "
+   echo "###################################################"
+   echo "Input Arguments (Cluster ID): $1"
+   echo "Input Arguments (Proc ID): $2"
+   echo "Input Arguments (Config file name): $3"
+   echo "###################################################"
+   
+   # uncomment below line and give path of eos where output need to transfer
+   # OUTDIR=root://cmseos.fnal.gov//store/user/<userName>/
+   
+   echo "==============================="
+   echo "==                        ====="
+   echo "==    List file in PWD    ====="
+   echo "PWD: "$PWD
+   ls
+   echo "==                        ====="
+   echo "==============================="
+   echo "==   Load CMSSW environment  =="
+   eval `scramv1 project CMSSW CMSSW_10_2_22`
+   # copy file Hello_world.cpp inside the CMSSW directory
+   cp Hello_world.cpp  CMSSW_10_2_22/src/
+   cd CMSSW_10_2_22/src/
+   # set cmssw environment
+   eval `scram runtime -sh`
+   echo "==============================="
+   echo "==                        ====="
+   echo "==    Running C++ program ====="
+   echo "==                        ====="
+   echo "==============================="
+   root -l -b -q Hello_world.cpp
+   echo "==============================="
+   echo "==                        ====="
+   echo "==    List file in PWD    ====="
+   echo "PWD: "$PWD
+   ls
+   echo "==                        ====="
+   echo "==============================="
+   echo "xrdcp output for condor"
+   # xrdcp -f outPut_${1}_${2}.root ${OUTDIR}/outPut_${1}_${2}.root
+   # here $1 and $2 is the cluster ID and job ID and it is passed 
+   # through the arguments from jdl file
+   echo "==============================="
+   echo "==                        ====="
+   echo "==    List file in PWD    ====="
+   echo "PWD: "$PWD
+   ls
+   echo "==                        ====="
+   echo "==============================="
+   date
+   ```
 
-# uncomment below line and give path of eos where output need to transfer
-# OUTDIR=root://cmseos.fnal.gov//store/user/<userName>/
+- To submit job run the command:
+   ```bash
+   condor_submit test.jdl
+   ```
 
-echo "==============================="
-echo "==                        ====="
-echo "==    List file in PWD    ====="
-echo "PWD: "$PWD
-ls
-echo "==                        ====="
-echo "==============================="
-echo "==   Load CMSSW environment  =="
-eval `scramv1 project CMSSW CMSSW_10_2_22`
-# copy file Hello_world.cpp inside the CMSSW directory
-cp Hello_world.cpp  CMSSW_10_2_22/src/
-cd CMSSW_10_2_22/src/
-# set cmssw environment
-eval `scram runtime -sh`
-echo "==============================="
-echo "==                        ====="
-echo "==    Running C++ program ====="
-echo "==                        ====="
-echo "==============================="
-root -l -b -q Hello_world.cpp
-echo "==============================="
-echo "==                        ====="
-echo "==    List file in PWD    ====="
-echo "PWD: "$PWD
-ls
-echo "==                        ====="
-echo "==============================="
-echo "xrdcp output for condor"
-# xrdcp -f outPut_${1}_${2}.root ${OUTDIR}/outPut_${1}_${2}.root
-# here $1 and $2 is the cluster ID and job ID and it is passed 
-# through the arguments from jdl file
-echo "==============================="
-echo "==                        ====="
-echo "==    List file in PWD    ====="
-echo "PWD: "$PWD
-ls
-echo "==                        ====="
-echo "==============================="
-date
-```
+- Check the status using:
+   ```bash
+   condor_q
+   ```
+
+- When job finishes, one can investigate the log files. In the above example it was named as `Condor_LogFiles_*.stdout` and `Condor_LogFiles_*.log`
+
 
 # Some important notes
 
