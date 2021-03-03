@@ -19,6 +19,8 @@ To open a file we must specify the redirector to find the file. This redirector 
 
 - global redirector: **`root://cms-xrd-global.cern.ch//`**
 
+- Redirector for CERNBOX eos: **`root://eosuser.cern.ch//eos/user/<UserNameInitial/<UserName>/`**
+
 - Open a file using ROOT: If you are using bare ROOT, you can open files in the xrootd service just like you would any other file:
 
 ```c++

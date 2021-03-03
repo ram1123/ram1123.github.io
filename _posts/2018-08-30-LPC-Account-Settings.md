@@ -58,3 +58,24 @@ You can add this into your `.bash_profile` file so that this runs every time you
 
 Reference: [Fix broken UTF-8 fonts in SSH after upgrading to High Sierra](https://medium.com/@ejoebstl/fix-broken-utf-8-fonts-in-ssh-after-upgrading-to-high-sierra-931a7c828f2)
 
+
+# Prevent SSH from disconnecting
+
+Because of firewall or load-balancer the ssh session drops after being in ideal state for some time. To prevent this, one can configure the session to keepalive, which will prevent the the network device to consider it as ideal.
+
+There are two methods. First method:
+
+```bash
+ssh -o "ServerAliveInterval 60" <SERVER_ADDRESS>
+```
+
+Second method: If one wants to keep all the ssh session alive then the keepalive information can be passed to the `.ssh/config` file. For this add
+
+```bash
+ServerAliveInterval 60
+```
+
+this line in file `/etc/ssh/ssh_config` or `~/.ssh/config`.
+
+Reference: [https://superuser.com/questions/699676/how-to-prevent-ssh-from-disconnecting-if-its-been-idle-for-a-while](https://superuser.com/questions/699676/how-to-prevent-ssh-from-disconnecting-if-its-been-idle-for-a-while)
+

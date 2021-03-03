@@ -89,4 +89,12 @@ Refernce:
 
     - Step 3: Press “Esc” to exit scrollback mode.
 
+## Use screen command on lxplus
+
+```bash
+# log into lxplus 
+krenew -b -t -- screen -D -m
+screen
+```
+
 # Difference between tmux and screen?
