@@ -21,6 +21,16 @@ comments: true
 
 5. LaTex
 
+6. **Youtube video downloader**: youtube-dl
+   ```bash
+   brew install youtube-dl
+   brew install ffmpeg
+   ```
+   for downloading a youtube video, go on terminal then:
+   ```bash
+   youtube-dl <youtube video sharing link>
+   ```
+
 # Mattermost setting
 
 1. How to browse: [https://mattermost.web.cern.ch](https://mattermost.web.cern.ch)

@@ -10,7 +10,32 @@ comments: true
 
 # Figures
 
-## Firures Positioning 
+## Trim Figure
+
+Reference: https://tex.stackexchange.com/a/57420/41568
+
+```latex
+\documentclass{article}
+
+\usepackage{graphicx}
+
+\begin{document}
+% trim from left edge
+\includegraphics[trim={5cm 0 0 0},clip=true]{example-image-a}
+% trim from right edge
+\includegraphics[trim={0 0 5cm 0},clip=true]{example-image-a}
+\end{document}
+```
+
+Trim option takes four input as follows:
+
+```
+trim={<left> <lower> <right> <upper>}
+```
+
+along with this we should switch on the `clip` option to true. Only then it will trim the image.
+
+## Firures Positioning
 
 Few important points to note:
 1. The content of the image should not be broken over page.
@@ -51,8 +76,8 @@ For this we need to use the `\centering` as shown below:
         \label{fig:Indian_foils_H20}
     \end{subfigure}
     \begin{subfigure}[b]{0.46\textwidth}
-        %\includegraphics[width=7.5cm, height=5.5cm]{CERN_foils.pdf} 
-        \includegraphics[width=7.5cm, height=5.5cm]{figures/GEM/figures/Fig_11(b).pdf} 
+        %\includegraphics[width=7.5cm, height=5.5cm]{CERN_foils.pdf}
+        \includegraphics[width=7.5cm, height=5.5cm]{figures/GEM/figures/Fig_11(b).pdf}
         \caption{ }
         \label{fig:CERN_foils}
     \end{subfigure}
@@ -84,8 +109,8 @@ This will look like:
 ### way-3
 
 ```latex
-\begin{figure}[htbp] 
-   \centering 
+\begin{figure}[htbp]
+   \centering
    \begin{tabular}{cc}
    \includegraphics[width=0.48\textwidth]{Plots/BackgroundEstimation/WV/m_lvj_fitting/WWTree_STop_m_lvj_sb_loExpN_with_pull.pdf}
    \includegraphics[width=0.48\textwidth]{Plots/BackgroundEstimation/WV/m_lvj_fitting/WWTree_STop_m_lvj_signal_regionExpN_with_pull.pdf}\\
@@ -138,7 +163,7 @@ Ref:2: [todonotes manual](https://mirror.hmc.edu/ctan/macros/latex/contrib/todon
 
 after `\begin{document}` put ` \listoftodos`
 
-- To disable to-do notes without manually removing each one put 
+- To disable to-do notes without manually removing each one put
 
 ```latex
 \usepackage[disable]{todonotes}
@@ -174,8 +199,8 @@ hit-efficiency\footnotemark & 93.2 \% & 90.6 \% \\
 \end{center}
 \label{tb:comp1}
 \end{table}
- 
-\footnotetext[\value{footnote}]{Hit-efficiency is defined in section} 
+
+\footnotetext[\value{footnote}]{Hit-efficiency is defined in section}
 ```
 
 # degree symbol
@@ -209,7 +234,7 @@ Reference: [https://tex.stackexchange.com/a/168881/41568](https://tex.stackexcha
 There are two possible ways to type the big O:
 
 > $O(n\log{}n)$ % regular O
-> 
+>
 > $\mathcal{O}(n\log{}n)$ % Open at top left
 
 The latter produces the following:
@@ -231,7 +256,7 @@ To fix this replace:
 \pagestyle{fancy}
 ```
 
-with 
+with
 
 ```latex
 \usepackage{fancyhdr,ragged2e}
