@@ -40,6 +40,68 @@ body.sticky-bottom-footer {
 
 // TODO: redefine content layout.
 
+.home-highlight {
+  margin: 2rem 0 2.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1rem;
+  background-color: var(--global-card-bg-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.home-highlight__label {
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+}
+
+.home-highlight__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-highlight__card {
+  display: block;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.85rem;
+  background-color: var(--global-bg-color);
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  strong {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--global-text-color);
+  }
+
+  span {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--global-text-color);
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: var(--global-theme-color);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-highlight__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /******************************************************************************
  * Publications
  ******************************************************************************/
