@@ -26,7 +26,7 @@ last_modified_at: 2022-09-05
 
 2. Enable latex support for maths: [link](http://blog.lostinmyterminal.com/webpages/2015/01/09/math-support-in-jekyll.html)
 
-3. Improve code hilighting : [link](https://demisx.github.io/jekyll/2014/01/13/improve-code-highlighting-in-jekyll.html)
+3. Improve code highlighting: [Jekyll code snippet highlighting](https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting)
 
    ```
    {/% highlight ruby linenos %}

@@ -103,7 +103,7 @@ List below shows general alias and its full command:
 
 ## Condor Examples
 
-Ref: [http://batchdocs.web.cern.ch/batchdocs/tutorial/exercise1a.html](http://batchdocs.web.cern.ch/batchdocs/tutorial/exercise1a.html)
+Ref: [CERN batch documentation](https://batchdocs.web.cern.ch/index.html)
 
 For condor jobs we have to make two files for job submission. First file is the condor submit descriptor file and another file is the shell script.
 
@@ -258,7 +258,7 @@ Suppose we want to submit the program "Hello_world.cpp" using condor.
 
 4. [https://stackoverflow.com/questions/13157442/condor-output-file-updating](https://stackoverflow.com/questions/13157442/condor-output-file-updating)
 
-5. [http://research.cs.wisc.edu/htcondor/manual/v7.6/2_5Submitting_Job.html](http://research.cs.wisc.edu/htcondor/manual/v7.6/2_5Submitting_Job.html)
+5. [HTCondor users manual: submitting a job](https://htcondor.readthedocs.io/en/latest/users-manual/submitting-a-job.html)
 
 6. [http://uscms.org/uscms_at_work/computing/setup/batch_systems.shtml](http://uscms.org/uscms_at_work/computing/setup/batch_systems.shtml)
 

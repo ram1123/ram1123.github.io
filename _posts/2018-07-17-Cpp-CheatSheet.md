@@ -19,7 +19,7 @@ giscus_comments: true
 
 # Reference
 
-1. Fermilab C++/STL tutorial: [https://www.oopl.com/fnal/Resources.html](https://www.oopl.com/fnal/Resources.html)
+1. Fermilab C++/STL tutorial notes.
 
 # constexpr specifier
 

@@ -34,7 +34,7 @@ giscus_comments: true
 1. TMVA: Negative Weights in Reader; [https://sourceforge.net/p/tmva/mailman/tmva-users/?viewmonth=200901](https://sourceforge.net/p/tmva/mailman/tmva-users/?viewmonth=200901)
 1. Statistical power of negative weights: [link](https://indico.cern.ch/event/402226/contributions/954106/attachments/805866/1104387/WG1_-_VH-VBF_subgroup_-_24-06-2015.pdf)
 1. [https://cds.cern.ch/record/517223/files/cer-002273178.pdf](https://cds.cern.ch/record/517223/files/cer-002273178.pdf)
-1. Mulders, M; Direct measurement of the W boson mass in $e^{+}e_{-}$ collisions at LEP; Amsterdam U. Amsterdam 2001 [http://documents.cern.ch/cgi-bin/setlink?base=generic&categ=public&id=cer-002273178](http://documents.cern.ch/cgi-bin/setlink?base=generic&categ=public&id=cer-002273178); [http://cds.cern.ch/record/517223/files/cer-002273178.pdf](http://cds.cern.ch/record/517223/files/cer-002273178.pdf); [http://cds.cern.ch/record/517223/files/cer-002273178.ps.gz](http://cds.cern.ch/record/517223/files/cer-002273178.ps.gz)
+1. Mulders, M; Direct measurement of the W boson mass in $e^{+}e_{-}$ collisions at LEP; Amsterdam U. Amsterdam 2001. Public copy: [https://cds.cern.ch/record/517223/files/cer-002273178.pdf](https://cds.cern.ch/record/517223/files/cer-002273178.pdf)
 1. Reason of negative weights; [https://arxiv.org/pdf/1908.00167.pdf](https://arxiv.org/pdf/1908.00167.pdf)
 1. [https://arxiv.org/pdf/hep-ph/0204244.pdf](https://arxiv.org/pdf/hep-ph/0204244.pdf)
 1. [https://indico.cern.ch/event/459797/contributions/1961581/attachments/1181555/1800214/mcaod-Feb15-2016.pdf](https://indico.cern.ch/event/459797/contributions/1961581/attachments/1181555/1800214/mcaod-Feb15-2016.pdf)

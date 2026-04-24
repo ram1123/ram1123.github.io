@@ -164,7 +164,7 @@ Reference: [https://tex.stackexchange.com/questions/5363/how-to-create-alternati
 # How to use todonotes
 
 Ref:1: [http://www.texample.net/tikz/examples/todo-notes/](http://www.texample.net/tikz/examples/todo-notes/)
-Ref:2: [todonotes manual](https://mirror.hmc.edu/ctan/macros/latex/contrib/todonotes/todonotes.pdf)
+Ref:2: [todonotes package page](https://ctan.org/pkg/todonotes)
 
 ```latex
 \usepackage[colorlinks]{hyperref}

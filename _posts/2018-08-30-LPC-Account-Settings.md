@@ -62,7 +62,7 @@ export LC_CTYPE=en_US.UTF-8
 
 You can add this into your `.bash_profile` file so that this runs every time you open your terminal.
 
-Reference: [Fix broken UTF-8 fonts in SSH after upgrading to High Sierra](https://medium.com/@ejoebstl/fix-broken-utf-8-fonts-in-ssh-after-upgrading-to-high-sierra-931a7c828f2)
+Reference: historical notes on fixing UTF-8 font issues in macOS SSH terminals.
 
 # Prevent SSH from disconnecting
 
