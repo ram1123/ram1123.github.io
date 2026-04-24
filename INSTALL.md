@@ -96,6 +96,30 @@ $ bundle exec jekyll serve --lsi
 
 To see the template running, open your browser and go to `http://localhost:4000`. You should see a copy of the theme's [demo website](https://alshedivat.github.io/al-folio/). Now, feel free to customize the theme however you like. After you are done, remember to **commit** your final changes.
 
+### Testing your updates locally
+
+After making changes to pages, posts, styles, or data files, you can test the site locally before pushing:
+
+```bash
+bundle install
+pip install jupyter
+bundle exec jekyll serve --lsi
+```
+
+Then open `http://localhost:4000` in your browser and check the page you changed.
+
+If you only want to verify that the site builds successfully without starting the local server, run:
+
+```bash
+bundle exec jekyll build --lsi
+```
+
+Useful checks while reviewing your changes:
+
+- Open the modified page and confirm the text, links, and images render correctly.
+- Visit the homepage, CV page, publications page, and any edited blog post to catch layout regressions.
+- If you changed navigation, permalinks, or asset paths, click those links locally to confirm they resolve.
+
 ## Deployment
 
 Deploying your website to [GitHub Pages](https://pages.github.com/) is the most popular option.
