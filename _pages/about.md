@@ -2,23 +2,23 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>IHEP, Beijing, China</a>. Stationed at CERN, Geneva, Switzerland
+subtitle: <a href='https://www.physics.purdue.edu/'>Purdue University</a>, Indiana, USA
 
 profile:
   align: right
   image: my_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>B653/R-014</p>
-    <p>CERN</p>
-    <p>Meyrin, Geneva, Switzerland 1211</p>
+    <p>Postdoctoral Research Associate</p>
+    <p>Purdue University</p>
+    <p>Indiana, USA</p>
 
 # news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an experimental particle physicist working on Higgs measurements, vector boson scattering, and precision studies of electroweak interactions at the LHC. My work combines collider physics analysis, detector development, and scientific software, with a particular focus on CMS and GEM detector R&D.
+I am a postdoctoral researcher at Purdue University working on Higgs physics, vector boson scattering, and precision studies of electroweak interactions at the LHC. My work combines collider-physics analysis, detector development, and scientific software, with a particular focus on CMS, GEM technologies, and data-intensive methods.
 
 <div class="home-highlight">
   <p class="home-highlight__label">Start here</p>
@@ -44,13 +44,13 @@ I am an experimental particle physicist working on Higgs measurements, vector bo
 
 ## Research focus
 
-My research focuses on the Higgs properties, vector boson scattering, and the measurement of anomalous gauge couplings in the electroweak symmetry-breaking sector of the Standard Model. I have extensive experience with the development and R&D of a gaseous electron multiplier (GEM) detector for the compact muon solenoid (CMS) detector at the LHC.
+My research spans Higgs-boson property measurements, vector boson scattering, effective field theory interpretations, and searches for new physics in CMS data. I have led or co-led analyses on anomalous gauge couplings, semileptonic vector boson scattering, Higgs differential cross sections, and resonant and non-resonant Higgs pair production.
 
-Currently, I am working on the measurement of anomalous triple gauge couplings using the VV semi-leptonic channel, the search for high mass scalar Higgs like particle that decays to ZZ to 2l2Q, and the search for resonant particles that decay to HH->WWgg, using both semi-leptonic and fully hadronic decay channels of WW. I am also involved in the High mass Higgs search using the ZZ decay channel.
+Currently, I am working on Higgs boson decay to muon pairs, high-mass Higgs searches in ZZ to 2l2q and 2l2nu, and resonant Higgs boson pair production in the WWgg final state. I am also interested in detector R&D for the HL-LHC, including HGCAL sensor studies, trigger-performance improvements, and broader applications of gaseous detectors in imaging and security.
 
-Earlier, I worked on the Higgs differential and fiducial cross-section measurement and its interpretation with kb, kc and kLambda studies, vector boson scattering studies and double Higgs search in the WWgg channel. Furthermore, I was the convener of CMS HLT-EGamma POG. I maintained and upgraded CPPF hardware and emulator comparison deployed at Level-1 at the CMS detector.
+Earlier, I worked on Higgs differential and fiducial cross-section measurements, constraints on effective Higgs couplings to bottom and charm quarks, EGamma high-level trigger development for CMS Run-3, and GEM detector development for the CMS muon upgrade. These projects have shaped my long-term interest in combining fundamental particle-physics questions with scalable detector technologies and modern analysis techniques.
 
-<b>Summary</b>: I enjoy teaching, research, and outreach, and I regularly work with C/C++, Python, TensorFlow, shell scripting, and HTML to support both physics analysis and communication.</p>
+<b>Summary</b>: I enjoy teaching, mentoring, and outreach, and I regularly work with C/C++, Python, TensorFlow, ROOT, shell scripting, and web tools to support both physics analysis and scientific communication.
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `my_pic.jpg` and put it in the `img/` folder.
