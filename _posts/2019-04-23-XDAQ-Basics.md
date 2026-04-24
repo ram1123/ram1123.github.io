@@ -51,9 +51,7 @@ There's not much information about the SCA chip temperature units, but
    exact part number of the PT100 sensor we are using is P0K1.1206.2P.B,
    which has a resistance of 100 Ohms at 0 deg C, and changes by 0.385% per
    each degree C cumulatively (more info can be found here:
-   http://www.farnell.com/datasheets/2207165.pdf?_ga=2.247382788.1064362929.1535377707-998824428.1535377707
-   and here:
-   https://www.intech.co.nz/products/temperature/typert/RTD-Pt100-Conversion.pdf).
+   a vendor datasheet ([link](http://www.farnell.com/datasheets/2207165.pdf?_ga=2.247382788.1064362929.1535377707-998824428.1535377707)) and a PT100 temperature conversion table ([link](https://www.intech.co.nz/products/temperature/typert/RTD-Pt100-Conversion.pdf))).
    This means that at 0 deg C the voltage drop over the PT100 will be 100uA
    * 100 Ohms = 10mV, so the ADC will read 1.0V - 10mV = 0.99V, and if the
    temperature is 30 degC, the PT100 will have a resistance of 111.67 Ohms,
@@ -63,8 +61,8 @@ There's not much information about the SCA chip temperature units, but
 
 References mentioned in above message:
 
-1. SMD platinum sensor: [http://www.farnell.com/datasheets/2207165.pdf?\_ga=2.247382788.1064362929.1535377707-998824428.1535377707](http://www.farnell.com/datasheets/2207165.pdf?_ga=2.247382788.1064362929.1535377707-998824428.1535377707)
-2. Temperature Conversion Table for PT100 sensor used in GEM DAQ: [https://www.intech.co.nz/products/temperature/typert/RTD-Pt100-Conversion.pdf](https://www.intech.co.nz/products/temperature/typert/RTD-Pt100-Conversion.pdf)
+1. SMD platinum sensor vendor datasheet.
+2. PT100 sensor temperature conversion table.
 
 # What is VTTx and VTRx?
 
@@ -77,11 +75,10 @@ Test[^4][^5]
 [^4]: https://edms.cern.ch/ui/#!master/navigator/document?D:1275981158:1275981158:subDocs
 [^5]: https://indico.cern.ch/event/681247/contributions/2926593/attachments/1638413/2615045/Versatile_Link_and_GBT_Chipset_Production_ACES18.pdf
 
-- https://espace.cern.ch/project-versatile-link/public/Versatile%20Link%20Public%20Documents/Forms/AllItems.aspx
-- https://espace.cern.ch/project-versatile-link/public/Versatile%20Link%20Public%20Documents/Publications/2017%20Versatile%20Transceiver%20production%20and%20quality%20assurance/Olantera_2017_J._Inst._12_C01097_VTRxProdStatus.pdf
+- Historical CERN Espace links for the Versatile Link project are omitted here because they are no longer publicly reachable.
 - https://iopscience.iop.org/article/10.1088/1748-0221/8/02/C02053/meta
 - https://iopscience.iop.org/article/10.1088/1748-0221/8/02/C02053/pdf
-- https://espace.cern.ch/project-versatile-link/public/Versatile%20Link%20Public%20Documents/Application%20Note/Versatile%20Link%20Application%20Note%20v2.7.pdf
+- Historical CERN Espace application note for the Versatile Link project.
 - https://indico.cern.ch/event/681247/contributions/2926593/attachments/1638413/2615045/Versatile_Link_and_GBT_Chipset_Production_ACES18.pdf
 - https://edms.cern.ch/ui/file/1140665/1/VTRx_Spec_v2.2.pdf
 
@@ -129,7 +126,7 @@ Reference: [https://twiki.cern.ch/twiki/bin/view/CMS/MuonGEMBackend#CMS_GEM_Back
 
 # Reference
 
-1. GEM Electronics User Guide: [Link](https://github.com/cms-gem-daq-project/sw_utils/blob/develop/v3ElectronicsUserGuide.md)
+1. GEM Electronics User Guide: repository path has moved; consult the current CMS GEM DAQ project documentation.
 2. LVDS user manual: [Link](http://www.ti.com/lit/ug/snla187/snla187.pdf)
 3. ZYNQ System-on-Chip: [link](https://www.xilinx.com/products/silicon-devices/soc/zynq-7000.html)
 4. Virtex-7 FPGA: [Link](https://www.xilinx.com/support/documentation/product-briefs/virtex7-product-brief.pdf)
@@ -140,10 +137,10 @@ Reference: [https://twiki.cern.ch/twiki/bin/view/CMS/MuonGEMBackend#CMS_GEM_Back
 
 ## Official Reference
 
-1. GEM Electronics User Guide: [Link](https://github.com/cms-gem-daq-project/sw_utils/blob/develop/v3ElectronicsUserGuide.md)
+1. GEM Electronics User Guide: repository path has moved; consult the current CMS GEM DAQ project documentation.
 2. CTP7 Module (GitHub): [Link](https://github.com/cms-gem-daq-project/ctp7_modules)
 3. GEM backend system: [Twiki Link](https://twiki.cern.ch/twiki/bin/view/CMS/MuonGEMBackend#CMS_GEM_Backend_System)
-4. GBTX Manuals (CERN): [Link](https://espace.cern.ch/GBT-Project/GBTX/Manuals/Forms/AllItems.aspx)
+4. GBTX Manuals (CERN): historical CERN Espace location, which is no longer publicly reachable.
 5. GE1/1 Electronics presentation: [Link](https://indico.cern.ch/event/543031/sessions/273187/attachments/1665783/2670670/19_uTCA-based_readout_system_for_CMS_Triple-GEM_detectors.pdf)
 6. Using XDAQ in Application Scenarios of the CMS Experiment: [link](https://arxiv.org/pdf/hep-ex/0305076v1.pdf)
 
@@ -153,9 +150,9 @@ Reference: [https://twiki.cern.ch/twiki/bin/view/CMS/MuonGEMBackend#CMS_GEM_Back
 
 # References
 
-1. Development of the DAQ System of Triple-GEM Detectors for the CMS Muon Spectrometer Upgrade at LHC, PhD Thesis, Lenzi, Thomas and De Lentdecker, Gilles, [CERN-THESIS-2016-215](http://cds.cern.ch/record/2239914)
-2. http://inspirehep.net/record/1632245/files/fulltext.pdf
-3. https://indico.cern.ch/event/468486/contributions/1144322/attachments/1240303/1823447/PAspell_ACES2016.pdf
+1. Development of the DAQ System of Triple-GEM Detectors for the CMS Muon Spectrometer Upgrade at LHC, PhD Thesis, Lenzi, Thomas and De Lentdecker, Gilles, [CERN-THESIS-2016-215](https://cds.cern.ch/record/2239914)
+2. https://inspirehep.net/record/1632245/files/fulltext.pdf
+3. ACES 2016 material on XDAQ and GEM DAQ topics: https://indico.cern.ch/event/468486/
 4. https://indico.cern.ch/event/608587/contributions/2614200/attachments/1522303/2378769/GE11-TWEPP17-v2.0.pdf
 5. https://iopscience.iop.org/article/10.1088/1748-0221/12/02/P02003/pdf
 
@@ -169,8 +166,8 @@ Reference: [https://twiki.cern.ch/twiki/bin/view/CMS/MuonGEMBackend#CMS_GEM_Back
 # Some materials to read
 
 1. CTP7 module github readme: [https://github.com/cms-gem-daq-project/ctp7_modules/blob/develop/README.md](https://github.com/cms-gem-daq-project/ctp7_modules/blob/develop/README.md)
-1. GEM electronics user guide: [https://github.com/cms-gem-daq-project/sw_utils/blob/develop/v3ElectronicsUserGuide.md](https://github.com/cms-gem-daq-project/sw_utils/blob/develop/v3ElectronicsUserGuide.md)
-1. GBT SCA user manual: [https://espace.cern.ch/GBT-Project/GBT-SCA/Manuals/GBT-SCA-UserManual.pdf](https://espace.cern.ch/GBT-Project/GBT-SCA/Manuals/GBT-SCA-UserManual.pdf)
+1. GEM electronics user guide: consult the current CMS GEM DAQ project documentation.
+1. GBT SCA user manual: historical CERN Espace location, which is no longer publicly reachable.
 1. FW docs:
    1. CTP7 v3 Address Table : [https://www.dropbox.com/s/r1vic58oh12t9i3/table_ctp7.pdf?dl=0](https://www.dropbox.com/s/r1vic58oh12t9i3/table_ctp7.pdf?dl=0)
    2. Optohybrid v3 Address Table : [https://www.dropbox.com/s/qb3i2omxjba0ug3/table_oh.pdf?dl=0](https://www.dropbox.com/s/qb3i2omxjba0ug3/table_oh.pdf?dl=0)
@@ -261,9 +258,7 @@ Reference: - Email from Evaldas Juska forwarded by Brian Dorney - Subject of ema
    exact part number of the PT100 sensor we are using is P0K1.1206.2P.B,
    which has a resistance of 100 Ohms at 0 deg C, and changes by 0.385% per
    each degree C cumulatively (more info can be found here:
-   http://www.farnell.com/datasheets/2207165.pdf?_ga=2.247382788.1064362929.1535377707-998824428.1535377707
-   and here:
-   https://www.intech.co.nz/products/temperature/typert/RTD-Pt100-Conversion.pdf).
+   a vendor datasheet and a PT100 temperature conversion table).
    This means that at 0 deg C the voltage drop over the PT100 will be 100uA
    * 100 Ohms = 10mV, so the ADC will read 1.0V - 10mV = 0.99V, and if the
    temperature is 30 degC, the PT100 will have a resistance of 111.67 Ohms,

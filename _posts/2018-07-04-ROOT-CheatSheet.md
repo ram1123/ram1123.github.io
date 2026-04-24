@@ -24,7 +24,7 @@ giscus_comments: true
 
 # quickly inspect root file
 
-https://root.cern.ch/how/how-quickly-inspect-content-file
+https://root.cern/manual/io/
 
 # Check if ROOT file is not corrupt
 
@@ -493,6 +493,6 @@ Reference: [https://root-forum.cern.ch/t/decimal-precision-with-text-drawing-opt
 
 # Some tutorial link
 
-1. Best tutorial: [https://www-zeuthen.desy.de/~middell/\_downloads/pyroot.pdf](https://www-zeuthen.desy.de/~middell/_downloads/pyroot.pdf)
-2. [https://wiki-zeuthen.desy.de/LCInfo/PythonExamples](https://wiki-zeuthen.desy.de/LCInfo/PythonExamples)
+1. Best tutorial: [ROOT Python interface documentation](https://root.cern/manual/python/)
+2. [PyROOT class reference](https://root.cern/doc/master/group__Pythonizations.html)
 3. C++ : Tip of weekL: [http://wlav.web.cern.ch/wlav/ctotw/](http://wlav.web.cern.ch/wlav/ctotw/)

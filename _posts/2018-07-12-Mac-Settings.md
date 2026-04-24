@@ -20,7 +20,7 @@ last_modified_at: 2024-05-04
 
 ...
 2. [Zoom](https://cern.zoom.us/download)
-3. Download Mac `self service` from CERN: [link](https://devices.docs.cern.ch/devices/mac/MacSelfService/). This will be download in background once you enroll and install proper certificates. Then from self-service one can install following software:
+3. Download Mac `self service` from CERN from the current CERN Devices documentation portal. This will be downloaded in the background once you enroll and install the proper certificates. Then from self-service one can install the following software:
    1. xquartz (needed for visulations, as Mac OSX does not come with an X11 server installed.)
    2. cernbox app
    3. Mattermost app
@@ -92,7 +92,7 @@ last_modified_at: 2024-05-04
 
     A script to download many youtube videos in one go is placed here: [link](https://gist.github.com/ram1123/7534f07e6904bb24bfa85bc87e76d2f7)
 
-11. Antivirus for mac: [https://devices.docs.cern.ch/pss/eset/](https://devices.docs.cern.ch/pss/eset/)
+11. Antivirus for mac: check the current CERN Devices documentation portal for the latest ESET installation instructions.
 
 # Some other settings
 
@@ -110,7 +110,7 @@ last_modified_at: 2024-05-04
 
 ## HOW TO MAKE A BOOTABLE USB STICK FROM AN ISO FILE ON AN APPLE MAC OS X
 
-Reference: [https://www.lewan.com/blog/2012/02/10/making-a-bootable-usb-stick-on-an-apple-mac-os-x-from-an-iso](https://www.lewan.com/blog/2012/02/10/making-a-bootable-usb-stick-on-an-apple-mac-os-x-from-an-iso)
+Reference: historical notes on creating a bootable USB stick from an ISO on macOS.
 
 ## ROOT installation using homebrew
 

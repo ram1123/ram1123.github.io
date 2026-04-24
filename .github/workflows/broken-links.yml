@@ -49,4 +49,22 @@ jobs:
         with:
           fail: true
           # removed md files that include liquid tags
-          args: --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --verbose --no-progress './**/*.md' './**/*.html'
+          args: >-
+            --exclude-path README.md
+            --exclude-path _pages/404.md
+            --exclude-path _pages/blog.md
+            --exclude-path _posts/2018-12-22-distill.md
+            --exclude 'https://mediastream.cern.ch/.*'
+            --exclude 'https://www.gnu.org/software/.*'
+            --exclude 'https://www.hep.phy.cam.ac.uk/.*'
+            --exclude 'http://www.hep.phy.cam.ac.uk/.*'
+            --exclude 'https://cp3.irmp.ucl.ac.be/.*'
+            --exclude 'http://feynrules.irmp.ucl.ac.be/.*'
+            --exclude 'https://mirror.hmc.edu/.*'
+            --exclude 'http://www.rrcat.gov.in/.*'
+            --max-retries 3
+            --retry-wait-time 2
+            --timeout 20
+            --verbose
+            --no-progress
+            './**/*.md' './**/*.html'

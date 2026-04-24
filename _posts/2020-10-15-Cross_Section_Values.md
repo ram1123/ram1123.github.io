@@ -38,8 +38,8 @@ related_posts: false
 
 # Other Standard Cross-Section Plots
 
-- Parton luminosity and cross section plots by James Stirling, Imperial College London: [http://www.hep.ph.ic.ac.uk/~wstirlin/plots/plots.html](http://www.hep.ph.ic.ac.uk/~wstirlin/plots/plots.html)
-  Example: ![lhcgrid13](http://www.hep.ph.ic.ac.uk/~wstirlin/plots/lhcgrid13.jpg)
+- Parton luminosity and cross section plots by James Stirling, Imperial College London.
+  Example figure link appears to have moved from its original hosting.
 
 # Others
 

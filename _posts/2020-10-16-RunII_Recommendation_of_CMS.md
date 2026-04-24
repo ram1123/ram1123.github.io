@@ -94,7 +94,7 @@ last_modified_at: 2022-05-11
 
 Few good slides:
 
-1. [http://nnpdf.mi.infn.it/wp-content/uploads/2018/09/MUbiali_CERN_112016.pdf](http://nnpdf.mi.infn.it/wp-content/uploads/2018/09/MUbiali_CERN_112016.pdf)
+1. M. Ubiali slides on PDFs for LHC physics (historical reference; the original hosted PDF appears to have moved).
 1. PDFs for LHC Physics: [https://indico.fnal.gov/event/24574/contributions/118019/attachments/76683/91877/huston_anl_2017.pdf](https://indico.fnal.gov/event/24574/contributions/118019/attachments/76683/91877/huston_anl_2017.pdf)
 
 
@@ -108,7 +108,7 @@ Few good slides:
 
    Reference:
 
-   1. [https://hypernews.cern.ch/HyperNews/CMS/get/physTools/3813/1.html](https://hypernews.cern.ch/HyperNews/CMS/get/physTools/3813/1.html)
+   1. Historical CMS HyperNews discussion on MiniAOD campaigns (requires CMS access).
 
 
 1. Difference between `Summer19` and `Summer20` campaign?
@@ -145,7 +145,7 @@ Few good slides:
    For more information check the following references:
 
    1. [https://twiki.cern.ch/twiki/bin/view/CMS/JetMET](https://twiki.cern.ch/twiki/bin/view/CMS/JetMET)
-   1. [https://hypernews.cern.ch/HyperNews/CMS/get/JetMET/2000.html](https://hypernews.cern.ch/HyperNews/CMS/get/JetMET/2000.html)
+   1. Historical CMS HyperNews discussion on JetMET recommendations (requires CMS access).
    1. [https://twiki.cern.ch/twiki/bin/viewauth/CMS/ExoPreapprovalChecklist](https://twiki.cern.ch/twiki/bin/viewauth/CMS/ExoPreapprovalChecklist)
    1. [https://indico.cern.ch/event/1001783/contributions/4211420/attachments/2180698/3683527/HEMIssueCHeck_3l_channel.pdf](https://indico.cern.ch/event/1001783/contributions/4211420/attachments/2180698/3683527/HEMIssueCHeck_3l_channel.pdf)
 

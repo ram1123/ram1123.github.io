@@ -65,4 +65,4 @@ To clean the viton o-ring just warm it in the vacuum chamber.
 
 Reference:
 
-1. [https://mattermost.web.cern.ch/files/rhshysh41iy3dfcwhhpn8xd9cc/public?h=wpqrqrFjrApQoBZN8MndlNdUQHWR34Y1zlREqmyiWjo](https://mattermost.web.cern.ch/files/rhshysh41iy3dfcwhhpn8xd9cc/public?h=wpqrqrFjrApQoBZN8MndlNdUQHWR34Y1zlREqmyiWjo)
+1. The detector reference images used in this section are stored locally under `assets/GEM/`.
