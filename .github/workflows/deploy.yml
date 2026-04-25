@@ -7,11 +7,13 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_sass/**"
       - "**.html"
       - "**.js"
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "purgecss.config.js"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -31,11 +33,13 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_sass/**"
       - "**.html"
       - "**.js"
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "purgecss.config.js"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
