@@ -3,10 +3,19 @@ module.exports = {
   css: ["_site/assets/css/*.css"],
   output: "_site/assets/css/",
   skippedContentGlobs: ["_site/assets/**/*.html"],
-  safelist: [
-    "home-highlight",
-    "home-highlight__label",
-    "home-highlight__grid",
-    "home-highlight__card",
-  ],
+  safelist: {
+    standard: [
+      /^home-highlight/,
+      /^blog-tools/,
+      /^topic-chip/,
+      /^post-taxonomy/,
+      /^post-chip/,
+      /^repo-/,
+      /^teaching-/,
+      "post-list__item",
+      "projects",
+      "card-item",
+      "grid-item",
+    ],
+  },
 };
