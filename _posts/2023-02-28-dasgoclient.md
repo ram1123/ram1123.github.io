@@ -2,7 +2,7 @@
 layout: post
 title: "dasgoclient"
 date: 2023-02-28
-categories: dasgoclient, cms
+categories: [dasgoclient, cms]
 giscus_comments: true
 ---
 

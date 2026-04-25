@@ -2,7 +2,7 @@
 layout: post
 title: "matplotlib"
 date: 2021-06-02
-categories: python, matplotlib
+categories: [python, matplotlib]
 giscus_comments: true
 ---
 
