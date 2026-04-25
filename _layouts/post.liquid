@@ -22,38 +22,44 @@ layout: default
       {% if page.author %}• {{ page.author }}{% endif %}
       {% if page.meta %}• {{ page.meta }}{% endif %}
     </p>
-    <p class="post-tags">
-      {% if url_beginning == '/blog/' %}
-        <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
-      {% else %}
-        <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
-      {% endif %}
+    <div class="post-taxonomy">
+      <div class="post-taxonomy__group">
+        {% if url_beginning == '/blog/' %}
+          <a class="post-chip post-chip--year" href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
+            <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
+          </a>
+        {% else %}
+          <span class="post-chip post-chip--year"><i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</span>
+        {% endif %}
+      </div>
       {% if tags != '' %}
-        &nbsp; &middot; &nbsp;
-        {% for tag in page.tags %}
-          {% if url_beginning == '/blog/' %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-            &nbsp;
-          {% else %}
-            <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }} &nbsp;
-          {% endif %}
-        {% endfor %}
+        <div class="post-taxonomy__group">
+          {% for tag in page.tags %}
+            {% if url_beginning == '/blog/' %}
+              <a class="post-chip" href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
+                <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
+              </a>
+            {% else %}
+              <span class="post-chip"><i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</span>
+            {% endif %}
+          {% endfor %}
+        </div>
       {% endif %}
 
       {% if categories != '' %}
-        &nbsp; &middot; &nbsp;
-        {% for category in page.categories %}
-          {% if url_beginning == '/blog/' %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category -}}
-            </a>
-            &nbsp;
-          {% else %}
-            <i class="fa-solid fa-tag fa-sm"></i> {{ category }} &nbsp;
-          {% endif %}
-        {% endfor %}
+        <div class="post-taxonomy__group">
+          {% for category in page.categories %}
+            {% if url_beginning == '/blog/' %}
+              <a class="post-chip post-chip--category" href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
+                <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
+              </a>
+            {% else %}
+              <span class="post-chip post-chip--category"><i class="fa-solid fa-tag fa-sm"></i> {{ category }}</span>
+            {% endif %}
+          {% endfor %}
+        </div>
       {% endif %}
-    </p>
+    </div>
   </header>
 
   <article class="post-content">
