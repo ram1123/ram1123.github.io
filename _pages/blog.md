@@ -35,22 +35,17 @@ pagination:
     <ul class="p-0 m-0">
       {% for tag in site.display_tags %}
         <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+          <a class="topic-chip" href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">
+            <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
+          </a>
         </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
       {% endfor %}
-      {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
-        <p>&bull;</p>
-      {% endif %}
       {% for category in site.display_categories %}
         <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+          <a class="topic-chip topic-chip--category" href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
+            <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
+          </a>
         </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
       {% endfor %}
     </ul>
   </div>
@@ -101,6 +96,14 @@ pagination:
 
 {% endif %}
 
+  <div class="blog-tools" aria-label="Blog filters">
+    <div class="blog-tools__search">
+      <label class="sr-only" for="blog-search">Search blog posts</label>
+      <input id="blog-search" class="blog-tools__input" type="search" placeholder="Search posts by title, description, tag, or category">
+    </div>
+    <p id="blog-results-count" class="blog-tools__count" aria-live="polite"></p>
+  </div>
+
   <ul class="post-list">
 
     {% if page.pagination.enabled %}
@@ -120,7 +123,13 @@ pagination:
     {% assign tags = post.tags | join: "" %}
     {% assign categories = post.categories | join: "" %}
 
-    <li>
+    <li
+      class="post-list__item"
+      data-search-title="{{ post.title | downcase | escape }}"
+      data-search-description="{{ post.description | default: '' | strip_html | downcase | escape }}"
+      data-search-tags="{{ post.tags | join: ' ' | downcase | escape }}"
+      data-search-categories="{{ post.categories | join: ' ' | downcase | escape }}"
+    >
 
 {% if post.thumbnail %}
 
@@ -147,26 +156,31 @@ pagination:
         &nbsp; &middot; &nbsp; {{ post.external_source }}
         {% endif %}
       </p>
-      <p class="post-tags">
-        <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
-          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
-
-          {% if tags != "" %}
-          &nbsp; &middot; &nbsp;
+      <div class="post-taxonomy">
+        <div class="post-taxonomy__group">
+          <a class="post-chip post-chip--year" href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
+            <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
+          </a>
+        </div>
+        {% if tags != "" %}
+          <div class="post-taxonomy__group">
             {% for tag in post.tags %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a> &nbsp;
-              {% endfor %}
-          {% endif %}
-
-          {% if categories != "" %}
-          &nbsp; &middot; &nbsp;
+              <a class="post-chip" href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
+                <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
+              </a>
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% if categories != "" %}
+          <div class="post-taxonomy__group">
             {% for category in post.categories %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a> &nbsp;
-              {% endfor %}
-          {% endif %}
-    </p>
+              <a class="post-chip post-chip--category" href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
+                <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
+              </a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
 
 {% if post.thumbnail %}
 
@@ -188,3 +202,39 @@ pagination:
 {% endif %}
 
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById("blog-search");
+    const resultCount = document.getElementById("blog-results-count");
+    const posts = Array.from(document.querySelectorAll(".post-list__item"));
+
+    if (!searchInput || !resultCount || posts.length === 0) return;
+
+    const updateResults = () => {
+      const query = searchInput.value.trim().toLowerCase();
+      let visible = 0;
+
+      posts.forEach((post) => {
+        const haystack = [
+          post.dataset.searchTitle || "",
+          post.dataset.searchDescription || "",
+          post.dataset.searchTags || "",
+          post.dataset.searchCategories || "",
+        ].join(" ");
+
+        const matches = query === "" || haystack.includes(query);
+        post.style.display = matches ? "" : "none";
+        if (matches) visible += 1;
+      });
+
+      resultCount.textContent =
+        query === ""
+          ? `Showing ${visible} posts`
+          : `Showing ${visible} post${visible === 1 ? "" : "s"} for "${query}"`;
+    };
+
+    searchInput.addEventListener("input", updateResults);
+    updateResults();
+  });
+</script>

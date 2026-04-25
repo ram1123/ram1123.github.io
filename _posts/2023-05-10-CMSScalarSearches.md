@@ -2,7 +2,7 @@
 layout: post
 title: "Scalar search in CMS"
 date: 2023-05-10
-categories: scalar, cms
+categories: [scalar, cms]
 giscus_comments: true
 ---
 

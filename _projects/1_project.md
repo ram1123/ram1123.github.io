@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Non-resonant DiHiggs Analysis
-description: Searching for challenging signals in the di-Higgs channel
-img: assets/img/12.jpg
+title: Vector Boson Scattering and aQGC
+description: Semileptonic diboson measurements, anomalous gauge coupling constraints, and analysis leadership within CMS.
+img: assets/event_pic/HIG-19-003_v5.png
 importance: 1
-category: work
+category: analysis
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
+This project highlights my work on semileptonic vector boson scattering and anomalous quartic gauge coupling measurements in CMS. It includes analysis design, statistical interpretation, and the development of workflows that helped establish key physics results in challenging final states.

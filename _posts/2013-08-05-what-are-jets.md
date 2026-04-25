@@ -2,7 +2,7 @@
 layout: post
 title: "What are Jets?"
 date: 2013-08-05
-categories: physics, jet
+categories: [physics, jet]
 giscus_comments: true
 ---
 

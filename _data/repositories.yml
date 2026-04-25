@@ -1,10 +1,56 @@
+profile:
+  username: ram1123
+  title: Research Software and Analysis Repositories
+  summary: A curated selection of public repositories connected to CMS analysis workflows, simulation studies, and event processing utilities.
+  links:
+    - label: GitHub profile
+      url: https://github.com/ram1123
+    - label: ORCID
+      url: https://orcid.org/0000-0003-1181-1426
+    - label: Website
+      url: https://ram1123.github.io
+
 github_users:
   - ram1123
-  # - alshedivat
 
-github_repos:
-  - ram1123/nanoAOD_skim
-  - ram1123/CMS_FulllSimulation
-  - ram1123/CustomNanoAOD_HHWWgg
-  - ram1123/MadGraph_With_Condor
-  - ram1123/Fiducial_XS
+featured_repositories:
+  - repo: ram1123/nanoAOD_skim
+    title: NanoAOD Skimming Workflow
+    category: CMS analysis
+    description: Tools for reducing CMS NanoAOD datasets into focused analysis-ready skims for fast iteration and event selection studies.
+    stack:
+      - Python
+      - NanoAOD
+      - CMS
+  - repo: ram1123/CMS_FulllSimulation
+    title: CMS Full Simulation Notes
+    category: Simulation
+    description: Utilities and notes connected to CMS full-simulation workflows, with an emphasis on practical setup and reproducibility.
+    stack:
+      - CMSSW
+      - Geant4
+      - Simulation
+  - repo: ram1123/CustomNanoAOD_HHWWgg
+    title: Custom NanoAOD for HH to WWgg
+    category: Higgs analysis
+    description: Custom NanoAOD content and processing logic for di-Higgs studies in the HH to WWgg final state.
+    stack:
+      - CMSSW
+      - HHWWgg
+      - NanoAOD
+  - repo: ram1123/MadGraph_With_Condor
+    title: MadGraph with Condor
+    category: Event generation
+    description: A practical setup for running MadGraph production and related Monte Carlo tasks on Condor-based batch systems.
+    stack:
+      - MadGraph
+      - Condor
+      - Batch systems
+  - repo: ram1123/Fiducial_XS
+    title: Fiducial Cross-Section Studies
+    category: Higgs analysis
+    description: Analysis code and utilities related to fiducial cross-section measurements and interpretation workflows.
+    stack:
+      - Python
+      - ROOT
+      - Cross sections
