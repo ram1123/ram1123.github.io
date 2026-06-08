@@ -2,9 +2,10 @@
 layout: post
 title: "Latex Commands"
 date: 2018-05-25
-tag: latex
-categories: MarkupLanguage
+tags: latex
+categories: programming
 giscus_comments: true
+description: "A practical LaTeX tutorial covering document structure, equations, figures, and bibliography management."
 ---
 
 # Table of Contents

@@ -5,6 +5,7 @@ date: 2018-07-04
 categories: programming
 tags: root cpp pyroot
 giscus_comments: true
+description: "Cheat sheet for ROOT and PyROOT — histograms, trees, fitting, and common analysis patterns."
 ---
 
 # Table of Contents

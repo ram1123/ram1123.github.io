@@ -2,8 +2,9 @@
 layout: post
 title: "List of General Public Lectures"
 date: 2020-05-21
-categories: particle-physics public
+categories: physics
 giscus_comments: true
+description: "Links to public lectures and outreach talks on particle physics for a general audience."
 ---
 
 # Table of Contents

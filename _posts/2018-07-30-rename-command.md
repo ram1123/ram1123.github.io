@@ -2,9 +2,10 @@
 layout: post
 title: "rename multiple files"
 date: 2018-07-30
-categories: bash linux shell-programming
+categories: programming
 tags: rename
 giscus_comments: true
+description: "Using the `rename` command in Linux to batch-rename files with Perl-style regex patterns."
 ---
 
 # Table of Contents

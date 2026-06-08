@@ -2,8 +2,10 @@
 layout: post
 title: "matplotlib"
 date: 2021-06-02
-categories: [python, matplotlib]
+categories: programming
+tags: python matplotlib
 giscus_comments: true
+description: "Matplotlib tips and recipes for making publication-quality plots in Python."
 ---
 
 # Table of Contents

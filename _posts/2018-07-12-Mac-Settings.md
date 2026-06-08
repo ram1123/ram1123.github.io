@@ -2,10 +2,11 @@
 layout: post
 title: "Mac Settings"
 date: 2018-07-12
-categories: mac
+categories: tools
 tags: mac
 giscus_comments: true
 last_modified_at: 2024-05-04
+description: "macOS configuration tips and productivity settings useful for a research computing workflow."
 ---
 
 # Table of Contents

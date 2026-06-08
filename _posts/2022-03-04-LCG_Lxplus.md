@@ -6,6 +6,7 @@ categories: tools
 tags: cms LCG lxplus
 giscus_comments: true
 last_modified_at: 2022-03-04
+description: "Using LCG software environments on CERN's lxplus cluster for CMS analysis and ROOT workflows."
 ---
 
 # Table of Contents

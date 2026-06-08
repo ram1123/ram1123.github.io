@@ -2,10 +2,11 @@
 layout: post
 title: "Cross-Section Values"
 date: 2020-10-15
-categories: physics PhysicsAnalysis
+categories: physics
 tags: physics cms cross-section
 giscus_comments: true
 related_posts: false
+description: "Reference values for Standard Model production cross sections at 13 TeV — W, Z, top, Higgs, and diboson processes."
 ---
 
 # Table of Contents

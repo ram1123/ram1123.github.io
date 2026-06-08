@@ -6,6 +6,7 @@ categories: physics
 tags: physics particle-physics Wjets Zjets QCD VBS custodialSymmetry hadrons
 giscus_comments: true
 related_posts: false
+description: "A collection of useful physics facts and formulae covering W/Z+jets, QCD, VBS, and custodial symmetry."
 ---
 
 # Table of Contents

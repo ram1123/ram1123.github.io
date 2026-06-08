@@ -2,9 +2,10 @@
 layout: post
 title: "Bash Shell"
 date: 2019-10-04
-categories: bash shell programming
+categories: programming
 tags: bash
 giscus_comments: true
+description: "Comprehensive bash scripting reference — variables, loops, functions, pipes, and common shell patterns."
 ---
 
 # Table of Contents

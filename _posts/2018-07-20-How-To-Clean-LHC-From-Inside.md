@@ -2,9 +2,10 @@
 layout: post
 title: "How To Clean LHC"
 date: 2018-07-20
-categories: physics lhc
+categories: physics
 tags: lhc particle-physics
 giscus_comments: true
+description: "A fun look at how the LHC beam pipe is kept clean and maintained."
 ---
 
 # Table of Contents

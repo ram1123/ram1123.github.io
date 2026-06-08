@@ -2,9 +2,10 @@
 layout: post
 title: "TMVA CheatSheet"
 date: 2018-07-04
-categories: tools programming
+categories: [programming, tools]
 tags: root cpp pyroot tmva tools
 giscus_comments: true
+description: "Cheat sheet for TMVA — training and evaluating multivariate classifiers in ROOT for particle physics analysis."
 ---
 
 # Table of Contents

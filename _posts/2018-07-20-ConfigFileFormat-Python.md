@@ -5,6 +5,7 @@ date: 2018-07-20
 categories: programming
 tags: python yaml
 giscus_comments: true
+description: "Working with configuration files in Python — INI, YAML, and JSON formats with practical examples."
 ---
 
 # Table of Contents

@@ -6,6 +6,7 @@ tags: svn cms
 categories: tools
 giscus_comments: true
 last_modified_at: 2023-02-06
+description: "How to write a CMS Analysis Note (AN) — structure, tools, SVN workflow, and submission steps."
 ---
 
 # Table of Contents

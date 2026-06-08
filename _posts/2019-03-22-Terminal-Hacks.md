@@ -2,8 +2,9 @@
 layout: post
 title: "Terminal Hacks"
 date: 2019-03-22
-categories: [terminal, bash]
+categories: programming
 giscus_comments: true
+description: "Useful terminal tricks and shell customisations to speed up everyday command-line work."
 ---
 
 # Table of Contents

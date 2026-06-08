@@ -2,8 +2,9 @@
 layout: post
 title: "Articles related to our health"
 date: 2018-07-19
-categories: health
+categories: tools
 giscus_comments: true
+description: "Notes on health, ergonomics, and wellbeing for researchers who spend long hours at a computer."
 ---
 
 # Table of Contents

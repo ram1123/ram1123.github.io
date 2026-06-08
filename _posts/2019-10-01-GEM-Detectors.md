@@ -3,9 +3,10 @@ layout: post
 title: "GEM Detectors"
 date: 2019-10-01
 tags: gem detector GE11
-categories: detector
+categories: physics
 giscus_comments: true
 last_modified_at: 2019-10-01
+description: "Overview of Gas Electron Multiplier (GEM) detectors — operating principles, construction, and use in the CMS muon upgrade (GE1/1)."
 ---
 
 # Table of Contents

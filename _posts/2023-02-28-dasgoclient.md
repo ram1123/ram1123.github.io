@@ -2,8 +2,9 @@
 layout: post
 title: "dasgoclient"
 date: 2023-02-28
-categories: [dasgoclient, cms]
+categories: tools
 giscus_comments: true
+description: "Using the DAS (Data Aggregation System) command-line client to query CMS datasets and file lists."
 ---
 
 # Table of Contents

@@ -5,6 +5,7 @@ date: 2019-09-10
 categories: physics
 tags: accelerator
 giscus_comments: true
+description: "Notes on particle accelerator physics — beam optics, synchrotrons, and LHC operation."
 ---
 
 # Table of Contents

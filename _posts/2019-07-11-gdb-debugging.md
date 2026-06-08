@@ -2,8 +2,9 @@
 layout: post
 title: "Debugging tool: GDB"
 date: 2019-07-11
-categories: gdb cpp root
+categories: programming
 giscus_comments: true
+description: "Using GDB to debug C++ programs — breakpoints, stack traces, watchpoints, and ROOT/CMSSW workflows."
 ---
 
 # Table of Contents

@@ -4,6 +4,7 @@ title: "Scale & PDF uncertainties"
 date: 2020-07-07
 categories: mc-generators
 giscus_comments: true
+description: "How to evaluate QCD scale and PDF uncertainties in Monte Carlo event generators for CMS analyses."
 ---
 
 # Table of Contents

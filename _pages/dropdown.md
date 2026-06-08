@@ -1,16 +1,15 @@
 ---
 layout: page
-title: more
+title: explore
 nav: true
 nav_order: 8
 dropdown: true
 children:
-  - title: news
+  - title: news & updates
     permalink: /news/
   - title: divider
-  - title: tags
+  - title: blog by tag
     permalink: /blog/tag/
-  - title: divider
-  - title: categories
+  - title: blog by category
     permalink: /blog/category/
 ---

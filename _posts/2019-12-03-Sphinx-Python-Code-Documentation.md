@@ -6,6 +6,7 @@ categories: tools
 tags: sphinx docGenerator
 giscus_comments: true
 last_modified_at: 2022-04-28
+description: "How to document Python code with Sphinx — autodoc, RST format, and publishing to Read the Docs."
 ---
 
 # Table of Contents

@@ -4,6 +4,7 @@ title: "Electroweak correction"
 date: 2019-12-08
 categories: physics
 giscus_comments: true
+description: "Notes on electroweak radiative corrections — loop contributions, renormalisation, and their impact on precision observables."
 ---
 
 # Table of Contents

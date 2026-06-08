@@ -2,9 +2,10 @@
 layout: post
 title: "Negative Weight Treatment (Madgraph)"
 date: 2020-05-21
-categories: PhysicsAnalysis
+categories: physics
 tags: cms madgraph PhysicsAnalysis GenWeight
 giscus_comments: true
+description: "How to handle negative-weight events in MadGraph — generator-level treatment and its effect on analysis yields."
 ---
 
 # Table of Contents

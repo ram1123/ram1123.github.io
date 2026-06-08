@@ -2,10 +2,11 @@
 layout: post
 title: "Gaseous Detector: Important Points"
 date: 2019-03-22
-categories: detector physics
+categories: physics
 tags: gem detector physics
 giscus_comments: true
 related_posts: false
+description: "Key concepts and important points in gaseous detector physics — ionisation, drift, amplification, and GEM technology."
 ---
 
 # Table of Contents

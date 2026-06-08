@@ -2,8 +2,9 @@
 layout: post
 title: "Matching & Merging (MadGraph)"
 date: 2020-06-03
-categories: madgraph matching merging
+categories: mc-generators
 giscus_comments: true
+description: "Understanding MLM and CKKW matching and merging schemes in MadGraph for multi-jet Monte Carlo production."
 ---
 
 # Table of Contents

@@ -5,6 +5,7 @@ date: 2018-05-25
 categories: physics
 tags: particle-physics links PhysicsForPublic accelerators
 giscus_comments: true
+description: "A curated collection of resources explaining particle physics to a general audience — accelerators, detectors, and the Standard Model."
 ---
 
 # Table of Contents

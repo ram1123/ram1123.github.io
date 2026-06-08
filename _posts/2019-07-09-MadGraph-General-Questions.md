@@ -2,8 +2,9 @@
 layout: post
 title: "MadGraph: General Questions"
 date: 2019-07-09
-categories: monte-carlo madgraph
+categories: mc-generators
 giscus_comments: true
+description: "Answers to common questions about MadGraph — process syntax, matching schemes, and troubleshooting."
 ---
 
 # Table of Contents

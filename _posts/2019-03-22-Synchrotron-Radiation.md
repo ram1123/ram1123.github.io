@@ -5,6 +5,7 @@ title: "Synchrotron Radiation"
 date: 2019-03-22
 categories: physics
 tags: particle-physics Synchrotron-radiation
+description: "Overview of synchrotron radiation — emission from relativistic charged particles and its role in accelerator physics."
 ---
 
 # Table of Contents
