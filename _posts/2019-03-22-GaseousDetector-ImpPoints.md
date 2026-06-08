@@ -2,7 +2,7 @@
 layout: post
 title: "Gaseous Detector: Important Points"
 date: 2019-03-22
-categories: detector physics
+categories: physics
 tags: gem detector physics
 giscus_comments: true
 related_posts: false

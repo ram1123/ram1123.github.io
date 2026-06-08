@@ -2,7 +2,7 @@
 layout: post
 title: "Matching & Merging (MadGraph)"
 date: 2020-06-03
-categories: madgraph matching merging
+categories: mc-generators
 giscus_comments: true
 ---
 

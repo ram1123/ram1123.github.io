@@ -2,7 +2,7 @@
 layout: post
 title: "Terminal multiplexer (screen/tmux)"
 date: 2018-09-01
-categories: bash linux shell-programming
+categories: programming
 tags: screen tmux
 giscus_comments: true
 ---

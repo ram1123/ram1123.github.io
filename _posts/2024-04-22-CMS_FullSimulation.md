@@ -2,7 +2,7 @@
 layout: post
 title: "CMS Full Detector Simulations based on mccm chain"
 date: 2024-04-22
-categories: physics cms HEPAnalysis simulation
+categories: physics
 tags: simulation
 giscus_comments: true
 last_modified_at: 2024-04-22

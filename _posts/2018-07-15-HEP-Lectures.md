@@ -3,7 +3,7 @@ layout: post
 title: "List of Lectures"
 date: 2018-07-15
 tags: particle-physics lectures
-categories: physics lectures
+categories: physics
 giscus_comments: true
 ---
 

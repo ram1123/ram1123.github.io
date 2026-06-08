@@ -3,7 +3,7 @@ layout: post
 title: "Images Related to CERN"
 date: 2018-07-10
 tags: particle-physics images cms cern lhc
-categories: images
+categories: physics
 giscus_comments: true
 last_modified_at: 2022-09-05
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "rename multiple files"
 date: 2018-07-30
-categories: bash linux shell-programming
+categories: programming
 tags: rename
 giscus_comments: true
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "Condor Jobs"
 date: 2018-07-10
-categories: cms tools
+categories: tools
 tags: condor
 giscus_comments: true
 last_modified_at: 2022-11-11

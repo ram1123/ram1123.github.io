@@ -2,7 +2,7 @@
 layout: post
 title: "Feynman Diagram"
 date: 2018-06-14
-categories: MarkupLanguage
+categories: programming
 tags: latex FeynmanDiagram
 giscus_comments: true
 ---

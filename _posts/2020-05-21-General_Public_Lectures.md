@@ -2,7 +2,7 @@
 layout: post
 title: "List of General Public Lectures"
 date: 2020-05-21
-categories: particle-physics public
+categories: physics
 giscus_comments: true
 ---
 

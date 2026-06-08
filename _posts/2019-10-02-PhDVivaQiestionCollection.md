@@ -3,7 +3,7 @@ layout: post
 title: "Collection of Questions from PhD Viva"
 date: 2019-10-02
 tags: phdViva
-categories: questions
+categories: physics
 giscus_comments: true
 last_modified_at: 2019-10-02
 ---

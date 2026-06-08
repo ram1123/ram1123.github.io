@@ -2,8 +2,8 @@
 layout: post
 title: "Latex Commands"
 date: 2018-05-25
-tag: latex
-categories: MarkupLanguage
+tags: latex
+categories: programming
 giscus_comments: true
 ---
 

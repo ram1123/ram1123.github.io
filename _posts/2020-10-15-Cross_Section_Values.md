@@ -2,7 +2,7 @@
 layout: post
 title: "Cross-Section Values"
 date: 2020-10-15
-categories: physics PhysicsAnalysis
+categories: physics
 tags: physics cms cross-section
 giscus_comments: true
 related_posts: false

@@ -2,7 +2,7 @@
 layout: post
 title: "PPT with plots in one click"
 date: 2018-09-01
-categories: scripts
+categories: tools
 tags: ppt-script
 giscus_comments: true
 ---

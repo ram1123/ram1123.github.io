@@ -2,7 +2,7 @@
 layout: post
 title: "Articles related to our health"
 date: 2018-07-19
-categories: health
+categories: tools
 giscus_comments: true
 ---
 

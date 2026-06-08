@@ -2,7 +2,7 @@
 layout: post
 title: "Beam Dynamics Basics"
 date: 2019-09-22
-categories: beam lhc
+categories: physics
 giscus_comments: true
 ---
 

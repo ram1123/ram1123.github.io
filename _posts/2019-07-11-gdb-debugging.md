@@ -2,7 +2,7 @@
 layout: post
 title: "Debugging tool: GDB"
 date: 2019-07-11
-categories: gdb cpp root
+categories: programming
 giscus_comments: true
 ---
 

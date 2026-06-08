@@ -207,34 +207,86 @@ pagination:
   document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("blog-search");
     const resultCount = document.getElementById("blog-results-count");
-    const posts = Array.from(document.querySelectorAll(".post-list__item"));
+    const paginatedList = document.querySelector(".post-list");
+    const pagination = document.querySelector(".pagination");
 
-    if (!searchInput || !resultCount || posts.length === 0) return;
+    if (!searchInput || !resultCount || !paginatedList) return;
 
-    const updateResults = () => {
+    // Container for full-index search results (injected next to the paginated list)
+    const searchResultsList = document.createElement("ul");
+    searchResultsList.className = "post-list";
+    searchResultsList.id = "search-results-list";
+    searchResultsList.style.display = "none";
+    paginatedList.parentNode.insertBefore(searchResultsList, paginatedList.nextSibling);
+
+    let allPosts = null; // cached after first fetch
+
+    const fetchIndex = () =>
+      fetch("{{ '/assets/json/posts_search.json' | relative_url }}")
+        .then((r) => r.json())
+        .then((data) => { allPosts = data; });
+
+    const renderPost = (post) => {
+      const li = document.createElement("li");
+      li.className = "post-list__item";
+      const tagHtml = post.tags
+        ? post.tags.split(" ").filter(Boolean).map(t =>
+            `<a class="post-chip" href="/blog/tag/${t}"><i class="fa-solid fa-hashtag fa-sm"></i> ${t}</a>`
+          ).join("")
+        : "";
+      const catHtml = post.categories
+        ? post.categories.split(" ").filter(Boolean).map(c =>
+            `<a class="post-chip post-chip--category" href="/blog/category/${c}"><i class="fa-solid fa-tag fa-sm"></i> ${c}</a>`
+          ).join("")
+        : "";
+      li.innerHTML = `
+        <h3><a class="post-title" href="${post.url}">${post.title}</a></h3>
+        ${post.description ? `<p>${post.description}</p>` : ""}
+        <p class="post-meta">${post.date}</p>
+        <div class="post-taxonomy">
+          ${tagHtml ? `<div class="post-taxonomy__group">${tagHtml}</div>` : ""}
+          ${catHtml ? `<div class="post-taxonomy__group">${catHtml}</div>` : ""}
+        </div>`;
+      return li;
+    };
+
+    const updateResults = async () => {
       const query = searchInput.value.trim().toLowerCase();
-      let visible = 0;
 
-      posts.forEach((post) => {
-        const haystack = [
-          post.dataset.searchTitle || "",
-          post.dataset.searchDescription || "",
-          post.dataset.searchTags || "",
-          post.dataset.searchCategories || "",
-        ].join(" ");
+      if (query === "") {
+        // Restore paginated view
+        paginatedList.style.display = "";
+        if (pagination) pagination.style.display = "";
+        searchResultsList.style.display = "none";
+        searchResultsList.innerHTML = "";
+        resultCount.textContent = "";
+        return;
+      }
 
-        const matches = query === "" || haystack.includes(query);
-        post.style.display = matches ? "" : "none";
-        if (matches) visible += 1;
+      // Lazy-load the index
+      if (!allPosts) {
+        try { await fetchIndex(); }
+        catch (e) { console.error("Could not load search index:", e); return; }
+      }
+
+      const matches = allPosts.filter((post) => {
+        const haystack = [post.title, post.description, post.tags, post.categories]
+          .join(" ").toLowerCase();
+        return haystack.includes(query);
       });
 
-      resultCount.textContent =
-        query === ""
-          ? `Showing ${visible} posts`
-          : `Showing ${visible} post${visible === 1 ? "" : "s"} for "${query}"`;
+      // Render results
+      searchResultsList.innerHTML = "";
+      matches.forEach((post) => searchResultsList.appendChild(renderPost(post)));
+
+      // Swap views
+      paginatedList.style.display = "none";
+      if (pagination) pagination.style.display = "none";
+      searchResultsList.style.display = "";
+
+      resultCount.textContent = `Showing ${matches.length} post${matches.length === 1 ? "" : "s"} for "${query}"`;
     };
 
     searchInput.addEventListener("input", updateResults);
-    updateResults();
   });
 </script>

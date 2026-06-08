@@ -3,7 +3,7 @@ layout: post
 title: "Machine Learning"
 date: 2018-05-25
 tags: machine-learning
-categories: machine-learning programming
+categories: programming
 giscus_comments: true
 ---
 

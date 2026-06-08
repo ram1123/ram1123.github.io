@@ -1,0 +1,204 @@
+{
+  "basics": {
+    "name": "Ram Krishna Sharma",
+    "label": "Postdoctoral Research Associate",
+    "email": "ram.krishna.sharma@cern.ch",
+    "url": "https://ram1123.github.io",
+    "summary": "Particle physicist at Purdue University working on Higgs physics, vector boson scattering, and precision electroweak measurements at the LHC. Research spans collider-physics analysis, detector development (GEM, HGCAL), and scientific software within the CMS Collaboration.",
+    "location": {
+      "city": "West Lafayette",
+      "region": "Indiana",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "ram1123",
+        "url": "https://github.com/ram1123"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "ram-krishna-sharma",
+        "url": "https://www.linkedin.com/in/ram-krishna-sharma"
+      },
+      {
+        "network": "ORCID",
+        "username": "0000-0003-1181-1426",
+        "url": "https://orcid.org/0000-0003-1181-1426"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "QZ2KRiEAAAAJ",
+        "url": "https://scholar.google.com/citations?user=QZ2KRiEAAAAJ"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Purdue University",
+      "position": "Postdoctoral Research Associate",
+      "url": "https://www.physics.purdue.edu/",
+      "startDate": "2025-01",
+      "summary": "Higgs boson physics, high-mass Higgs searches, and resonant di-Higgs production within CMS.",
+      "highlights": [
+        "Lead analyst for Higgs boson decay to muon pairs (H→μμ).",
+        "Main analyzer and contact person for high-mass Higgs search in ZZ→2l2q and 2l2ν (HIG-23-001).",
+        "Leading resonant Higgs pair search in WWγγ final state (B2G-24-010).",
+        "Assessing and improving high-pT muon performance."
+      ]
+    },
+    {
+      "name": "IHEP Beijing and CERN",
+      "position": "Postdoctoral Researcher",
+      "startDate": "2019-12",
+      "endDate": "2024-12",
+      "summary": "Higgs physics analyses, EGamma HLT coordination, and detector R&D within CMS.",
+      "highlights": [
+        "Main analyzer for non-resonant HH→WWγγ (fully hadronic channel); CMS-PAS-HIG-21-014.",
+        "Contributed to H→4l differential cross-section measurements; introduced n-jettiness observable.",
+        "Helped establish first CMS evidence for semileptonic WW/WZ vector boson scattering (4.4σ).",
+        "HGCAL sensor studies for HL-LHC upgrade.",
+        "Led CPPF data quality monitoring for CMS Level-1 trigger online DQM."
+      ]
+    },
+    {
+      "name": "CMS Collaboration",
+      "position": "Co-convener, EGamma HLT Group",
+      "startDate": "2020-10",
+      "endDate": "2022-08",
+      "highlights": [
+        "Optimized electron and photon HLT energy regression, identification, isolation, and data-to-simulation scale factors for Run-3."
+      ]
+    },
+    {
+      "name": "University of Delhi and CERN",
+      "position": "Ph.D. Student / Researcher",
+      "startDate": "2012-10",
+      "endDate": "2019-11",
+      "highlights": [
+        "Sole analyst for anomalous EW production search in semileptonic diboson final states, setting world-leading aQGC limits.",
+        "Contributed to CMS GE1/1 GEM upgrade: assembly, characterisation, beam tests, and alignment studies.",
+        "Corresponding author on first GEM foils produced in India."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Delhi",
+      "area": "High Energy Physics",
+      "studyType": "Ph.D.",
+      "startDate": "2012-08",
+      "endDate": "2019-10",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "University of Delhi",
+      "area": "Physics",
+      "studyType": "M.Sc. (First Division)",
+      "startDate": "2009",
+      "endDate": "2012"
+    },
+    {
+      "institution": "University of Delhi",
+      "area": "Physics (Honours)",
+      "studyType": "B.Sc. (First Division)",
+      "startDate": "2006",
+      "endDate": "2009"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Stairway to discovery: A report on the CMS programme of cross section measurements from millibarns to femtobarns",
+      "publisher": "Physics Reports",
+      "releaseDate": "2025",
+      "url": "https://doi.org/10.1016/j.physrep.2024.11.005",
+      "summary": "CMS Collaboration. Physics Reports 1115 (2025) 3–115."
+    },
+    {
+      "name": "Evidence for WW/WZ vector boson scattering in the decay channel lνqq produced in association with two jets",
+      "publisher": "Physics Letters B",
+      "releaseDate": "2022",
+      "url": "https://doi.org/10.1016/j.physletb.2022.137438",
+      "summary": "CMS Collaboration. Physics Letters B 834 (2022) 137438."
+    },
+    {
+      "name": "Measurements of inclusive and differential cross sections for Higgs boson production and decay to four leptons at √s = 13 TeV",
+      "publisher": "Journal of High Energy Physics",
+      "releaseDate": "2023",
+      "url": "https://doi.org/10.1007/JHEP08(2023)040",
+      "summary": "CMS Collaboration. JHEP 2023 (2023) 040."
+    }
+  ],
+  "awards": [
+    {
+      "title": "Fundamental Physics Special Recognition Award",
+      "date": "2015",
+      "awarder": "CMS Fundamental Physics Scholar Committee, CERN"
+    },
+    {
+      "title": "Senior Research Fellowship",
+      "date": "2014",
+      "awarder": "University Grant Commission, Government of India"
+    },
+    {
+      "title": "Junior Research Fellowship",
+      "date": "2012",
+      "awarder": "University Grant Commission, Government of India"
+    },
+    {
+      "title": "National Eligibility Test (NET) for Assistant Professorship",
+      "date": "2012",
+      "awarder": "Government of India"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming and tools",
+      "keywords": ["C/C++", "Python", "Shell scripting", "LaTeX", "Git", "GitHub", "CI/CD"]
+    },
+    {
+      "name": "Analysis and ML",
+      "keywords": ["ROOT", "RooFit", "Uproot", "TensorFlow", "Keras", "Pandas", "Scikit-learn", "NumPy", "Matplotlib"]
+    },
+    {
+      "name": "Physics software",
+      "keywords": ["MadGraph5_aMCatNLO", "PYTHIA", "VBFNLO"]
+    }
+  ],
+  "languages": [
+    { "language": "English", "fluency": "Fluent" },
+    { "language": "Hindi", "fluency": "Native" }
+  ],
+  "interests": [
+    {
+      "name": "Research",
+      "keywords": ["Higgs physics", "Vector boson scattering", "Effective field theory", "GEM detectors", "HGCAL", "Machine learning for HEP"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Vector Boson Scattering and aQGC",
+      "description": "Semileptonic diboson measurements and anomalous quartic gauge coupling constraints in CMS.",
+      "url": "https://ram1123.github.io/projects/1_project/"
+    },
+    {
+      "name": "Higgs and Di-Higgs Searches",
+      "description": "High-mass Higgs, H→μμ, and resonant/non-resonant Higgs pair production in the WWγγ channel.",
+      "url": "https://ram1123.github.io/projects/2_project/"
+    },
+    {
+      "name": "GEM Detector Development",
+      "description": "Detector R&D, beam tests, quality control, and hardware studies for GEM systems in CMS.",
+      "url": "https://ram1123.github.io/projects/3_project/"
+    },
+    {
+      "name": "Trigger and Detector Software",
+      "description": "HLT optimisation, DQM development, HGCAL studies, and software tooling for CMS workflows.",
+      "url": "https://ram1123.github.io/projects/4_project/"
+    }
+  ],
+  "volunteer": [],
+  "certificates": [],
+  "references": []
+}

@@ -2,7 +2,7 @@
 layout: post
 title: "Explore HLT Configuration Editor"
 date: 2019-04-09
-categories: [cms, HLT]
+categories: tools
 giscus_comments: true
 ---
 

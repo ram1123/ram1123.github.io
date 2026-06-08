@@ -2,7 +2,7 @@
 layout: post
 title: "Macbook Keynote Tricks"
 date: 2023-08-25
-categories: macbook presentation
+categories: tools
 tags: macbook presentation keynote
 giscus_comments: true
 last_modified_at: 2023-08-25
