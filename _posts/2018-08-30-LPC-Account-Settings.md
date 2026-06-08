@@ -5,6 +5,7 @@ date: 2018-08-30
 tags: lpc cluster settings
 categories: grid
 giscus_comments: true
+description: "Setting up and configuring an account at the LHC Physics Center (LPC) at Fermilab."
 ---
 
 # Table of Contents

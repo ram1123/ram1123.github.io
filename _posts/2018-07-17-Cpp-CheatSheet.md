@@ -5,6 +5,7 @@ date: 2018-07-17
 categories: programming
 tags: cpp
 giscus_comments: true
+description: "C++ quick reference covering classes, templates, STL containers, memory management, and modern C++ features."
 ---
 
 # Table of Contents

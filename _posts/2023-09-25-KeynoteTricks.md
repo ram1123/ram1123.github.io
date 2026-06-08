@@ -6,6 +6,7 @@ categories: tools
 tags: macbook presentation keynote
 giscus_comments: true
 last_modified_at: 2023-08-25
+description: "Useful Keynote tricks and shortcuts for making clean physics presentations on macOS."
 ---
 
 # Table of Contents

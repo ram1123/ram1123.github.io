@@ -6,6 +6,7 @@ categories: tools
 tags: git
 giscus_comments: true
 last_modified_at: 2022-09-05
+description: "Notes on setting up and customising a GitHub Pages site with Jekyll."
 ---
 
 # Table of Contents

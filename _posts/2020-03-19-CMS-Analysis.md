@@ -5,6 +5,7 @@ date: 2020-03-19
 categories: tools
 tags: cms physics-analysis
 giscus_comments: true
+description: "Overview of the CMS physics analysis workflow — NanoAOD, analysis frameworks, and best practices."
 ---
 
 # Table of Contents

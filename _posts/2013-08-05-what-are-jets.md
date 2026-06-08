@@ -4,6 +4,7 @@ title: "What are Jets?"
 date: 2013-08-05
 categories: physics
 giscus_comments: true
+description: "An introduction to jets in particle physics — how they form from quarks and gluons, and how they are reconstructed in collider experiments."
 ---
 
 # Table of Contents

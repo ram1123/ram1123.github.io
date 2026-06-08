@@ -5,6 +5,7 @@ date: 2018-09-01
 categories: tools
 tags: ppt-script
 giscus_comments: true
+description: "A script for automating PowerPoint presentation tasks from the command line."
 ---
 
 # Table of Contents

@@ -5,6 +5,7 @@ date: 2019-09-18
 tags: rf-cavity lhc accelerator
 categories: physics
 giscus_comments: true
+description: "Fundamentals of RF cavities — resonant modes, shunt impedance, and their role in particle acceleration."
 ---
 
 # Table of Contents

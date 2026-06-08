@@ -6,6 +6,7 @@ categories: mc-generators
 tags: mc-generators madgraph gridpack genproduction
 giscus_comments: true
 last_modified_at: 2022-11-11
+description: "How to generate gridpacks with MadGraph for CMS Monte Carlo production — setup, run cards, and submission."
 ---
 
 # Table of Contents

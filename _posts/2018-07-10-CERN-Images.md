@@ -6,6 +6,7 @@ tags: particle-physics images cms cern lhc
 categories: physics
 giscus_comments: true
 last_modified_at: 2022-09-05
+description: "A collection of images from CERN — the LHC, CMS detector, and experimental infrastructure."
 ---
 
 # Table of Contents

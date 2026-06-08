@@ -5,6 +5,7 @@ date: 2018-05-25
 tags: machine-learning
 categories: programming
 giscus_comments: true
+description: "Overview of machine learning concepts and resources relevant to physics analysis and data science."
 ---
 
 # Table of Contents

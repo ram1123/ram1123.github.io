@@ -5,6 +5,7 @@ date: 2018-07-19
 categories: statistics
 tags: statistics cms tools programming
 giscus_comments: true
+description: "Reference notes on statistical methods used in particle physics — hypothesis testing, p-values, CLs, and systematic uncertainties."
 ---
 
 # Table of Contents

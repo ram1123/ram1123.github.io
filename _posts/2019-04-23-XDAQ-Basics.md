@@ -5,6 +5,7 @@ date: 2019-04-23
 tags: gem daq
 categories: physics
 giscus_comments: true
+description: "Introduction to XDAQ — the CMS online data-acquisition framework used for detector readout and control."
 ---
 
 # Table of Contents

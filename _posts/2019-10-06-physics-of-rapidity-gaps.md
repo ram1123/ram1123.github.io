@@ -4,6 +4,7 @@ title: "Physics of Rapidity Gaps"
 date: 2019-10-06
 categories: physics
 giscus_comments: true
+description: "Notes on the physics of rapidity gaps in hadronic collisions and their role in diffractive and vector boson scattering processes."
 ---
 
 # Table of Contents

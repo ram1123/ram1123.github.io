@@ -6,6 +6,7 @@ categories: statistics
 tags: statistics cms-combine
 giscus_comments: true
 last_modified_at: 2022-05-10
+description: "Notes on using the CMS Higgs Combine tool for statistical inference — limit setting, significance, and likelihood scans."
 ---
 
 # Table of Contents

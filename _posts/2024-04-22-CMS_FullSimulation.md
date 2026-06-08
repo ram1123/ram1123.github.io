@@ -6,6 +6,7 @@ categories: physics
 tags: simulation
 giscus_comments: true
 last_modified_at: 2024-04-22
+description: "Overview of the CMS full simulation chain — Geant4-based detector simulation, digitisation, and reconstruction."
 ---
 
 # Table of Contents

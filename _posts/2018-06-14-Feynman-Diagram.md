@@ -5,6 +5,7 @@ date: 2018-06-14
 categories: programming
 tags: latex FeynmanDiagram
 giscus_comments: true
+description: "How to draw Feynman diagrams in LaTeX using the TikZ-Feynman and FeynMP packages."
 ---
 
 # Table of Contents

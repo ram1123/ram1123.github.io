@@ -5,6 +5,7 @@ date: 2019-09-17
 tags: latex
 categories: programming
 giscus_comments: true
+description: "A collection of useful LaTeX templates for papers, theses, presentations, and posters."
 ---
 
 # Table of Contents

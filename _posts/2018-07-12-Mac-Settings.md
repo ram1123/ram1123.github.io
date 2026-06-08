@@ -6,6 +6,7 @@ categories: tools
 tags: mac
 giscus_comments: true
 last_modified_at: 2024-05-04
+description: "macOS configuration tips and productivity settings useful for a research computing workflow."
 ---
 
 # Table of Contents

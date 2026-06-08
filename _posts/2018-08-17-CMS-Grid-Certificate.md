@@ -5,6 +5,7 @@ date: 2018-08-17
 tags: cern cms grid
 categories: grid
 giscus_comments: true
+description: "Step-by-step guide to obtaining a CERN/CMS grid certificate and registering with VOMS."
 ---
 
 # Table of Contents

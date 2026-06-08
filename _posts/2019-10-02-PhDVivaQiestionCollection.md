@@ -6,6 +6,7 @@ tags: phdViva
 categories: physics
 giscus_comments: true
 last_modified_at: 2019-10-02
+description: "A collection of PhD viva questions across particle physics, statistics, and detector topics — useful preparation for thesis defence."
 ---
 
 # Table of Contents

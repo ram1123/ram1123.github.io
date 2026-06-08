@@ -6,6 +6,7 @@ categories: physics
 tags: physics cms CMSrecommendation
 giscus_comments: true
 last_modified_at: 2022-05-11
+description: "Summary of CMS Run-2 recommendations for object selection, corrections, and systematic uncertainties."
 ---
 
 ***Table of Contents***

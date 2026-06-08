@@ -5,6 +5,7 @@ date: 2018-05-25
 categories: physics
 tags: particle-physics links tracker lectures symmetry neutrino LHCCollision BoostedWZ
 giscus_comments: true
+description: "Collected references and links covering particle physics topics including tracker reconstruction, neutrinos, LHC collisions, and boosted objects."
 ---
 
 # Table of Contents

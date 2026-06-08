@@ -6,6 +6,7 @@ categories: physics
 tags: gem detector physics
 giscus_comments: true
 related_posts: false
+description: "Key concepts and important points in gaseous detector physics — ionisation, drift, amplification, and GEM technology."
 ---
 
 # Table of Contents

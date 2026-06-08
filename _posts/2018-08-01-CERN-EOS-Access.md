@@ -5,6 +5,7 @@ date: 2018-07-26
 tags: eos cern cms condor lpc
 categories: grid
 giscus_comments: true
+description: "How to access CERN EOS storage from the command line, Condor jobs, and the LPC."
 ---
 
 # Table of Contents

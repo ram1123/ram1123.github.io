@@ -5,6 +5,7 @@ date: 2021-06-17
 categories: tools
 tags: cms singularity
 giscus_comments: true
+description: "Using Singularity containers for CMS analysis — setup, running CMSSW, and grid submission."
 ---
 
 # Table of Contents

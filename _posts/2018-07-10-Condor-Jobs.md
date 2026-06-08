@@ -6,6 +6,7 @@ categories: tools
 tags: condor
 giscus_comments: true
 last_modified_at: 2022-11-11
+description: "How to submit and manage batch jobs using HTCondor at CERN and the LPC."
 ---
 
 # Table of Contents
